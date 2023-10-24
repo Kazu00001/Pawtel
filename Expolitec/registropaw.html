@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Iniciar Sesión</title>
+        <link rel="stylesheet" href="Resgristro.css">
+    </head>
+    <body>
+        <header>
+            <br><br>
+            <h1>Iniciar Sesion</h1>
+        </header>
+        <aside class="top"></aside>
+        <aside class="top2"></aside>
+        <main>
+            <article id="for">
+                <br>
+                <form action="regristrocifrado.php" method="post">
+                    <br><br>
+                    <label for="nombre" class="palabras">Nombre Completo:</label><br><br>
+                    <input type="text" name="nombre" class="tam"><br><br>
+                    <label for="correo" class="palabras">Correo Electronico:</label><br><br>
+                    <input type="email" name="correo" class="tam"><br><br>
+                    <label for="fecha" class="palabras">Fecha de nacimiento:</label><br><br>
+                    <input type="date" name="fecha" class="tam"><br><br>
+                    <label for="telefono" class="palabras">Teléfono:</label><br><br>
+                    <input type="number" name="telefono" class="tam"><br><br>
+                    <label for="pass" class="palabras">Contraseña:</label><br><br>
+                    <input type="password" name="pass" class="tam"><br><br><br>
+                    <input type="submit" value="Registrarse"  class="bot"><br><br><br>
+                    <p>¿Ya tienes cuenta?</p><br>
+                </form>
+                <form action="InicioSesion.html" method="post">
+                    <input type="submit" value="Inicio Sesion"  class="bot"><br>
+                </form>
+            </article>
+            
+        </main>
+    </body>
+</html>
