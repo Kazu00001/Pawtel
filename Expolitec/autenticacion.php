@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-//credenciales de acceso a la base datos :D
+//credenciales de acceso a la base datos :D SISI
 
 $hostname='localhost';
 $username='root';
