@@ -8,7 +8,7 @@ $username='root';
 $password='';
 $database='tienda_perry_el_orrintorinco';
 
-// conexion a la base de datos :hh
+// conexion a la base de datos :hh jjjj
 
 $Conexion = mysqli_connect($hostname, $username, $password, $database);
 
