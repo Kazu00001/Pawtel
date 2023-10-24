@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-//credenciales de acceso a la base datos
+//credenciales de acceso a la base datos :D
 
 $hostname='localhost';
 $username='root';
