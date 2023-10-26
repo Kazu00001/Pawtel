@@ -1,3 +1,13 @@
+<?php
+session_start();
+if (!isset($_SESSION['loggedin'])) {
+
+    header('Location: Login.html');
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +27,62 @@
     <main>
         <section id="izquierda">
             <div>
-
+                <form action="" method="get">
+                <input type="hidden" name="nombre" value="<?php $_SESSION['name'] ?>">
+                <input type="hidden" name="correo" value="<?php $_SESSION['name'] ?>">
+                <label for="icioestan">Fecha de Entrada</label>
+                <input type="date" name="icioestan" id="icioestan">
+                <label for="finestan">Fecha de Salida</label>
+                <input type="date" name="finestan" id="finestan">
+                    <legend>
+                        <label for=""></label>
+                    <select name="select1" id="select1">
+                        <option value="1">Opción 1</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
+                        <option value="4">Opción 4</option>
+                        <option value="5">Opción 5</option>
+                        <option value="6">Opción 6</option>
+                        <option value="7">Opción 7</option>
+                        <option value="8">Opción 8</option>
+                        <option value="9">Opción 9</option>
+                        <option value="10">Opción 10</option>
+                    </select>
+                    <label for=""></label>
+                    <select name="select2" id="select2">
+                        <option value="1">Opción 1</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
+                        <option value="4">Opción 4</option>
+                        <option value="5">Opción 5</option>
+                        <option value="6">Opción 6</option>
+                        <option value="7">Opción 7</option>
+                        <option value="8">Opción 8</option>
+                        <option value="9">Opción 9</option>
+                        <option value="10">Opción 10</option>
+                    </select>
+                    <label for=""></label>
+                    <select name="select3" id="select3">
+                        <option value="1">Opción 1</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
+                        <option value="4">Opción 4</option>
+                        <option value="5">Opción 5</option>
+                        <option value="6">Opción 6</option>
+                        <option value="7">Opción 7</option>
+                        <option value="8">Opción 8</option>
+                        <option value="9">Opción 9</option>
+                        <option value="10">Opción 10</option>
+                    </select>
+                </legend>
+                <input type="text" name="mascota" id="mascota">
+                <select name="select3" id="select3">
+                        <option value="1">little dog</option>
+                        <option value="2">PetHabit</option>
+                        <option value="3">Catstay</option>
+                        <option value="4">KingPaw</option>
+                    </select>
+                </form>
             </div>
         </section>
         <section>

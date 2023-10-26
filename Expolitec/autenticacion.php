@@ -6,7 +6,7 @@ session_start();
 $hostname='localhost';
 $username='root';
 $password='';
-$database='tienda_perry_el_orrintorinco';
+$database='pawtel';
 
 // conexion a la base de datos :hh jjjj
 
@@ -30,7 +30,7 @@ if (!isset($_POST['correo'], $_POST['password'])) {
 
 // evitar inyección sql
 
-if ($Result = $Conexion->prepare('SELECT id, pato, email, img FROM accounts WHERE email = ?')) {
+if ($Result = $Conexion->prepare('SELECT id, cotra, correo, nombres FROM usser WHERE correo = ?')) {
     // parámetros de enlace de la cadena s
     //s=string i=intenger 
     $Result->bind_param('s', $_POST['correo']);
@@ -44,7 +44,7 @@ if ($Result = $Conexion->prepare('SELECT id, pato, email, img FROM accounts WHER
 
 $Result->store_result();
 if ($Result->num_rows > 0) {
-    $Result->bind_result($id, $hash_password,$email,$imagen);
+    $Result->bind_result($id, $hash_password,$email,$nombres);
     $Result->fetch();
 
     // se confirma que la cuenta existe ahora validamos la contraseña
@@ -55,7 +55,7 @@ if ($Result->num_rows > 0) {
         
         session_regenerate_id();
         $_SESSION['loggedin'] = TRUE;
-        $_SESSION['name'] = $_POST['correo'];
+        $_SESSION['name'] = $nombres;
         $_SESSION['id'] = $id;
         $_SESSION['email']= $email;
         $_SESSION['foto']= $imagen;
