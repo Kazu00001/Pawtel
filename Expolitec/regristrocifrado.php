@@ -39,7 +39,7 @@ if(!$envio){
     echo ' Error de MySQL:'.mysqli_error($Conexion);
 } else {
     echo'Parece que todo va bien';
-    header('Location: form_user.html');
+    header('Location: Login.html');
 }
 // cerramos la conecxion de la base de datos 
 mysqli_close($Conexion);
