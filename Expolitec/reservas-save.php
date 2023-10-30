@@ -26,6 +26,20 @@ $habitaciones=$_POST['habitaciones'];
 $huspedes=$_POST['huspedes'];
 $ninos=$_POST['ninos'];
 $mascota=$_POST['mascota'];
-$mascota=$_POST['mascota'];
+$tipohab=$_POST['tipohab'];
 
+// hacer la sentencia de envio 
+$sql="INSERT INTO reserva(nombreclient,correo,iniestan,finestan,habitaciones,huspedes,ninos,Nombrpaq) value('$nom','$correo','$icioestan','$finestan','$habitaciones','$huspedes','$ninos','$mascota','$tipohab')";
+//mandar la sentancia de envio
+$envio= mysqli_query($Conexion,$sql);
+// si hay un problema con el envio le damos un mensaje de que no se pudo 
+if(!$envio){
+    echo '<SCRIPT> alert("tu regristro no se puedo regristar")</SCRIPT>';
+    echo ' Error de MySQL:'.mysqli_error($Conexion);
+} else {
+    echo'Parece que todo va bien';
+    header('Location: Login.html');
+}
+// cerramos la conecxion de la base de datos 
+mysqli_close($Conexion);
 ?>
