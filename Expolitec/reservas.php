@@ -27,16 +27,16 @@ if (!isset($_SESSION['loggedin'])) {
     <main>
         <section id="izquierda">
             <div>
-                <form action="" method="get">
-                <input type="hidden" name="nombre" value="<?php $_SESSION['name'] ?>">
-                <input type="hidden" name="correo" value="<?php $_SESSION['name'] ?>">
+                <form action="" method="post">
+                <input class=controles type="hidden" name="nombre" value="<?php $_SESSION['name'] ?>">
+                <input class=controles type="hidden" name="correo" value="<?php $_SESSION['email'] ?>">
                 <label for="icioestan">Fecha de Entrada</label>
-                <input type="date" name="icioestan" id="icioestan">
+                <input class=controles type="date" name="icioestan" id="icioestan"> <br>
                 <label for="finestan">Fecha de Salida</label>
-                <input type="date" name="finestan" id="finestan">
+                <input class=controles type="date" name="finestan" id="finestan">
                     <legend>
-                        <label for=""></label>
-                    <select name="select1" id="select1">
+                        <label for="habitaciones">Habitaciones:</label>
+                    <select name="habitaciones" class="select">
                         <option value="1">Opción 1</option>
                         <option value="2">Opción 2</option>
                         <option value="3">Opción 3</option>
@@ -48,8 +48,8 @@ if (!isset($_SESSION['loggedin'])) {
                         <option value="9">Opción 9</option>
                         <option value="10">Opción 10</option>
                     </select>
-                    <label for=""></label>
-                    <select name="select2" id="select2">
+                    <label for="huspedes">Huspedes:</label>
+                    <select name="huspedes" class="select">
                         <option value="1">Opción 1</option>
                         <option value="2">Opción 2</option>
                         <option value="3">Opción 3</option>
@@ -61,8 +61,8 @@ if (!isset($_SESSION['loggedin'])) {
                         <option value="9">Opción 9</option>
                         <option value="10">Opción 10</option>
                     </select>
-                    <label for=""></label>
-                    <select name="select3" id="select3">
+                    <label for="ninos">Niños:</label>
+                    <select name="ninos" class="select">
                         <option value="1">Opción 1</option>
                         <option value="2">Opción 2</option>
                         <option value="3">Opción 3</option>
@@ -75,14 +75,26 @@ if (!isset($_SESSION['loggedin'])) {
                         <option value="10">Opción 10</option>
                     </select>
                 </legend>
-                <input type="text" name="mascota" id="mascota">
-                <select name="select3" id="select3">
-                        <option value="1">little dog</option>
-                        <option value="2">PetHabit</option>
-                        <option value="3">Catstay</option>
-                        <option value="4">KingPaw</option>
-                    </select>
-                </form>
+                <label for="mascota">Mascota:</label>
+                <input class=controles type="text" name="mascota" id="mascota">
+
+                <!-- hace consulta con la base de datos y trae las habitaciones -->
+                <label for="tipohab">Tipo de habitacion:</label>
+                <select name="tipohab" id="tipohab">
+                <?php 
+                
+                    include('conexion.php');
+                    $produc="SELECT * FROM habitaciones";
+                    $resul=mysqli_query($Conexion,$produc);
+                    while($valores= mysqli_fetch_array($resul)){
+                    echo '<option value="'.$valores['idh'].'">'.$valores['nomh'].'</option>';
+                    }
+                ?>
+                </select>
+
+                <p class=p>Estoy de Acuerdo con los <a href="#">Terminos y Condiciones</a></p>
+                <input class="controles" type="submit" name="reservar" id="reservar" value="Reservar">
+            </form> 
             </div>
         </section>
         <section>

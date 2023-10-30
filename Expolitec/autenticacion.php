@@ -59,7 +59,7 @@ if ($Result->num_rows > 0) {
         $_SESSION['id'] = $id;
         $_SESSION['email']= $email;
         $_SESSION['foto']= $imagen;
-        header('Location: perfil.php');
+        header('Location: inicio.php');
     } else {
         // contraseña incorrecta
         echo '<SCRIPT> alert("Tu contraseña es incorecta")</SCRIPT>';
