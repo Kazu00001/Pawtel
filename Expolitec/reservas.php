@@ -99,6 +99,7 @@ if (!isset($_SESSION['loggedin'])) {
                 </select>
 
                 <p class=p>Estoy de Acuerdo con los <a href="#">Terminos y Condiciones</a></p>
+                <input class="controles" type="submit" name="reservar" id="reservar" value="Reservar">
             </form> 
             </div>
         </section>
