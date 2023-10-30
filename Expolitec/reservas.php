@@ -28,12 +28,12 @@ if (!isset($_SESSION['loggedin'])) {
         <section id="izquierda">
             <div>
                 <form action="" method="post">
-                <input type="hidden" name="nombre" value="<?php $_SESSION['name'] ?>">
-                <input type="hidden" name="correo" value="<?php $_SESSION['email'] ?>">
+                <input class=controles type="hidden" name="nombre" value="<?php $_SESSION['name'] ?>">
+                <input class=controles type="hidden" name="correo" value="<?php $_SESSION['email'] ?>">
                 <label for="icioestan">Fecha de Entrada</label>
-                <input type="date" name="icioestan" id="icioestan">
+                <input class=controles type="date" name="icioestan" id="icioestan">
                 <label for="finestan">Fecha de Salida</label>
-                <input type="date" name="finestan" id="finestan">
+                <input class=controles type="date" name="finestan" id="finestan">
                     <legend>
                         <label for="habitaciones">Habitaciones:</label>
                     <select name="habitaciones" class="select">
@@ -76,7 +76,7 @@ if (!isset($_SESSION['loggedin'])) {
                     </select>
                 </legend>
                 <label for="mascota">Mascota:</label>
-                <input type="text" name="mascota" id="mascota">
+                <input class=controles type="text" name="mascota" id="mascota">
                 <!-- incluyo por si se quiere poner mas habitaciones sea autometica la opciones -->
 
                 <label for="tipohab">Tipo de habitacion:</label>

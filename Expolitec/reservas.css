@@ -1,6 +1,7 @@
 *{
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
 }
 html, body{
     height: 120%;
@@ -59,4 +60,14 @@ main{
     border-color: #43291F;
     color: white;
     border-radius: 100px;
+}
+.controls{
+    width: 100%;
+    background-color: #F3E9DC;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px;
+    font-family: 'calibri';
+    font-size: 18px;
 }
