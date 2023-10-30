@@ -25,7 +25,7 @@ if (!isset($_POST['correo'], $_POST['password'])) {
 
     // si no hay datos muestra error y re direccionar
 
-    header('Location: Login_que_jale.html');
+    header('Location: Login.html');
 }
 
 // evitar inyección sql
@@ -63,12 +63,12 @@ if ($Result->num_rows > 0) {
     } else {
         // contraseña incorrecta
         echo '<SCRIPT> alert("Tu contraseña es incorecta")</SCRIPT>';
-        header('Location: Login_que_jale.html');
+        header('Location: Login.html');
         
     }
 } else {
     // usuario incorrecto
-    header('Location: Login_que_jale.html');
+    header('Location: Login.html');
     echo '<SCRIPT> alert("Tu usuario es incorrecto") </SCRIPT>';
 }
 
