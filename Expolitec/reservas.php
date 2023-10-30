@@ -77,16 +77,10 @@ if (!isset($_SESSION['loggedin'])) {
                 </legend>
                 <label for="mascota">Mascota:</label>
                 <input class=controles type="text" name="mascota" id="mascota">
-                <!-- incluyo por si se quiere poner mas habitaciones sea autometica la opciones -->
 
+                <!-- hace consulta con la base de datos y trae las habitaciones -->
                 <label for="tipohab">Tipo de habitacion:</label>
                 <select name="tipohab" id="tipohab">
-                <option value="0">Seleccione</option>
-                <option value="1">Little Dog</option>
-                <option value="2">PetHabit</option>
-                <option value="3">CatStay</option>
-                <option value="4">KingPaw</option>
-                
                 <?php 
                 
                     include('conexion.php');
