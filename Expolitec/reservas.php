@@ -80,15 +80,18 @@ if (!isset($_SESSION['loggedin'])) {
                 <!-- incluyo por si se quiere poner mas habitaciones sea autometica la opciones -->
 
                 <label for="tipohab">Tipo de habitacion:</label>
+                <select name="tipohab" id="tipohab">
                 <option value="0">Seleccione</option>
                 <?php 
-                    include('autenticacion.php');
+                
+                    include('conexion.php');
                     $produc="SELECT * FROM habitaciones";
                     $resul=mysqli_query($Conexion,$produc);
                     while($valores= mysqli_fetch_array($resul)){
                     echo '<option value="'.$valores['idh'].'">'.$valores['nomh'].'</option>';
                     }
                 ?>
+                </select>
             </form>
             </div>
         </section>
