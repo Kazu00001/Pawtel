@@ -31,7 +31,7 @@ if (!isset($_SESSION['loggedin'])) {
                 <input class=controles type="hidden" name="nombre" value="<?php $_SESSION['name'] ?>">
                 <input class=controles type="hidden" name="correo" value="<?php $_SESSION['email'] ?>">
                 <label for="icioestan">Fecha de Entrada</label>
-                <input class=controles type="date" name="icioestan" id="icioestan">
+                <input class=controles type="date" name="icioestan" id="icioestan"> <br>
                 <label for="finestan">Fecha de Salida</label>
                 <input class=controles type="date" name="finestan" id="finestan">
                     <legend>
@@ -82,6 +82,11 @@ if (!isset($_SESSION['loggedin'])) {
                 <label for="tipohab">Tipo de habitacion:</label>
                 <select name="tipohab" id="tipohab">
                 <option value="0">Seleccione</option>
+                <option value="1">Little Dog</option>
+                <option value="2">PetHabit</option>
+                <option value="3">CatStay</option>
+                <option value="4">KingPaw</option>
+                
                 <?php 
                 
                     include('conexion.php');
@@ -92,7 +97,9 @@ if (!isset($_SESSION['loggedin'])) {
                     }
                 ?>
                 </select>
-            </form>
+
+                <p class=p>Estoy de Acuerdo con los <a href="#">Terminos y Condiciones</a></p>
+            </form> 
             </div>
         </section>
         <section>
