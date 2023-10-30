@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <Title>Inicio</Title>
-        <link rel="stylesheet" href="inicioP.css">
+        <link rel="stylesheet" href="inicio.css">
         <link rel="stylesheet" href="barra_nav_foot.css">
     </head>
     <body>
