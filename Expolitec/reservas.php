@@ -107,7 +107,7 @@ if (!isset($_SESSION['loggedin'])) {
             $resul=mysqli_query($Conexion,$produc);
             while($valores= mysqli_fetch_array($resul)){ ?>
                 <aside>
-                <img src="" alt="">
+                <img src="imgs/persona.jpn" alt="">
                 <h1></h1>
                 <hr>
                 <img src="" alt=""><p></p>
