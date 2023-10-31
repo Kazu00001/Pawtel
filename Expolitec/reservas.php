@@ -101,8 +101,13 @@ if (!isset($_SESSION['loggedin'])) {
                 <!-- es la estructura del contenrdor de la habitacion -->
                 <!-- llena los contendores con la informacion de las habotaciones y diseño ya es la maquetacion en codigo para que solo acomodes va -->
             <!-- little dog -->
-            <aside>
-                <img src="" alt="">
+            <?php	
+            include('conexion.php');
+            $produc="SELECT * FROM habitaciones";
+            $resul=mysqli_query($Conexion,$produc);
+            while($valores= mysqli_fetch_array($resul)){ ?>
+                <aside>
+                <img src="<?php echo ''?>" alt="">
                 <h1></h1>
                 <hr>
                 <img src="" alt=""><p></p>
@@ -117,57 +122,8 @@ if (!isset($_SESSION['loggedin'])) {
                 <hr>
                 <p class="descrip"></p>
             </aside>
-            <!-- PetHabit -->
-            <aside>
-                <img src="" alt="">
-                <h1></h1>
-                <hr>
-                <img src="" alt=""><p></p>
-                <img src="" alt=""><p></p>
-                <p class="precios"></p>
-                <hr>
-                <p class="descrip"></p>
-                <hr>
-                <img alt=""><p></p>
-                <img alt=""><p></p>
-                <p class="precios2"></p>
-                <hr>
-                <p class="descrip"></p>
-            </aside>
-            <!-- Catstay -->
-            <aside>
-                <img src="" alt="">
-                <h1></h1>
-                <hr>
-                <img src="" alt=""><p></p>
-                <img src="" alt=""><p></p>
-                <p class="precios"></p>
-                <hr>
-                <p class="descrip"></p>
-                <hr>
-                <img alt=""><p></p>
-                <img alt=""><p></p>
-                <p class="precios2"></p>
-                <hr>
-                <p class="descrip"></p>
-            </aside>
-            <!-- KingPaw -->
-            <aside>
-                <img src="" alt="">
-                <h1></h1>
-                <hr>
-                <img src="" alt=""><p></p>
-                <img src="" alt=""><p></p>
-                <p class="precios"></p>
-                <hr>
-                <p class="descrip"></p>
-                <hr>
-                <img alt=""><p></p>
-                <img alt=""><p></p>
-                <p class="precios2"></p>
-                <hr>
-                <p class="descrip"></p>
-            </aside>
+            <?php }
+            ?>
         </section>
     </main>
 </body>
