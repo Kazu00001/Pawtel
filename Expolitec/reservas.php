@@ -110,7 +110,9 @@ if (!isset($_SESSION['loggedin'])) {
                 <img src="" alt="">
                 <h1></h1>
                 <hr>
+                <img src="Expolitec/imgs/persona.png" alt=""><p></p>
                 <img src="" alt=""><p></p>
+                <img src="" alt="">
                 <img src="" alt=""><p></p>
                 <p class="precios"></p>
                 <hr>
