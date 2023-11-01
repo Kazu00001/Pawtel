@@ -79,7 +79,6 @@ if (!isset($_SESSION['loggedin'])) {
                 <label for="tipohab">Tipo de habitacion:</label>
                 <select name="tipohab" id="tipohab">
                 <?php 
-                
                     include('conexion.php');
                     $produc="SELECT * FROM habitaciones";
                     $resul=mysqli_query($Conexion,$produc);
@@ -88,7 +87,6 @@ if (!isset($_SESSION['loggedin'])) {
                     }
                 ?>
                 </select>
-
                 <p class=p>Estoy de Acuerdo con los <a href="#">Terminos y Condiciones</a></p>
                 <input class="controles" type="submit" name="reservar" id="reservar" value="Reservar">
             </form> 
