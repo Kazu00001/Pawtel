@@ -104,11 +104,6 @@ if (!isset($_SESSION['loggedin'])) {
             $resul=mysqli_query($Conexion,$produc);
             while($valores= mysqli_fetch_array($resul)){ ?> 
                 <aside id="der">
-                <div class="derecha">
-                    <img src="" alt="">  <!-- imagen de habitacion -->
-                <h1 class="tituloHabitaciones"> </h1>
-            while($valores= mysqli_fetch_array($resul)){ ?>
-                <aside>
                 <img src="<?php echo $valores['Imagen']; ?>" alt="">  <!-- imagen de habitacion -->
                 <h1 class="tituloHabitaciones"><?php echo $valores['nomh']; ?></h1>
                 <hr>
@@ -126,8 +121,6 @@ if (!isset($_SESSION['loggedin'])) {
                 <img src="Expolitec/imgs/cama.png" alt=""><p><?php echo $valores['cams2']; ?></p>  <!-- camas  -->
                 <p class="precios"><?php echo $valores['precio2']; ?></p> 
                 <hr>
-                <p class="descrip">Es una Habitacion Basica con 1 cama, TV y 1 baño completo.</p>
-            </div>
                 <p class="descrip"><?php echo $valores['descriph2']; ?></p>
             </aside>
             <?php }
