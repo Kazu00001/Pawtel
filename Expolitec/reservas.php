@@ -104,24 +104,24 @@ if (!isset($_SESSION['loggedin'])) {
             $resul=mysqli_query($Conexion,$produc);
             while($valores= mysqli_fetch_array($resul)){ ?>
                 <aside>
-                <img src="" alt="">  <!-- imagen de habitacion -->
-                <h1 class="tituloHabitaciones"> </h1>
+                <img src="<?php echo $valores['Imagen']; ?>" alt="">  <!-- imagen de habitacion -->
+                <h1 class="tituloHabitaciones"><?php echo $valores['nomh']; ?></h1>
                 <hr>
-                <img src="Expolitec/imgs/persona.png" alt=""><p></p>  <!-- foto persona  -->
-                <img src="Expolitec/imgs/ducha.png" alt=""><p></p>  <!-- ducha-->
+                <img src="Expolitec/imgs/persona.png" alt=""><p><?php echo $valores['nomh']; ?></p>  <!-- foto persona  -->
+                <img src="Expolitec/imgs/ducha.png" alt=""><p><?php echo $valores['duch']; ?></p>  <!-- ducha-->
                 <img src="Expolitec/imgs/huella.png" alt="">  <!-- pata mascota -->
-                <img src="Expolitec/imgs/cama.png" alt=""><p></p>  <!-- camas  -->
-                <p class="precios">$907</p> 
+                <img src="Expolitec/imgs/cama.png" alt=""><p><?php echo $valores['cams']; ?></p>  <!-- camas  -->
+                <p class="precios"><?php echo $valores['precio']; ?></p> 
                 <hr>
-                <p class="descrip">Es una Habitacion Basica con 1 cama, TV y 1 baño completo.</p>
+                <p class="descrip"><?php echo $valores['descriph1']; ?></p>
                 <hr>
-                <img src="Expolitec/imgs/persona.png" alt=""><p></p>  <!-- foto persona  -->
-                <img src="Expolitec/imgs/ducha.png" alt=""><p></p>  <!-- ducha-->
+                <img src="Expolitec/imgs/persona.png" alt=""><p><?php echo $valores['pers2']; ?></p>  <!-- foto persona  -->
+                <img src="Expolitec/imgs/ducha.png" alt=""><p><?php echo $valores['duch2']; ?></p>  <!-- ducha-->
                 <img src="Expolitec/imgs/huella.png" alt="">  <!-- pata mascota -->
-                <img src="Expolitec/imgs/cama.png" alt=""><p></p>  <!-- camas  -->
-                <p class="precios">$907</p> 
+                <img src="Expolitec/imgs/cama.png" alt=""><p><?php echo $valores['cams2']; ?></p>  <!-- camas  -->
+                <p class="precios"><?php echo $valores['precio2']; ?></p> 
                 <hr>
-                <p class="descrip">Es una Habitacion Basica con 1 cama, TV y 1 baño completo.</p>
+                <p class="descrip"><?php echo $valores['descriph2']; ?></p>
             </aside>
             <?php }
             ?>
