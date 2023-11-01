@@ -79,6 +79,26 @@ img{
     background-color: rgb(255, 255, 255);
     margin: 1%;
 }
+.c_icon{
+    width: 100%;
+    height: 70%;
+    float: left;
+}
+.icons{
+    width: 60%;
+    height:60%;
+    margin-top:20%;
+}
+.titSer{
+    width: 100%;
+    height: 30%;
+    float: left;
+}
+.titS{
+    font-size:large;
+    font-family: 'Hammersmith One', sans-serif;
+
+}
 .tit{
     font-size: x-large;
     color: rgb(102, 102, 102);

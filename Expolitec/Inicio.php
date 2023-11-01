@@ -57,17 +57,94 @@
                 <br><br> 
                 <h1 class="titc">Servicios</h1>
                 <section id="container-rooms">
-                    <section class="square_s"></section>
-                    <section class="square_s"></section>
-                    <section class="square_s"></section>
-                    <section class="square_s"></section>
-                    <section class="square_s"></section>
-                    <section class="square_s"></section>
-                    <section class="square_s"></section>
-                    <section class="square_s"></section>
-                    <section class="square_s"></section>
-                    <section class="square_s"></section>
-                    <section class="square_s"></section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/taza-de-cafe.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Cafeteria</p>
+                        </div>
+                    </section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/cena.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Restaurante</p>
+                        </div>
+                    </section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/wifi.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Wifi</p>
+                        </div>
+                    </section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/mascotas-permitidas.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Cuidado de Mascotas</p>
+                        </div>
+                    </section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/television.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Television a Cable</p>
+                        </div>
+                    </section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/spa.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Spa</p>
+                        </div>
+                    </section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/gimnasio.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Gimnasio</p>
+                        </div>
+                    </section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/hombre-nadando.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Piscina</p>
+                        </div>
+                    </section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/veterinario.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Veterinaria</p>
+                        </div>
+                    </section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/tijeras-abiertas-forma-de-herramienta.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Estetica Canina</p>
+                        </div>
+                    </section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/tazon-de-agua.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Bebederos</p>
+                        </div>
+                    </section>
                 </section>
             </article><!-------------------------------------------------------------------------------->
 
@@ -78,12 +155,54 @@
                 <h1 class="titc">Actividades</h1>
                 <p></p>
                 <section id="container-rooms">
-                    <section class="square_s"></section>
-                    <section class="square_s"></section>
-                    <section class="square_s"></section>
-                    <section class="square_s"></section>
-                    <section class="square_s"></section>
-                    <section class="square_s"></section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/paseo-perro.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Paseo al Aire Libre</p>
+                        </div>
+                    </section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/competencia-de-perros.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Juegos con tu Mascota</p>
+                        </div>
+                    </section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/vino.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Prueba de vinos</p>
+                        </div>
+                    </section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/mapa.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Recorridos por la ciudad</p>
+                        </div>
+                    </section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/camara.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Fotografias con tu Mascota</p>
+                        </div>
+                    </section>
+                    <section class="square_s">
+                        <div class="c_icon">
+                            <img src="icons/consola.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                            <p class="titS">Sala de juegos</p>
+                        </div>
+                    </section>
                     <br><br>
                     <button id="but">Reserva Ahora</button>
                 </section>
