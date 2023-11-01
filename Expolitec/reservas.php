@@ -21,9 +21,6 @@ if (!isset($_SESSION['loggedin'])) {
         <br><br>
         <h1>Has Tu Reservacion! </h1>
     </header>
-    <aside class="top"></aside>
-    <aside class="top2"></aside>
-
     <main>
         <section id="izquierda">
             <div class="FormIzq">
