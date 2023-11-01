@@ -112,3 +112,7 @@ main{
     float: right;
     border-radius: 4px;
 }
+img{
+    width: 2%;
+    height: 2%;
+}
