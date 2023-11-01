@@ -82,11 +82,11 @@ main{
 .FormIzq{
     width: 40%;
     padding: 10px;
-    height:75%;
+    height:92%;
     float: left;
-    margin-top: 20%;
+    margin-top: 12%;
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: hsl(0, 0%, 100%);
     margin-left: 15%;
 }
 #izquierda{
@@ -94,5 +94,21 @@ main{
     height: 100%;
     float: left;
     border-radius: 4px;
-    
+}
+.derecha{
+    width: 60%;
+    padding: 10px;
+    height:92%;
+    float: right;
+    margin-top: 12%;
+    border-radius: 4px;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 15%;
+}
+
+#der{
+    width: 60%;
+    height: 100%;
+    float: right;
+    border-radius: 4px;
 }

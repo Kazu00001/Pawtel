@@ -102,9 +102,10 @@ if (!isset($_SESSION['loggedin'])) {
             include('conexion.php');
             $produc="SELECT * FROM habitaciones";
             $resul=mysqli_query($Conexion,$produc);
-            while($valores= mysqli_fetch_array($resul)){ ?>
-                <aside>
-                <img src="" alt="">  <!-- imagen de habitacion -->
+            while($valores= mysqli_fetch_array($resul)){ ?> 
+                <aside id="der">
+                <div class="derecha">
+                    <img src="" alt="">  <!-- imagen de habitacion -->
                 <h1 class="tituloHabitaciones"> </h1>
                 <hr>
                 <img src="Expolitec/imgs/persona.png" alt=""><p></p>  <!-- foto persona  -->
@@ -122,6 +123,7 @@ if (!isset($_SESSION['loggedin'])) {
                 <p class="precios">$907</p> 
                 <hr>
                 <p class="descrip">Es una Habitacion Basica con 1 cama, TV y 1 baño completo.</p>
+            </div>
             </aside>
             <?php }
             ?>
