@@ -26,7 +26,7 @@ if (!isset($_SESSION['loggedin'])) {
 
     <main>
         <section id="izquierda">
-            <div>
+            <div class="FormIzq">
                 <form action="" method="post">
                 <input class=controles type="hidden" name="nombre" value="<?php $_SESSION['name'] ?>">
                 <input class=controles type="hidden" name="correo" value="<?php $_SESSION['email'] ?>">
@@ -111,20 +111,20 @@ if (!isset($_SESSION['loggedin'])) {
                 <h1 class="tituloHabitaciones"> </h1>
                 <hr>
                 <img src="Expolitec/imgs/persona.png" alt=""><p></p>  <!-- foto persona  -->
-                <img src="" alt=""><p></p>  <!-- ducha-->
-                <img src="" alt="">  <!-- pata mascota -->
-                <img src="" alt=""><p></p>  <!-- camas  -->
-                <p class="precios">d</p> 
+                <img src="Expolitec/imgs/ducha.png" alt=""><p></p>  <!-- ducha-->
+                <img src="Expolitec/imgs/huella.png" alt="">  <!-- pata mascota -->
+                <img src="Expolitec/imgs/cama.png" alt=""><p></p>  <!-- camas  -->
+                <p class="precios">$907</p> 
                 <hr>
-                <p class="descrip">d</p>
+                <p class="descrip">Es una Habitacion Basica con 1 cama, TV y 1 baño completo.</p>
                 <hr>
                 <img src="Expolitec/imgs/persona.png" alt=""><p></p>  <!-- foto persona  -->
-                <img src="" alt=""><p></p>  <!-- ducha-->
-                <img src="" alt="">  <!-- pata mascota -->
-                <img src="" alt=""><p></p>  <!-- camas  -->
-                <p class="precios">d</p> 
+                <img src="Expolitec/imgs/ducha.png" alt=""><p></p>  <!-- ducha-->
+                <img src="Expolitec/imgs/huella.png" alt="">  <!-- pata mascota -->
+                <img src="Expolitec/imgs/cama.png" alt=""><p></p>  <!-- camas  -->
+                <p class="precios">$907</p> 
                 <hr>
-                <p class="descrip">d</p>
+                <p class="descrip">Es una Habitacion Basica con 1 cama, TV y 1 baño completo.</p>
             </aside>
             <?php }
             ?>

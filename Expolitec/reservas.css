@@ -79,3 +79,16 @@ main{
 .tituloHabitaciones{
     color: black;
 }
+.FormIzq{
+    width: 40%;
+    padding: 10px;
+    height: 100%;
+    float: left;
+    border-radius: 4px;
+}
+#izquierda{
+    width: 40%;
+    height: 100%;
+    float: left;
+    border-radius: 4px;
+}
