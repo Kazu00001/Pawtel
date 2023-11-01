@@ -109,17 +109,17 @@ if (!isset($_SESSION['loggedin'])) {
                 <img src="Expolitec/imgs/ducha.png" alt=""><p><?php echo $valores['duch']; ?></p>  <!-- ducha-->
                 <img src="Expolitec/imgs/huella.png" alt="">  <!-- pata mascota -->
                 <img src="Expolitec/imgs/cama.png" alt=""><p><?php echo $valores['cams']; ?></p>  <!-- camas  -->
-                <p class="precios"><?php echo $valores['precio']; ?></p> 
+                <p class="precios">$<?php echo $valores['precio']; ?></p> 
                 <hr>
-                <p class="descrip"><?php echo $valores['descriph1']; ?></p>
+                <p class="descrip">Esta habitacion Incluye: <?php echo $valores['descriph1']; ?></p>
                 <hr>
                 <img src="Expolitec/imgs/persona.png" alt=""><p><?php echo $valores['pers2']; ?></p>  <!-- foto persona  -->
                 <img src="Expolitec/imgs/ducha.png" alt=""><p><?php echo $valores['duch2']; ?></p>  <!-- ducha-->
                 <img src="Expolitec/imgs/huella.png" alt="">  <!-- pata mascota -->
                 <img src="Expolitec/imgs/cama.png" alt=""><p><?php echo $valores['cams2']; ?></p>  <!-- camas  -->
-                <p class="precios"><?php echo $valores['precio2']; ?></p> 
+                <p class="precios">$<?php echo $valores['precio2']; ?></p> 
                 <hr>
-                <p class="descrip"><?php echo $valores['descriph2']; ?></p>
+                <p class="descrip">Esta Habitacion Incluye: <?php echo $valores['descriph2']; ?></p>
             </aside>
             <?php }
             ?>
