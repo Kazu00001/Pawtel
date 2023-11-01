@@ -105,7 +105,7 @@ if (!isset($_SESSION['loggedin'])) {
                 <img src="<?php echo $valores['Imagen']; ?>" alt="">  <!-- imagen de habitacion -->
                 <h1 class="tituloHabitaciones"><?php echo $valores['nomh']; ?></h1>
                 <hr>
-                <img src="persona.png" alt=""><p><?php echo $valores['nomh']; ?></p>  <!-- foto persona  -->
+                <img src="persona.png" alt=""><p><?php echo $valores['pers']; ?></p>  <!-- foto persona  -->
                 <img src="ducha.png" alt=""><p><?php echo $valores['duch']; ?></p>  <!-- ducha-->
                 <img src="huella.png" alt="">  <!-- pata mascota -->
                 <img src="cama.png" alt=""><p><?php echo $valores['cams']; ?></p>  <!-- camas  -->
