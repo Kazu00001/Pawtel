@@ -108,21 +108,21 @@ if (!isset($_SESSION['loggedin'])) {
             while($valores= mysqli_fetch_array($resul)){ ?>
                 <aside>
                 <img src="" alt="">
-                <h1></h1>
+                <h1 class="tituloHabitaciones">Habitacion Seleccionada</h1>
                 <hr>
                 <img src="Expolitec/imgs/persona.png" alt=""><p></p>
                 <img src="" alt=""><p></p>
                 <img src="" alt="">
                 <img src="" alt=""><p></p>
-                <p class="precios"></p>
+                <p class="precios">d</p>
                 <hr>
-                <p class="descrip"></p>
+                <p class="descrip">d</p>
                 <hr>
                 <img alt=""><p></p>
                 <img alt=""><p></p>
-                <p class="precios2"></p>
+                <p class="precios2"d>a</p>
                 <hr>
-                <p class="descrip"></p>
+                <p class="descrip">d</p>
             </aside>
             <?php }
             ?>
