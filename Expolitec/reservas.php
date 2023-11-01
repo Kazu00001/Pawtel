@@ -107,7 +107,6 @@ if (!isset($_SESSION['loggedin'])) {
                 <hr>
                 <img src="persona.png" alt=""><p><?php echo $valores['pers']; ?></p>  <!-- foto persona  -->
                 <img src="ducha.png" alt=""><p><?php echo $valores['duch']; ?></p>  <!-- ducha-->
-                <img src="huella.png" alt="">  <!-- pata mascota -->
                 <img src="cama.png" alt=""><p><?php echo $valores['cams']; ?></p>  <!-- camas  -->
                 <p class="precios">$<?php echo $valores['precio']; ?></p> 
                 <hr>
@@ -115,7 +114,6 @@ if (!isset($_SESSION['loggedin'])) {
                 <hr>
                 <img src="persona.png" alt=""><p><?php echo $valores['pers2']; ?></p>  <!-- foto persona  -->
                 <img src="ducha.png" alt=""><p><?php echo $valores['duch2']; ?></p>  <!-- ducha-->
-                <img src="huella.png" alt="">  <!-- pata mascota -->
                 <img src="cama.png" alt=""><p><?php echo $valores['cams2']; ?></p>  <!-- camas  -->
                 <p class="precios">$<?php echo $valores['precio2']; ?></p> 
                 <hr>
