@@ -107,20 +107,22 @@ if (!isset($_SESSION['loggedin'])) {
             $resul=mysqli_query($Conexion,$produc);
             while($valores= mysqli_fetch_array($resul)){ ?>
                 <aside>
-                <img src="" alt="">
-                <h1 class="tituloHabitaciones">Habitacion Seleccionada</h1>
+                <img src="" alt="">  <!-- imagen de habitacion -->
+                <h1 class="tituloHabitaciones"> </h1>
                 <hr>
-                <img src="Expolitec/imgs/persona.png" alt=""><p></p>
-                <img src="" alt=""><p></p>
-                <img src="" alt="">
-                <img src="" alt=""><p></p>
-                <p class="precios">d</p>
+                <img src="Expolitec/imgs/persona.png" alt=""><p></p>  <!-- foto persona  -->
+                <img src="" alt=""><p></p>  <!-- ducha-->
+                <img src="" alt="">  <!-- pata mascota -->
+                <img src="" alt=""><p></p>  <!-- camas  -->
+                <p class="precios">d</p> 
                 <hr>
                 <p class="descrip">d</p>
                 <hr>
-                <img alt=""><p></p>
-                <img alt=""><p></p>
-                <p class="precios2"d>a</p>
+                <img src="Expolitec/imgs/persona.png" alt=""><p></p>  <!-- foto persona  -->
+                <img src="" alt=""><p></p>  <!-- ducha-->
+                <img src="" alt="">  <!-- pata mascota -->
+                <img src="" alt=""><p></p>  <!-- camas  -->
+                <p class="precios">d</p> 
                 <hr>
                 <p class="descrip">d</p>
             </aside>
