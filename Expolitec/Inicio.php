@@ -48,9 +48,9 @@
                 <br>
                 <h1 class="tits">Planes de Habitaciones</h1>
                 <section id="container-rooms">
-                    <section class="habitacion"></section>
-                    <section class="habitacion"></section>
-                    <section class="habitacion"></section>
+                <section class="habitacion"><section id="uno"></section></section>
+                    <section class="habitacion"><section id="dos"></section></section>
+                    <section class="habitacion"><section id="tres"></section></section>
                     <section class="habitacion2"></section>
                 </section>
             </article><!-------------------------------------------------------------------------------->
