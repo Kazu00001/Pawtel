@@ -37,10 +37,10 @@
 
         <div class="publicidad"><!-- Esta sección es para colocar una imagen de publicidad-->
             <div class= "carruseles">
-                <section class="slider-carrusel"><img src="imgs/img1.jpg"></section>
-                <section class="slider-carrusel"><img src="imgs/img2.jpg"></section>
-                <section class="slider-carrusel"><img src="imgs/img3.jpg"></section>
-                <section class="slider-carrusel"><img src="imgs/img4.jpg" ></section>
+                <section class="slider-carrusel"><img src="imgs/imga1.jpg"></section>
+                <section class="slider-carrusel"><img src="imgs/imga2.jpg"></section>
+                <section class="slider-carrusel"><img src="imgs/imga3.jpg"></section>
+                <section class="slider-carrusel"><img src="imgs/imga4.jpg" ></section>
             </div>
         </div>
         <main>
