@@ -35,17 +35,22 @@
             
         </header>
 
-        <aside id="publicidad"><!-- Esta sección es para colocar una imagen de publicidad-->
-
-        </aside>
+        <div class="publicidad"><!-- Esta sección es para colocar una imagen de publicidad-->
+            <div class= "carruseles">
+                <section class="slider-carrusel"><img src="imgs/imag1.jpg"></section>
+                <section class="slider-carrusel"><img src="imgs/imag2.jpg"></section>
+                <section class="slider-carrusel"><img src="imgs/imag3.jpg"></section>
+                <section class="slider-carrusel"><img src="imgs/imag4.jpg" ></section>
+            </div>
+        </div>
         <main>
             <article id="paquetes"><!--Toda esta parte contendrá los diferentes tipos de habitaciones-->
                 <br>
                 <h1 class="tits">Planes de Habitaciones</h1>
                 <section id="container-rooms">
-                    <section class="habitacion"></section>
-                    <section class="habitacion"></section>
-                    <section class="habitacion"></section>
+                <section class="habitacion"><section id="uno"></section></section>
+                    <section class="habitacion"><section id="dos"></section></section>
+                    <section class="habitacion"><section id="tres"></section></section>
                     <section class="habitacion2"></section>
                 </section>
             </article><!-------------------------------------------------------------------------------->
@@ -148,7 +153,7 @@
                 </section>
             </article><!-------------------------------------------------------------------------------->
 
-            <aside class="imagen"></aside><!--imagen de publicidad-->
+            <aside class="imagen2"></aside><!--imagen de publicidad-->
 
             <article class="servicios"> <!--Esta parte contendrá una vista rapida de las actividades existentes en el hotel-->
                 <br><br> 

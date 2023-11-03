@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html, body{
-    height: 120%;
+    height: 100%;
     background-color: #F3E9DC;
 }
 header{
@@ -31,11 +31,11 @@ h1{
     background-color: #F3E9DC;
 }
 main{
-    width: 40%;
-    height: 50%;
+    width: 100%;
+    height: 75%;
     margin: auto;
     float: left;
-    background-color: #ffffff;
+    background-color: #F3E9DC;
 }
 #for{
     width: 60%;
@@ -75,4 +75,44 @@ main{
     height: 40px;
     text-align: center;
     font-size: 18px;
+}
+.tituloHabitaciones{
+    color: black;
+}
+.FormIzq{
+    width: 40%;
+    padding: 10px;
+    height:92%;
+    float: left;
+    margin-top: 12%;
+    border-radius: 4px;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 15%;
+}
+#izquierda{
+    width: 40%;
+    height: 100%;
+    float: left;
+    border-radius: 4px;
+}
+.derecha{
+    width: 60%;
+    padding: 10px;
+    height:92%;
+    float: right;
+    margin-top: 12%;
+    border-radius: 4px;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 15%;
+}
+
+#der{
+    width: 60%;
+    height: 100%;
+    float: right;
+    border-radius: 4px;
+}
+img{
+    width: 4%;
+    height: 3%;
 }

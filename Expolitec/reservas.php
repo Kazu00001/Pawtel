@@ -21,13 +21,10 @@ if (!isset($_SESSION['loggedin'])) {
         <br><br>
         <h1>Has Tu Reservacion! </h1>
     </header>
-    <aside class="top"></aside>
-    <aside class="top2"></aside>
-
     <main>
         <section id="izquierda">
-            <div>
-                <form action="" method="post">
+            <div class="FormIzq">
+                <form action="reservas-save.php" method="post">
                 <input class=controles type="hidden" name="nombre" value="<?php $_SESSION['name'] ?>">
                 <input class=controles type="hidden" name="correo" value="<?php $_SESSION['email'] ?>">
                 <label for="icioestan">Fecha de Entrada</label>
@@ -82,7 +79,6 @@ if (!isset($_SESSION['loggedin'])) {
                 <label for="tipohab">Tipo de habitacion:</label>
                 <select name="tipohab" id="tipohab">
                 <?php 
-                
                     include('conexion.php');
                     $produc="SELECT * FROM habitaciones";
                     $resul=mysqli_query($Conexion,$produc);
@@ -91,16 +87,41 @@ if (!isset($_SESSION['loggedin'])) {
                     }
                 ?>
                 </select>
-
                 <p class=p>Estoy de Acuerdo con los <a href="#">Terminos y Condiciones</a></p>
                 <input class="controles" type="submit" name="reservar" id="reservar" value="Reservar">
             </form> 
             </div>
         </section>
         <section>
-            <div id="derecha"></div>
+                <!-- es la estructura del contenrdor de la habitacion -->
+                <!-- llena los contendores con la informacion de las habotaciones y diseño ya es la maquetacion en codigo para que solo acomodes va -->
+            <!-- little dog -->
+            <?php	
+            include('conexion.php');
+            $produc="SELECT * FROM habitaciones";
+            $resul=mysqli_query($Conexion,$produc);
+            while($valores= mysqli_fetch_array($resul)){ ?> 
+                <aside id="der">
+                <img src="<?php echo $valores['Imagen']; ?>" alt="">  <!-- imagen de habitacion -->
+                <h1 class="tituloHabitaciones"><?php echo $valores['nomh']; ?></h1>
+                <hr>
+                <img src="persona.png" alt=""><p><?php echo $valores['pers']; ?></p>  <!-- foto persona  -->
+                <img src="ducha.png" alt=""><p><?php echo $valores['duch']; ?></p>  <!-- ducha-->
+                <img src="cama.png" alt=""><p><?php echo $valores['cams']; ?></p>  <!-- camas  -->
+                <p class="precios">$<?php echo $valores['precio']; ?></p> 
+                <hr>
+                <p class="descrip">Esta habitacion Incluye: <?php echo $valores['descriph1']; ?></p>
+                <hr>
+                <img src="persona.png" alt=""><p><?php echo $valores['pers2']; ?></p>  <!-- foto persona  -->
+                <img src="ducha.png" alt=""><p><?php echo $valores['duch2']; ?></p>  <!-- ducha-->
+                <img src="cama.png" alt=""><p><?php echo $valores['cams2']; ?></p>  <!-- camas  -->
+                <p class="precios">$<?php echo $valores['precio2']; ?></p> 
+                <hr>
+                <p class="descrip">Esta Habitacion Incluye: <?php echo $valores['descriph2']; ?></p>
+            </aside>
+            <?php }
+            ?>
         </section>
-
     </main>
 </body>
 </html>
