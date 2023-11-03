@@ -37,10 +37,10 @@
 
         <div class="publicidad"><!-- Esta sección es para colocar una imagen de publicidad-->
             <div class= "carruseles">
-                <section class="slider-carrusel"><img src="imgs/imga1.jpg"></section>
-                <section class="slider-carrusel"><img src="imgs/imga2.jpg"></section>
-                <section class="slider-carrusel"><img src="imgs/imga3.jpg"></section>
-                <section class="slider-carrusel"><img src="imgs/imga4.jpg" ></section>
+                <section class="slider-carrusel"><img src="imgs/imag1.jpg"></section>
+                <section class="slider-carrusel"><img src="imgs/imag2.jpg"></section>
+                <section class="slider-carrusel"><img src="imgs/imag3.jpg"></section>
+                <section class="slider-carrusel"><img src="imgs/imag4.jpg" ></section>
             </div>
         </div>
         <main>
@@ -76,7 +76,7 @@
                 </section>
             </article><!-------------------------------------------------------------------------------->
 
-            <aside class="imagen"></aside><!--imagen de publicidad-->
+            <aside class="imagen2"></aside><!--imagen de publicidad-->
 
             <article class="servicios"> <!--Esta parte contendrá una vista rapida de las actividades existentes en el hotel-->
                 <br><br> 
