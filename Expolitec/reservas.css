@@ -107,6 +107,7 @@ main{
 }
 
 #der{
+   
     width: 60%;
     height: 100%;
     float: right;
@@ -115,4 +116,9 @@ main{
 img{
     width: 4%;
     height: 3%;
+}
+#imagen{
+   
+    width: 100px;
+    height: 90px;
 }
