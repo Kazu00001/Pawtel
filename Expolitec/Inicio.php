@@ -35,9 +35,14 @@
             
         </header>
 
-        <aside id="publicidad"><!-- Esta sección es para colocar una imagen de publicidad-->
-
-        </aside>
+        <div class="publicidad"><!-- Esta sección es para colocar una imagen de publicidad-->
+            <div class= "carruseles">
+                <section class="slider-carrusel"><img src="imgs/img1.jpg"></section>
+                <section class="slider-carrusel"><img src="imgs/img2.jpg"></section>
+                <section class="slider-carrusel"><img src="imgs/img3.jpg"></section>
+                <section class="slider-carrusel"><img src="imgs/img4.jpg" ></section>
+            </div>
+        </div>
         <main>
             <article id="paquetes"><!--Toda esta parte contendrá los diferentes tipos de habitaciones-->
                 <br>
