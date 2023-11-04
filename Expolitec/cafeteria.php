@@ -40,26 +40,28 @@
             <br><br>
             <h1 class="titCat">Categorias</h1><br>
             <article id=container_cats>
-                <form action="cafeteria_cat.php" method="post">
-                    <input type="hidden" name="id" value="Hola">
-                    <section class="categoria">
-                        <div class="c_icon">
-                            <img src="imgs/C-taza-café.png" class="icons">
-                        </div>
-                        <div class="titSer">
-                            <p class="titS">Bebidas Calientes</p>
-                            <input type="button" value="Buscar">
-                        </div>
-                    </section>
-                </form>
+                <section class="categoria">    
+                    <form action="cafeteria_cat.php" method="post">
+                        <input type="hidden" name="id" value="Bebidas Calientes">
+                            <div class="c_icon">
+                                <img src="imgs/C-taza-café.png" class="icons">
+                            </div>
+                            <div class="titSer">
+                                <input type="submit" value="Bebidas Calientes" class="titS">
+                            </div>
+                    </form>
+                </section>
                 
                 <section class="categoria">
-                    <div class="c_icon">
-                        <img src="imgs/C-café-frio.png" class="icons">
-                    </div>
-                    <div class="titSer">
-                        <p class="titS">Bebidas Frias</p>
-                    </div>
+                    <form action="cafeteria_cat.php" method="post">
+                            <input type="hidden" name="id" value="Bebidas Frias">
+                        <div class="c_icon">
+                            <img src="imgs/C-café-frio.png" class="icons">
+                        </div>
+                        <div class="titSer">
+                        <input type="submit" value="Bebidas Frias" class="titS">
+                        </div>
+                    </form>
                 </section>
                 <section class="categoria">
                     <div class="c_icon">
