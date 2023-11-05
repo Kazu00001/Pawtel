@@ -102,20 +102,20 @@ if (!isset($_SESSION['loggedin'])) {
             $resul=mysqli_query($Conexion,$produc);
             while($valores= mysqli_fetch_array($resul)){ ?> 
                 <aside id="der">
-                <img src="<?php echo $valores['Imagen']; ?>" alt="">  <!-- imagen de habitacion -->
-                <h1 class="tituloHabitaciones"><?php echo $valores['nomh']; ?></h1>
-                <hr>
-                <img src="persona.png" alt=""><p><?php echo $valores['pers']; ?></p>  <!-- foto persona  -->
-                <img src="ducha.png" alt=""><p><?php echo $valores['duch']; ?></p>  <!-- ducha-->
-                <img src="cama.png" alt=""><p><?php echo $valores['cams']; ?></p>  <!-- camas  -->
-                <p class="precios">$<?php echo $valores['precio']; ?></p> 
-                <hr>
-                <p class="descrip">Esta habitacion Incluye: <?php echo $valores['descriph1']; ?></p>
-                <hr>
-                <img src="persona.png" alt=""><p><?php echo $valores['pers2']; ?></p>  <!-- foto persona  -->
-                <img src="ducha.png" alt=""><p><?php echo $valores['duch2']; ?></p>  <!-- ducha-->
-                <img src="cama.png" alt=""><p><?php echo $valores['cams2']; ?></p>  <!-- camas  -->
-                <p class="precios">$<?php echo $valores['precio2']; ?></p> 
+                    <h1 class="tituloHabitaciones"><?php echo $valores['nomh']; ?></h1>
+                    <hr>
+                    <img src="persona.png" alt=""><p><?php echo $valores['pers']; ?></p>  <!-- foto persona  -->
+                    <img src="ducha.png" alt=""><p><?php echo $valores['duch']; ?></p>  <!-- ducha-->
+                    <img src="cama.png" alt=""><p><?php echo $valores['cams']; ?></p>  <!-- camas  -->
+                    <p class="precios">$<?php echo $valores['precio']; ?></p> 
+                    <img id="imagen" src="<?php echo $valores['Imagen']; ?>" alt="">  <!-- imagen de habitacion -->
+                    <hr>
+                    <p class="descrip">Esta habitacion Incluye: <?php echo $valores['descriph1']; ?></p>
+                    <hr>
+                    <img src="persona.png" alt=""><p><?php echo $valores['pers2']; ?></p>  <!-- foto persona  -->
+                    <img src="ducha.png" alt=""><p><?php echo $valores['duch2']; ?></p>  <!-- ducha-->
+                    <img src="cama.png" alt=""><p><?php echo $valores['cams2']; ?></p>  <!-- camas  -->
+                    <p class="precios">$<?php echo $valores['precio2']; ?></p> 
                 <hr>
                 <p class="descrip">Esta Habitacion Incluye: <?php echo $valores['descriph2']; ?></p>
             </aside>
