@@ -39,6 +39,8 @@ main{
     margin: 1%;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 1px rgba(62, 62, 62, 0.2);
+    border: none;
+    font-style: none;
 }
 .c_icon{
     width: 100%;
