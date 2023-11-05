@@ -64,7 +64,7 @@
                     <script type="text/javascript">
                     function cambiar(){
                     
-                        document.location.href ="cafeteriacat.php";
+                        document.location.href ="cafeteria_cat.php";
                     }
                     </script>
 
