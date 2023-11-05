@@ -11,7 +11,7 @@
             <article id="titfo">
                 <section id="titC">
                     <br>
-                    <h1 id="tit">PawTel</h1>
+                    <a href="Inicio.php"><h1 id="tit">PawTel</h1></a>
                 </section>
                 <section id="search">
                     <br><br><br>

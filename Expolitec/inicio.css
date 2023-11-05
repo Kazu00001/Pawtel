@@ -140,6 +140,10 @@ img{
 .tit{
     font-size: x-large;
     color: rgb(102, 102, 102);
+    text-decoration:none
+}
+a{
+    text-decoration:none;
 }
 
 .imagen{
