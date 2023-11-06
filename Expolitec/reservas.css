@@ -31,7 +31,7 @@ h1{
     background-color: #F3E9DC;
 }
 main{
-    width: 100%;
+    width: 70%;
     height: 75%;
     margin: auto;
     float: left;
@@ -108,19 +108,20 @@ main{
 
 #der{
    
-    width: 60%;
+    width: 70%;
     height: 100%;
     float: right;
     border-radius: 4px;
 }
-img{
-    width: 4%;
-    height: 3%;
-}
+
 #imagen{
    
-    width: 100%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
     float: right;
-
+}
+.iconos{
+    width: 60%;
+    height: 20%;
+    background-color: aqua;
 }
