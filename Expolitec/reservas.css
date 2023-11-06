@@ -119,6 +119,8 @@ img{
 }
 #imagen{
    
-    width: 100px;
-    height: 90px;
+    width: 100%;
+    height: 80%;
+    float: right;
+
 }

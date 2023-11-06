@@ -19,7 +19,7 @@ if (!isset($_SESSION['loggedin'])) {
 <body>
     <header>
         <br><br>
-        <h1>Has Tu Reservacion! </h1>
+        <h1>Haz Tu Reservacion! </h1>
     </header>
     <main>
         <section id="izquierda">
