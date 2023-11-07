@@ -11,7 +11,7 @@ html, body{
 }
 main{
     width: 100%;
-    height: 75%;
+    height: auto;
     float: left;
 }
 #container_cats{
@@ -23,24 +23,30 @@ main{
     font-family: 'Hammersmith One', sans-serif;
     font-size: 50px;
     color: rgb(79, 79, 79);
-    margin-left: 10%;
+    margin-left: 15vh;
 }
 .titCate{
     font-family: 'Hammersmith One', sans-serif;
-    font-size: xx-large;
+    font-size: 6vh;
     color: #BC784A;
-    margin-left: 10%;
-    margin-top: 30px;
+    margin-top: 4vh;
+    margin-left: 5vh;
 }
 #container-dr{
-    width: 80%;
-    height: 50%;
+    width: 90%;
+    height: auto;
     float: left;
-    margin-left: 10%;
+    margin-left: 5vw;
+}
+.c_drink{
+    width: 100%;
+    height: auto;
+    float: left;
+    
 }
 .drink{
-    width: 22%;
-    height: 96%;
+    width: 20vw;
+    height: 20vw;
     float: left;
     background-color: #fdfdfd;
     margin: 1%;

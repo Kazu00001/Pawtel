@@ -42,20 +42,26 @@
         <h1 class="titCat"><?php echo $id?></h1><br>
         
         <article id="container-dr">
-            <h1 class="titCate">Americano</h1><br>
-            <section class="drink"></section>
-            <section class="drink"></section>
-            <section class="drink"></section>
-            <section class="drink"></section>
-            <h1 class="titCate">Expresso Tradicional</h1><br>
-            <section class="drink"></section>
-            <section class="drink"></section>
-            <section class="drink"></section>
-            <section class="drink"></section>
-            <section class="drink"></section>
-            <section class="drink"></section>
-            <section class="drink"></section>
-            <section class="drink"></section>
+            <section class="c_drink">
+                <p class="titCate">Americano</p><br>
+                <section class="drink"></section>
+                <section class="drink"></section>
+                <section class="drink"></section>
+                <section class="drink"></section>
+            </section>
+            <section class="c_drink">
+                <p class="titCate">Expresso Tradicional</p><br>
+                <section class="drink"></section>
+                <section class="drink"></section>
+                <section class="drink"></section>
+                <section class="drink"></section>
+                <section class="drink"></section>
+                <section class="drink"></section>
+                <section class="drink"></section>
+                <section class="drink"></section>
+            </section>
+
+
         </article> 
     </main>
     <footer></footer>

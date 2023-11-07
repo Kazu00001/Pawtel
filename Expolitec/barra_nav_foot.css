@@ -67,7 +67,8 @@ header{
 }
 footer{
     width: 100%;
-    height: 20%;
+    height: 20vh;
     float: left;
+    margin-top: 5vh;
     background-color: #43291F;
 }
