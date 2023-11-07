@@ -95,7 +95,7 @@ if (!isset($_SESSION['loggedin'])) {
             </form> 
             </div>
         </section>
-        <section>
+        <section id="derecha">
                 <!-- es la estructura del contenrdor de la habitacion -->
                 <!-- llena los contendores con la informacion de las habotaciones y diseño ya es la maquetacion en codigo para que solo acomodes va -->
             <!-- little dog -->
@@ -104,45 +104,47 @@ if (!isset($_SESSION['loggedin'])) {
             $produc="SELECT * FROM habitaciones";
             $resul=mysqli_query($Conexion,$produc);
             while($valores= mysqli_fetch_array($resul)){ ?> 
-                <aside id="der">
-                    <!--<h1 class="tituloHabitaciones"><?php// echo $valores['nomh']; ?></h1>-->
+
+               <aside id="der">
+                    <h1 class="tituloHabitaciones"><?php echo $valores['nomh']; ?></h1>
+                        <section class="imgnpri">
+                            <img id="imagen" src="<?php echo $valores['Imagen']; ?>" id="prinimg"> <!-- imagen de habitacion -->
+                        </section>
+                    
                     <hr>
                     <section class="iconos">
-                    <!--<img src="persona.png" alt=""><p><?php echo $valores['pers']; ?></p> foto persona  -->
+                    <img src="persona.png" class="img"><p><?php echo $valores['pers']; ?></p> <!-- foto persona-->
                     </section>
                     <section class="iconos">
-                    <!--<img src="ducha.png" alt=""><p><?php// echo $valores['duch']; ?></p>-->  <!-- ducha-->
+                    <img src="ducha.png" class="img"><p><?php echo $valores['duch']; ?></p>  <!-- ducha-->
                     </section>
                     <section class="iconos">
-                    <!--<img src="cama.png" alt=""><p><?php// echo $valores['cams']; ?></p>-->  <!-- camas  -->
+                    <img src="cama.png" class="img"><p><?php echo $valores['cams']; ?></p>  <!-- camas  -->
                     </section>
                     <section class="iconos">
-                    <!--<p class="precios">$<?php //echo $valores['precio']; ?></p> -->
-                    </section>
-                    <section class="iconos">
-                    <!--<img id="imagen" src="<?php// echo $valores['Imagen']; ?>" alt=""> --> <!-- imagen de habitacion -->
+                    <p class="precios">$<?php echo $valores['precio']; ?></p>
                     </section>
                     <hr>
                     <section class="iconos">
-                    <!-- <p class="descrip">Esta habitacion Incluye: <?php //echo $valores['descriph1']; ?></p>-->
+                    <p class="descrip">Esta habitacion Incluye: <?php echo $valores['descriph1']; ?></p>
                     
                     </section>
                     <hr>
                     <section class="iconos">
-                    <!-- <img src="persona.png" alt=""><p><?php// echo $valores['pers2']; ?></p> --> <!-- foto persona  -->
+                    <img src="persona.png" class="img"><p><?php echo $valores['pers2']; ?></p> <!-- foto persona  -->
                     </section>
                     <section class="iconos">
-                    <!-- <img src="ducha.png" alt=""><p><?php //echo $valores['duch2']; ?></p> --> <!-- ducha-->
+                    <img src="ducha.png" class="img"><p><?php echo $valores['duch2']; ?></p> <!-- ducha-->
                     </section>
                     <section class="iconos">
-                    <!-- <img src="cama.png" alt=""><p><?php //echo $valores['cams2']; ?></p> --> <!-- camas  -->
+                    <img src="cama.png" class="img"><p><?php echo $valores['cams2']; ?></p> <!-- camas  -->
                     </section>
                     <section class="iconos">
-                    <!--<p class="precios">$<?php //echo $valores['precio2']; ?></p> -->
+                    <p class="precios">$<?php echo $valores['precio2']; ?></p>
                     </section class="iconos">
                      <hr>
                 <section class="iconos">
-                <!--<p class="descrip">Esta Habitacion Incluye: <?php //echo $valores['descriph2']; ?></p>-->
+                <p class="descrip">Esta Habitacion Incluye: <?php echo $valores['descriph2']; ?></p>
                 </section>
             </aside>
             <?php }
