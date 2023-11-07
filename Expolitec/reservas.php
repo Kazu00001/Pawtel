@@ -95,6 +95,7 @@ if (!isset($_SESSION['loggedin'])) {
             </form> 
             </div>
         </section>
+        <br>
         <section id="derecha">
                 <!-- es la estructura del contenrdor de la habitacion -->
                 <!-- llena los contendores con la informacion de las habotaciones y diseño ya es la maquetacion en codigo para que solo acomodes va -->
@@ -106,17 +107,19 @@ if (!isset($_SESSION['loggedin'])) {
             while($valores= mysqli_fetch_array($resul)){ ?> 
 
                <aside id="der">
-                    <h1 class="tituloHabitaciones"><?php echo $valores['nomh']; ?></h1>
+                <br>
                         <section class="imgnpri">
-                            <img id="imagen" src="<?php echo $valores['Imagen']; ?>" id="prinimg"> <!-- imagen de habitacion -->
+                            <img src="<?php echo $valores['Imagen']; ?>" class="prinimg"> <!-- imagen de habitacion -->
                         </section>
+                        <br>
                     
+                    <h1 class="tituloHabitaciones"><?php echo $valores['nomh']; ?></h1>
                     <hr>
                     <section class="iconos">
                     <img src="persona.png" class="img"><p><?php echo $valores['pers']; ?></p> <!-- foto persona-->
                     </section>
                     <section class="iconos">
-                    <img src="ducha.png" class="img"><p><?php echo $valores['duch']; ?></p>  <!-- ducha-->
+                    <img src="ducha.png"  class="img"><p><?php echo $valores['duch']; ?></p>  <!-- ducha-->
                     </section>
                     <section class="iconos">
                     <img src="cama.png" class="img"><p><?php echo $valores['cams']; ?></p>  <!-- camas  -->
@@ -124,12 +127,11 @@ if (!isset($_SESSION['loggedin'])) {
                     <section class="iconos">
                     <p class="precios">$<?php echo $valores['precio']; ?></p>
                     </section>
-                    <hr>
-                    <section class="iconos">
+                    <section class="descri">
+                        <hr>
                     <p class="descrip">Esta habitacion Incluye: <?php echo $valores['descriph1']; ?></p>
-                    
-                    </section>
                     <hr>
+                    </section>
                     <section class="iconos">
                     <img src="persona.png" class="img"><p><?php echo $valores['pers2']; ?></p> <!-- foto persona  -->
                     </section>
@@ -142,8 +144,9 @@ if (!isset($_SESSION['loggedin'])) {
                     <section class="iconos">
                     <p class="precios">$<?php echo $valores['precio2']; ?></p>
                     </section class="iconos">
-                     <hr>
-                <section class="iconos">
+                     
+                <section class="descri">
+                    <hr>
                 <p class="descrip">Esta Habitacion Incluye: <?php echo $valores['descriph2']; ?></p>
                 </section>
             </aside>
