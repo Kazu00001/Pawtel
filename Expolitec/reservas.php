@@ -105,22 +105,22 @@ if (!isset($_SESSION['loggedin'])) {
             $resul=mysqli_query($Conexion,$produc);
             while($valores= mysqli_fetch_array($resul)){ ?> 
                 <aside id="der">
-                    <!--<h1 class="tituloHabitaciones"><?php// echo $valores['nomh']; ?></h1>-->
+                    <!--<h1 class="tituloHabitaciones"><?php // echo $valores['nomh']; ?></h1>-->
                     <hr>
                     <section class="iconos">
                     <!--<img src="persona.png" alt=""><p><?php echo $valores['pers']; ?></p> foto persona  -->
                     </section>
                     <section class="iconos">
-                    <!--<img src="ducha.png" alt=""><p><?php// echo $valores['duch']; ?></p>-->  <!-- ducha-->
+                    <!--<img src="ducha.png" alt=""><p><?php // echo $valores['duch']; ?></p>-->  <!-- ducha-->
                     </section>
                     <section class="iconos">
-                    <!--<img src="cama.png" alt=""><p><?php// echo $valores['cams']; ?></p>-->  <!-- camas  -->
+                    <!--<img src="cama.png" alt=""><p><?php // echo $valores['cams']; ?></p>-->  <!-- camas  -->
                     </section>
                     <section class="iconos">
                     <!--<p class="precios">$<?php //echo $valores['precio']; ?></p> -->
                     </section>
                     <section class="iconos">
-                    <!--<img id="imagen" src="<?php// echo $valores['Imagen']; ?>" alt=""> --> <!-- imagen de habitacion -->
+                    <!--<img id="imagen" src="<?php // echo $valores['Imagen']; ?>" alt=""> --> <!-- imagen de habitacion -->
                     </section>
                     <hr>
                     <section class="iconos">
@@ -129,7 +129,7 @@ if (!isset($_SESSION['loggedin'])) {
                     </section>
                     <hr>
                     <section class="iconos">
-                    <!-- <img src="persona.png" alt=""><p><?php// echo $valores['pers2']; ?></p> --> <!-- foto persona  -->
+                    <!-- <img src="persona.png" alt=""><p><?php // echo $valores['pers2']; ?></p> --> <!-- foto persona  -->
                     </section>
                     <section class="iconos">
                     <!-- <img src="ducha.png" alt=""><p><?php //echo $valores['duch2']; ?></p> --> <!-- ducha-->

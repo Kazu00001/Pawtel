@@ -40,55 +40,72 @@
             <br><br>
             <h1 class="titCat">Categorias</h1><br>
             <article id=container_cats>
-            <button class="categoria" onclick="cambiar()">
+            <button class="categoria">
             <section>
-                <form action="cafeteriacat.php" method="post">
-                    <input type="hidden" name="id" value="Bebidas Calientes">
-                        <div class="c_icon">
-                            <img src="imgs/C-taza-café.png" class="icons">
-                        </div>
-                        <div class="titSer">
-                        <input type="submit" name="id" class="titS" value="Bebidas Calientes">
-                        </div>
-                </form>
+                <form action="cafeteria_cat.php" method="post" id="form1">
+                            <input type="hidden" name="id" value="Bebidas Calientes">
+                            <div class="c_icon">
+                                <img src="imgs/C-taza-café.png" class="icons" onclick="enviarFormulario()">
+                                <p class="titS">Bebidas Calientes</p>
+                            </div>
+                    </form>
             </section>
+            <script>
+                        function enviarFormulario() {
+                            document.getElementById('form1').submit();
+                        }
+                    </script>
             </button>
                 
-            <button class="categoria" onclick="cambiar()">
-                <section>
-                
-                    <div class="c_icon">
-                        <img src="imgs/C-café-frio.png" class="icons">
-                    </div>
-                
-                    <script type="text/javascript">
-                    function cambiar(){
-                    
-                        document.location.href ="cafeteria_cat.php";
-                    }
+            <button class="categoria">
+            <section>
+                    <form action="cafeteria_cat.php" method="post" id="form2">
+                            <input type="hidden" name="id" value="Bebidas Frias">
+                            <div class="c_icon">
+                                <img img src="imgs/C-café-frio.png" class="icons" onclick="enviarFormulario2()">
+                                <p class="titS">Bebidas Frias</p>
+                            </div>
+                    </form>
+            </section>
+            <script>
+                        function enviarFormulario2() {
+                            document.getElementById('form2').submit();
+                        }
                     </script>
-
-                    <div class="titSer">
-                        <p class="titS">Bebidas Frias</p>
-                    </div>
-                </section>
-                </button>
-                <section class="categoria">
-                    <div class="c_icon">
-                        <img src="imgs/C-pastel.png" class="icons">
-                    </div>
-                    <div class="titSer">
-                        <p class="titS">Postres</p>
-                    </div>
-                </section>
-                <section class="categoria">
-                    <div class="c_icon">
-                        <img src="imgs/C-aperitivos.png" class="icons">
-                    </div>
-                    <div class="titSer">
-                        <p class="titS">Aperitivos</p>
-                    </div>
-                </section>
+            </button>
+             
+            <button class="categoria" >
+            <section>
+                    <form action="cafeteria_cat.php" method="post" id="form3">
+                            <input type="hidden" name="id" value="Postres">
+                            <div class="c_icon">
+                                <img src="imgs/C-pastel.png" class="icons" onclick="enviarFormulario3()">
+                                <p class="titS">Postres</p>
+                            </div>
+                    </form>
+            </section>
+            <script>
+                        function enviarFormulario3() {
+                            document.getElementById('form3').submit();
+                        }
+                    </script>
+            </button>
+            <button class="categoria" >
+            <section>
+                    <form action="cafeteria_cat.php" method="post" id="form4">
+                            <input type="hidden" name="id" value="Aperitivos">
+                            <div class="c_icon">
+                            <img src="imgs/C-aperitivos.png" class="icons" onclick="enviarFormulario4()">
+                            <p class="titS">Aperitivos</p>
+                            </div>
+                    </form>
+            </section>
+            <script>
+                        function enviarFormulario4() {
+                            document.getElementById('form4').submit();
+                        }
+                    </script>
+            </button>
             </article>
         </main>
     
