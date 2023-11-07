@@ -44,21 +44,147 @@
         <article id="container-dr">
             <section class="c_drink">
                 <p class="titCate">Americano</p><br>
-                <section class="drink"></section>
-                <section class="drink"></section>
-                <section class="drink"></section>
-                <section class="drink"></section>
+<!------------------------------------------------------------------------------------------------>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
+<!------------------------------------------------------------------------------------------------>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
             </section>
             <section class="c_drink">
                 <p class="titCate">Expresso Tradicional</p><br>
-                <section class="drink"></section>
-                <section class="drink"></section>
-                <section class="drink"></section>
-                <section class="drink"></section>
-                <section class="drink"></section>
-                <section class="drink"></section>
-                <section class="drink"></section>
-                <section class="drink"></section>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
+                <section class="drink">
+                    <div class="c_foto">
+                        <img src="imgs/C-café-frio.png" class="foto">
+                    </div>
+                    <div class=ct_foto>
+                        <p class="t_foto">Americano</p>
+                    </div>
+                </section>
             </section>
 
 
