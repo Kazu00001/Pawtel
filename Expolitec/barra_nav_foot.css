@@ -40,6 +40,18 @@ header{
     position: relative;
     display: inline-block;
 }
+nav li{
+    font-size: 20px;
+    display:inline-block;
+    width:10%;
+    padding:15px 15px;
+    text-align:center;
+    color:#fff;
+    }
+    nav li:hover{
+        background-color:#fff;
+        color:#000;
+        }
 #search{
     width: 50%;
     height: 100%;

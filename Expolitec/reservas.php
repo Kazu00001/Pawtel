@@ -19,8 +19,11 @@ if (!isset($_SESSION['loggedin'])) {
 <body>
     <header>
         <br><br>
-        <h1>Has Tu Reservacion! </h1>
+        <h1>Haz Tu Reservacion! </h1>
     </header>
+    <aside>
+        
+    </aside>
     <main>
         <section id="izquierda">
             <div class="FormIzq">
@@ -102,22 +105,45 @@ if (!isset($_SESSION['loggedin'])) {
             $resul=mysqli_query($Conexion,$produc);
             while($valores= mysqli_fetch_array($resul)){ ?> 
                 <aside id="der">
-                    <h1 class="tituloHabitaciones"><?php echo $valores['nomh']; ?></h1>
+                    <!--<h1 class="tituloHabitaciones"><?php// echo $valores['nomh']; ?></h1>-->
                     <hr>
-                    <img src="persona.png" alt=""><p><?php echo $valores['pers']; ?></p>  <!-- foto persona  -->
-                    <img src="ducha.png" alt=""><p><?php echo $valores['duch']; ?></p>  <!-- ducha-->
-                    <img src="cama.png" alt=""><p><?php echo $valores['cams']; ?></p>  <!-- camas  -->
-                    <p class="precios">$<?php echo $valores['precio']; ?></p> 
-                    <img id="imagen" src="<?php echo $valores['Imagen']; ?>" alt="">  <!-- imagen de habitacion -->
+                    <section class="iconos">
+                    <!--<img src="persona.png" alt=""><p><?php echo $valores['pers']; ?></p> foto persona  -->
+                    </section>
+                    <section class="iconos">
+                    <!--<img src="ducha.png" alt=""><p><?php// echo $valores['duch']; ?></p>-->  <!-- ducha-->
+                    </section>
+                    <section class="iconos">
+                    <!--<img src="cama.png" alt=""><p><?php// echo $valores['cams']; ?></p>-->  <!-- camas  -->
+                    </section>
+                    <section class="iconos">
+                    <!--<p class="precios">$<?php //echo $valores['precio']; ?></p> -->
+                    </section>
+                    <section class="iconos">
+                    <!--<img id="imagen" src="<?php// echo $valores['Imagen']; ?>" alt=""> --> <!-- imagen de habitacion -->
+                    </section>
                     <hr>
-                    <p class="descrip">Esta habitacion Incluye: <?php echo $valores['descriph1']; ?></p>
+                    <section class="iconos">
+                    <!-- <p class="descrip">Esta habitacion Incluye: <?php //echo $valores['descriph1']; ?></p>-->
+                    
+                    </section>
                     <hr>
-                    <img src="persona.png" alt=""><p><?php echo $valores['pers2']; ?></p>  <!-- foto persona  -->
-                    <img src="ducha.png" alt=""><p><?php echo $valores['duch2']; ?></p>  <!-- ducha-->
-                    <img src="cama.png" alt=""><p><?php echo $valores['cams2']; ?></p>  <!-- camas  -->
-                    <p class="precios">$<?php echo $valores['precio2']; ?></p> 
-                <hr>
-                <p class="descrip">Esta Habitacion Incluye: <?php echo $valores['descriph2']; ?></p>
+                    <section class="iconos">
+                    <!-- <img src="persona.png" alt=""><p><?php// echo $valores['pers2']; ?></p> --> <!-- foto persona  -->
+                    </section>
+                    <section class="iconos">
+                    <!-- <img src="ducha.png" alt=""><p><?php //echo $valores['duch2']; ?></p> --> <!-- ducha-->
+                    </section>
+                    <section class="iconos">
+                    <!-- <img src="cama.png" alt=""><p><?php //echo $valores['cams2']; ?></p> --> <!-- camas  -->
+                    </section>
+                    <section class="iconos">
+                    <!--<p class="precios">$<?php //echo $valores['precio2']; ?></p> -->
+                    </section class="iconos">
+                     <hr>
+                <section class="iconos">
+                <!--<p class="descrip">Esta Habitacion Incluye: <?php //echo $valores['descriph2']; ?></p>-->
+                </section>
             </aside>
             <?php }
             ?>

@@ -40,29 +40,39 @@
             <br><br>
             <h1 class="titCat">Categorias</h1><br>
             <article id=container_cats>
-                <section class="categoria">    
-                    <form action="cafeteria_cat.php" method="post">
-                        <input type="hidden" name="id" value="Bebidas Calientes">
-                            <div class="c_icon">
-                                <img src="imgs/C-taza-café.png" class="icons">
-                            </div>
-                            <div class="titSer">
-                                <input type="submit" value="Bebidas Calientes" class="titS">
-                            </div>
-                    </form>
-                </section>
-                
-                <section class="categoria">
-                    <form action="cafeteria_cat.php" method="post">
-                            <input type="hidden" name="id" value="Bebidas Frias">
+            <button class="categoria" onclick="cambiar()">
+            <section>
+                <form action="cafeteriacat.php" method="post">
+                    <input type="hidden" name="id" value="Bebidas Calientes">
                         <div class="c_icon">
-                            <img src="imgs/C-café-frio.png" class="icons">
+                            <img src="imgs/C-taza-café.png" class="icons">
                         </div>
                         <div class="titSer">
-                        <input type="submit" value="Bebidas Frias" class="titS">
+                        <input type="submit" name="id" class="titS" value="Bebidas Calientes">
                         </div>
-                    </form>
+                </form>
+            </section>
+            </button>
+                
+            <button class="categoria" onclick="cambiar()">
+                <section>
+                
+                    <div class="c_icon">
+                        <img src="imgs/C-café-frio.png" class="icons">
+                    </div>
+                
+                    <script type="text/javascript">
+                    function cambiar(){
+                    
+                        document.location.href ="cafeteria_cat.php";
+                    }
+                    </script>
+
+                    <div class="titSer">
+                        <p class="titS">Bebidas Frias</p>
+                    </div>
                 </section>
+                </button>
                 <section class="categoria">
                     <div class="c_icon">
                         <img src="imgs/C-pastel.png" class="icons">
