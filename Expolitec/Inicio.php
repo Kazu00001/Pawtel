@@ -24,10 +24,15 @@
             <section id="bnav">
                 <nav class="nave">
                     <ul class="menu">
-                        <li>Inicio</li>
-                        <li>Paquetes</li>
-                        <li>Servicios</li>
-                        <li>Reservaciones</li>
+                        <li><a href="Inio.php">Inicio</a></li>
+                        <li><a href="#">Paquetes</a></li>
+                        <li><a href="">Servicios</a></li>
+                        <li>Reservaciones
+                            <ul>
+                                <li><a href="reservas.php">Reserva Hotel</a></li>
+                                <li><a href="Reserva-resta.php">Reserva Restaurante</a></li>
+                            </ul>
+                        </li>
                     </ul>
 
                 </nav>
