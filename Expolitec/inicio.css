@@ -191,6 +191,17 @@ a{
     font-size: xx-large;
     font-family: 'Hammersmith One', sans-serif;
     box-shadow: 6px 3px 3px #43291F;
+    animation: shaking 2s ;
+}
+@keyframes shaking{
+    from {
+        transform: translateX(-100%);
+        opacity: 0.25;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 #uno{
     height: 100%;
@@ -226,6 +237,9 @@ a{
     transform: scale(1.1);
 }
 .habitacion2:hover{
+    transform: scale(1.1);
+}
+.bott:hover{
     transform: scale(1.1);
 }
 footer{

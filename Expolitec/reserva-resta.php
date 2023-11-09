@@ -55,7 +55,16 @@ if (!isset($_SESSION['loggedin'])) {
             </section>
             
         </header>
+        <div class="publicidad"><!-- Esta sección es para colocar una imagen de publicidad-->
+            <div class= "carruseles">
+                <section class="slider-carrusel"><img src="imgs/res1.jpg"></section>
+                <section class="slider-carrusel"><img src="imgs/res2.jpg"></section>
+                <section class="slider-carrusel"><img src="imgs/res3.jpg"></section>
+                <section class="slider-carrusel"><img src="imgs/res4.jpg" ></section>
+            </div>
+        </div>
     <main> 
+   
         <section class="cont">
             <section class="form">
                 <form action="save-reservarest.php" method="post">
