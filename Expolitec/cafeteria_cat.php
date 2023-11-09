@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="cafeteria_cat.css">
 </head>
 <body>
-    <header>
+<header>
             <article id="titfo">
                 <section id="titC">
                     <br>
-                    <h1 id="tit">PawTel</h1>
+                    <a href="Inicio.php"><h1 id="tit">PawTel</h1></a>
                 </section>
                 <section id="search">
                     <br><br><br>
@@ -28,15 +28,25 @@
             <section id="bnav">
                 <nav class="nave">
                     <ul class="menu">
-                        <li>Inicio</li>
-                        <li>Paquetes</li>
-                        <li>Servicios</li>
-                        <li>Reservaciones</li>
+                        <li><a href="inicio.php">Inicio</a></li>
+                        <li><a href="#">Paquetes</a></li>
+                        <li><a href="">Servicios</a>
+                            <ul class="menuv">
+                                <li><a href="cafeteria.php">Cafeteria</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Reservaciones</a>
+                            <ul class="menuv">
+                                <li><a href="reservas.php">Reserva Hotel</a></li>
+                                <li><a href="Reserva-resta.php">Reserva Restaurante</a></li>
+                            </ul>
+                        </li>
                     </ul>
 
                 </nav>
             </section>
-    </header>
+            
+        </header>
     <main>
       <br><br><br>
         <h1 class="titCat"><?php echo $id?></h1><br>

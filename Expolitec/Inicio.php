@@ -11,7 +11,7 @@
             <article id="titfo">
                 <section id="titC">
                     <br>
-                    <a href="Inicio.php"><h1 id="tit">PawTel</h1></a>
+                    <a href="inicio.php"><h1 id="tit">PawTel</h1></a>
                 </section>
                 <section id="search">
                     <br><br><br>
@@ -24,11 +24,15 @@
             <section id="bnav">
                 <nav class="nave">
                     <ul class="menu">
-                        <li><a href="Inio.php">Inicio</a></li>
+                        <li><a href="inicio.php">Inicio</a></li>
                         <li><a href="#">Paquetes</a></li>
-                        <li><a href="">Servicios</a></li>
-                        <li>Reservaciones
-                            <ul>
+                        <li><a href="">Servicios</a>
+                            <ul class="menuv">
+                                <li><a href="cafeteria.php">Cafeteria</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Reservaciones</a>
+                            <ul class="menuv">
                                 <li><a href="reservas.php">Reserva Hotel</a></li>
                                 <li><a href="Reserva-resta.php">Reserva Restaurante</a></li>
                             </ul>
@@ -214,11 +218,17 @@
                         </div>
                     </section>
                     <br><br>
-                    <button id="but">Reserva Ahora</button>
+                    <button id="but" onclick='ress()'>Reserva Ahora</button>
                 </section>
             </article><!------------------------------------------------------------------------------->
 
             <footer></footer>
         </main>
     </body>
+    <script>
+        function ress() {
+            location.href ='reservas.php';
+        }
+        
+    </script>
 </html>

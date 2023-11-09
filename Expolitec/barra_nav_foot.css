@@ -22,36 +22,6 @@ header{
     color: white;
     font-family: 'Hammersmith One', sans-serif;;
 }
-#bnav{
-    width: 100%;
-    height: 25%;
-    float: left;
-    background-color: #B58463;
-}
-.nave{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-.nave ul{
-    list-style: none;
-}
-.menu > li{
-    position: relative;
-    display: inline-block;
-}
-nav li{
-    font-size: 20px;
-    display:inline-block;
-    width:10%;
-    padding:15px 15px;
-    text-align:center;
-    color:#fff;
-    }
-    nav li:hover{
-        background-color:#fff;
-        color:#000;
-        }
 #search{
     width: 50%;
     height: 100%;
@@ -76,6 +46,59 @@ nav li{
     margin-top: 9%;
     border-radius: 100px;
     background-color: #dddddd;
+}
+a{
+    text-decoration: none;
+}
+#bnav{
+    width: 100%;
+    height: 25%;
+    float: left;
+    background-color: #B58463;
+}
+.nave{
+    height: 100%;
+    margin: auto;
+    font-family: 'Hammersmith One', sans-serif;
+}
+.menu{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu > li > a{
+    height: 100%;
+    display: block;
+    padding: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+.menu > li:hover{
+    background-color: #43291F;
+}
+.menuv{
+    color: white;
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 13%;
+    background-color: #43291F;
+    z-index: 1000;
+}
+.menu li:hover .menuv{
+    display: block;
+}
+.menuv li:hover{
+    background-color: #B58463;
+}
+.menuv li a{
+    display: block;
+    color: white;
+    margin-top: 7%;
+    font-size: 26px;
 }
 footer{
     width: 100%;

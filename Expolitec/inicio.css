@@ -150,6 +150,7 @@ a{
     width: 100%;
     height: 50%;
     float: left;
+    margin-top: 2%;
     background-color: #B58463;
     background-position: center bottom 20% ;
     background-repeat: no-repeat;
@@ -189,6 +190,7 @@ a{
     color: white;
     font-size: xx-large;
     font-family: 'Hammersmith One', sans-serif;
+    box-shadow: 6px 3px 3px #43291F;
 }
 #uno{
     height: 100%;
