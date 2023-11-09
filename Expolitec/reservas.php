@@ -29,7 +29,7 @@ if (!isset($_SESSION['loggedin'])) {
             <div class="FormIzq">
                 <form action="reservas-save.php" method="post">
                 <input class=controles type="hidden" name="nombre" value="<?php $_SESSION['name'] ?>">
-                <input class=controles type="hidden" name="correo" value="<?php $_SESSION['email'] ?>">
+                <input class=controles type="hidden" name="correo" value="<?php $_SESSION['email']?>">
                 <label for="icioestan">Fecha de Entrada</label>
                 <input class=controles type="date" name="icioestan" id="icioestan"> <br>
                 <label for="finestan">Fecha de Salida</label>
@@ -105,32 +105,18 @@ if (!isset($_SESSION['loggedin'])) {
             $produc="SELECT * FROM habitaciones";
             $resul=mysqli_query($Conexion,$produc);
             while($valores= mysqli_fetch_array($resul)){ ?> 
-                <aside id="der">
-                    <!--<h1 class="tituloHabitaciones"><?php // echo $valores['nomh']; ?></h1>-->
-                    <hr>
-                    <section class="iconos">
-                    <!--<img src="persona.png" alt=""><p><?php echo $valores['pers']; ?></p> foto persona  -->
-                    </section>
-                    <section class="iconos">
-                    <!--<img src="ducha.png" alt=""><p><?php // echo $valores['duch']; ?></p>-->  <!-- ducha-->
-                    </section>
-                    <section class="iconos">
-                    <!--<img src="cama.png" alt=""><p><?php // echo $valores['cams']; ?></p>-->  <!-- camas  -->
-                    </section>
-                    <section class="iconos">
-                    <!--<p class="precios">$<?php //echo $valores['precio']; ?></p> -->
-                    </section>
-                    <section class="iconos">
-                    <!--<img id="imagen" src="<?php // echo $valores['Imagen']; ?>" alt=""> --> <!-- imagen de habitacion -->
-                    </section>
-                    <hr>
-                    <section class="iconos">
-                    <!-- <p class="descrip">Esta habitacion Incluye: <?php //echo $valores['descriph1']; ?></p>-->
+
+               <aside id="der">
+                <br>
+                        <section class="imgnpri">
+                            <img src="<?php echo $valores['Imagen']; ?>" class="prinimg"> <!-- imagen de habitacion -->
+                        </section>
+                        <br>
                     
                     <h1 class="tituloHabitaciones"><?php echo $valores['nomh']; ?></h1>
                     <hr>
                     <section class="iconos">
-                    <!-- <img src="persona.png" alt=""><p><?php // echo $valores['pers2']; ?></p> --> <!-- foto persona  -->
+                    <img src="persona.png" class="img"><p><?php echo $valores['pers']; ?></p> <!-- foto persona-->
                     </section>
                     <section class="iconos">
                     <img src="ducha.png"  class="img"><p><?php echo $valores['duch']; ?></p>  <!-- ducha-->
