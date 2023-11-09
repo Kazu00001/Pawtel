@@ -68,18 +68,18 @@ if (!isset($_SESSION['loggedin'])) {
         <section class="cont">
             <section class="form">
                 <form action="save-reservarest.php" method="post">
-                    <label for="nombre">Nombre Completo:</label><br>
-                    <input type="text" name="nombre" class="inputs" required><br>
-                    <label for="correo">Correo:</label><br>
-                    <input type="email" name="correo" class="inputs" required><br>
+                    <label for="nombre" class="form_label">Nombre Completo:</label><br>
+                    <input type="input" name="nombre" class="inputs" placeholder="Name" required><br>
+                    <label for="correo" class="form_label">Correo:</label><br>
+                    <input type="email" placeholder="Name"name="correo" class="inputs" required><br>
                     <!--Falto la Fecha :(((-->
-                    <label for="hora">Hora de la reservacion</label><br>
+                    <label for="hora" class="form_label">Hora de la reservacion</label><br>
                     <input type="time" name="hora" class="inputs" required><br>
-                    <label for="personas">No. Personas</label><br>
+                    <label for="personas" class="form_label">No. Personas</label><br>
                     <input type="number" name="personas" class="inputs"required><br>
-                    <label for="telefono">Telefono:</label><br>
+                    <label for="telefono" class="form_label">Telefono:</label><br>
                     <input type="tel" name="telefono" class="inputs"required><br>
-                    <label for="celebracion">¿Que celebras?</q></label><br>
+                    <label for="celebracion" class="form_label">¿Que celebras?</q></label><br>
                     <input type="text" name="celebracion" class="inputs"><br>
                     <p>Importante: Solo tendrás 10 min. de tolerancia.</p>
                     <input type="submit" value="Reservar" class="reservar">
