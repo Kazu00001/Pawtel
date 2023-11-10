@@ -34,6 +34,7 @@ if ($num_rows > 0) {
         echo '<tr>';
         echo '<td>' . $row['idh'] . '</td>';
         echo '<td>' . $row['Imagen'] . '</td>';
+        echo '<td>' . $row['nomh'] . '</td>';
         echo '<td>' . $row['pers'] . '</td>';
         echo '<td>' . $row['duch'] . '</td>';
         echo '<td>' . $row['cams'] . '</td>';
