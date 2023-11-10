@@ -8,6 +8,7 @@ $database='pawtel';
 // conexion a la base de datos :hh jjjj
 
 $Conexion = mysqli_connect($hostname, $username, $password, $database);
+$Conexion->set_charset("utf8");
 
 if (mysqli_connect_error()) {
 
