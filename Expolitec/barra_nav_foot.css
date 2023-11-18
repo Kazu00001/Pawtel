@@ -1,6 +1,6 @@
 header{
     width: 100%;
-    height: 25%;
+    height: 25vh;
     float: left;
     background-color: #43291F;
 }
@@ -18,7 +18,7 @@ header{
 #tit{
     margin-left: 10%;
     margin-top: 1%;
-    font-size: 70px;
+    font-size: 5vw;
     color: white;
     font-family: 'Hammersmith One', sans-serif;;
 }
@@ -40,8 +40,8 @@ header{
     float: left;
 }
 #pic{
-    width: 30%;
-    height: 65%;
+    width: 6vw;
+    height: 6vw;
     margin: auto;
     margin-top: 9%;
     border-radius: 100px;
@@ -57,8 +57,9 @@ a{
     background-color: #B58463;
 }
 .nave{
-    height: 100%;
+    width: 100%;
     margin: auto;
+    margin-top: 8px;
     font-family: 'Hammersmith One', sans-serif;
 }
 .menu{
@@ -74,31 +75,39 @@ a{
     padding: auto;
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 3vh;
+    transition: .3s;
 }
-.menu > li:hover{
-    background-color: #43291F;
+.menu > li:hover > a{
+    color: #43291F;
 }
 .menuv{
     color: white;
     position: absolute;
     display: none;
+    padding: 15px;
     list-style: none;
     width: 13%;
+    margin-top: 2vh;
     background-color: #43291F;
     z-index: 1000;
+    transition: .3s;
 }
 .menu li:hover .menuv{
     display: block;
 }
 .menuv li:hover{
-    background-color: #B58463;
+    background-color: #332018;
 }
 .menuv li a{
     display: block;
     color: white;
     margin-top: 7%;
-    font-size: 26px;
+    margin-left: 5%;
+    font-size: 100%;
+}
+.list{
+    width: 100%;
 }
 footer{
     width: 100%;
