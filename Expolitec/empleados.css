@@ -88,11 +88,33 @@ main{
 #searP{
     width: 30vw;
     height: 3vw;
-    float: right;
+    float: left;
     margin-top: 7vh;
-    margin-right: 3vw;
+    margin-left: 3vw;
     border-radius: 10px;
     border: 1px solid;
     border-color: rgb(143, 143, 143);
-    font-size: x-large;
+    font-size: 2vwx-large;
+    transition: .3s;
+}
+#searP:hover{
+    background-color: rgb(238, 238, 238);
+}
+#addEmp{
+    width: 20vw;
+    height: 3vw;
+    float: right;
+    margin-top: 7vh;
+    margin-right: 3vw;
+    border-radius: 100px;
+    border: 0cap;
+    background-color: rgb(45, 113, 153);
+    color: white;
+    font-size: 1vw;
+    z-index: 1;
+    transition: .3s;
+}
+#addEmp:hover{
+    transform: scale(1, 1);
+    box-shadow: 0 0 5px 3px rgb(206, 206, 206);
 }

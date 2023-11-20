@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <title>Lista Empleados</title>
     <link rel="stylesheet" href="empleados.css">
-    <link rel="stylesheet" href="barra_nav_foot.css">
+    <link rel="stylesheet" href="admin_bar_foot.css">
 </head>
 <body>
     <header>
@@ -31,7 +31,7 @@
                     <ul class="menu">
                         <li><a href="inicio.php">Inicio</a></li>
                         <li><a href="#">Paquetes</a></li>
-                        <li><a href="">Servicios</a>
+                        <li><a href="#">Servicios</a>
                             <ul class="menuv">
                                 <li class="list"><a href="cafeteria.php">Cafeteria</a></li>
                             </ul>
@@ -52,6 +52,9 @@
         <article id="container">
             <section id="container_search">
                 <input type="search" id="searP">
+                <form action="form_addEmp.html" method="post">
+                    <input type="submit" value="Contratar Empleado" id="addEmp">
+                </form>
             </section>
                 <?php while($puesto=mysqli_fetch_array($pues)) { 
                 

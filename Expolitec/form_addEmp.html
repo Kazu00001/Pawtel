@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contratar Empleado</title>
+    <link rel="stylesheet" href="form_addEmp.css">
+</head>
+<body>
+    <main>
+        <article id="container_add">
+            <article id="left">
+                <p class="tit"><b>Agregar Empleado</b></p>
+            </article>
+            <article id="add_info">
+                <form action="add_emp.php" method="post">
+                    <br>
+                    <div class="inputbox">
+                        <input type="text" name="name" class="inp" placeholder=" " required><br>
+                        <span class="text_input">Nombre del empleado</span>
+                    </div>
+                    <div class="inputbox">
+                        <select name="job" id="job" class="inp" required>
+                            <option value=""></option>
+                            <option value="Finanzas">Finanzas</option>
+                            <option value="Seguridad">Seguridad</option>
+                            <option value="Cocinero">Cocinero</option>
+                        </select>
+                        <span class="text_input">Puesto</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="number" name="salary" class="inp" placeholder=" " required><br>
+                        <span class="text_input">Sueldo mensual</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="tel" name="phone" class="inp" placeholder=" " required><br>
+                        <span class="text_input">Numero Telefonico</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="email" class="inp" placeholder=" " required><br>
+                        <span class="text_input">Correo Electronico</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="file" name="image" class="inp" placeholder=" " required><br>
+                        <span class="text_input">Imagen</span>
+                    </div>
+                    <input type="submit" value="Contratar">
+                </form>
+            </article>
+
+        </article> 
+    </main>
+</body>
+</html>
