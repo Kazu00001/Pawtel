@@ -1,7 +1,7 @@
 <?php
     require_once('conexion.php');
 
-    $pues=mysqli_query($Conexion, "SELECT DISTINCT categoriaemple FROM allemployee;");
+    //$pues=mysqli_query($Conexion, "SELECT DISTINCT categoriaemple FROM allemployee;");
 ?>
 <!DOCTYPE html>
 <html>
@@ -51,41 +51,61 @@
     <main>
         <article id="container">
             <section id="container_search">
-                <input type="search" id="searP">
+                <form action="" method="post">
+                    <label for="campo">Buscar:</label>
+                    <input type="text" name="searP" id="searP" onkeyup="getData()">
+                </form>
                 <form action="form_addEmp.html" method="post">
                     <input type="submit" value="Contratar Empleado" id="addEmp">
                 </form>
             </section>
-                <?php while($puesto=mysqli_fetch_array($pues)) { 
+                <?php /*while($puesto=mysqli_fetch_array($pues)) { 
                 
                 $selEmp=$puesto['categoriaemple'];
                 $emp=mysqli_query($Conexion, "SELECT * FROM allemployee WHERE categoriaemple = '$selEmp';");
-                
+                */
                 ?>
                 
-            <section class="container_employees">
-                <h1 class="tit"><?php echo $puesto['categoriaemple']?></h1>
-                <?php while($empleado=mysqli_fetch_array($emp)) { ?>
-                <form action="p-empleado.php" method="post">
-                    <input type="hidden" name="idEmp" value="<?php echo $empleado['idemp']?>">
-                    <button  class="emp" onclick="enviarFormulario()">
-                        <div class="c_image">
-                            <img src="emp/<?php echo $empleado['fotemple']?>" class="image">
-                        </div>
-                        <div class="c_name">
-                            <p class="nameEm"><?php echo $empleado['emplenom']?></p>
-                        </div>
-                        <p class="puesto"><?php echo $empleado['categoriaemple']?></p>
-                    </button>
-                    <script>
+            <section class="container_employees" id="container_employees">
+                <!-- <h1 class="tit"><?php //echo $puesto['categoriaemple']?></h1> -->
+                <?php // while($empleado=mysqli_fetch_array($emp)) { ?>
+                <!--<button  class="emp" onclick="enviarFormulario()">
+                    <div class="c_image">
+                        <img src="emp/<?php //echo $empleado['fotemple']?>" class="image">
+                    </div>
+                    <div class="c_name">
+                        <p class="nameEm"><?php //echo $empleado['emplenom']?></p>
+                    </div>
+                    <p class="puesto"><?php //echo $empleado['categoriaemple']?></p>
+                </button>
+                <script>
                         function enviarFormulario() {
                             document.getElementById('form1').submit();
                         }
-                    </script>
-                </form>
-                <?php } ?>
+                    </script -->
+                        <script>
+                            document.addEventListener("DOMContentLoaded", getData);
+
+                            function getData() {
+                                let input = document.getElementById("searP").value;
+                                let content = document.getElementById("container_employees");
+                                let url = "load_empleados.php";
+                                let formData = new FormData();
+                                formData.append('searP', input);
+
+                                fetch(url, {
+                                        method: "POST",
+                                        body: formData
+                                }).then(response => response.text())
+                                    .then(data => {
+                                    console.log(data);
+                                    content.innerHTML = data;
+                                    }).catch(err => console.log(err));
+                            }
+                        </script>
+>>>>>>> b81861459685c2b7f6b751df84918d0edbe10612
             </section>
-                <?php } ?>
+                <?php //} ?>
 <!-------------------------------------------------------------------------->
         </article>
     </main>

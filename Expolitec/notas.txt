@@ -1,0 +1,12 @@
+simulador--type paypal
+formulario dirigodo despues de botton de reserva
+php--guardar en campos de reserva
+html
+css
+--crear nuevos campos en reserva
+ listo/*tabla de inventario
+ id
+ nombre del producto
+ descripcion
+ existencia de mes anterior
+stock*/
