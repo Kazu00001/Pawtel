@@ -66,20 +66,23 @@
             <section class="container_employees">
                 <h1 class="tit"><?php echo $puesto['categoriaemple']?></h1>
                 <?php while($empleado=mysqli_fetch_array($emp)) { ?>
-                <button  class="emp" onclick="enviarFormulario()">
-                    <div class="c_image">
-                        <img src="emp/<?php echo $empleado['fotemple']?>" class="image">
-                    </div>
-                    <div class="c_name">
-                        <p class="nameEm"><?php echo $empleado['emplenom']?></p>
-                    </div>
-                    <p class="puesto"><?php echo $empleado['categoriaemple']?></p>
-                </button>
-                <script>
+                <form action="p-empleado.php" method="post">
+                    <input type="hidden" name="idEmp" value="<?php echo $empleado['idemp']?>">
+                    <button  class="emp" onclick="enviarFormulario()">
+                        <div class="c_image">
+                            <img src="emp/<?php echo $empleado['fotemple']?>" class="image">
+                        </div>
+                        <div class="c_name">
+                            <p class="nameEm"><?php echo $empleado['emplenom']?></p>
+                        </div>
+                        <p class="puesto"><?php echo $empleado['categoriaemple']?></p>
+                    </button>
+                    <script>
                         function enviarFormulario() {
                             document.getElementById('form1').submit();
                         }
                     </script>
+                </form>
                 <?php } ?>
             </section>
                 <?php } ?>
