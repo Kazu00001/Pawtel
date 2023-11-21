@@ -65,7 +65,7 @@
                 $emp=mysqli_query($Conexion, "SELECT * FROM allemployee WHERE categoriaemple = '$selEmp';");
                 */
                 ?>
-                
+
             <section class="container_employees" id="container_employees">
                 <!-- <h1 class="tit"><?php //echo $puesto['categoriaemple']?></h1> -->
                 <?php // while($empleado=mysqli_fetch_array($emp)) { ?>
