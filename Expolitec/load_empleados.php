@@ -57,6 +57,7 @@ while ($categoria = mysqli_fetch_assoc($resultCategorias)) {
             echo '<p class="puesto">' . $row['categoriaemple'] . '</p>';
             echo '</button>';
         }
+        echo'<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>';
     } else {
         echo '<p>No hay empleados en esta categoría</p>';
     }
