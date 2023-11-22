@@ -47,6 +47,8 @@ while ($categoria = mysqli_fetch_assoc($resultCategorias)) {
 
     if ($num_rows > 0) {
         while ($row = mysqli_fetch_array($resultFiltrado)) {
+            echo '<form action="p-empleado.php" method="post">';
+            echo '<input type="hidden" name="idEmp" value="'.$row['idemp'].'">';
             echo '<button class="emp" onclick="enviarFormulario()">';
             echo '<div class="c_image">';
             echo '<img src="emp/' . $row['fotemple'] . '" class="image">';
@@ -56,6 +58,7 @@ while ($categoria = mysqli_fetch_assoc($resultCategorias)) {
             echo '</div>';
             echo '<p class="puesto">' . $row['categoriaemple'] . '</p>';
             echo '</button>';
+            echo '</form>';
         }
         echo'<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>';
     } else {

@@ -52,8 +52,7 @@
         <article id="container">
             <section id="container_search">
                 <form action="" method="post">
-                    <label for="campo">Buscar:</label>
-                    <input type="text" name="searP" id="searP" onkeyup="getData()">
+                    <input type="text" name="searP" id="searP" onkeyup="getData()" placeholder="Buscar">
                 </form>
                 <form action="form_addEmp.html" method="post">
                     <input type="submit" value="Contratar Empleado" id="addEmp">
@@ -103,7 +102,6 @@
                                     }).catch(err => console.log(err));
                             }
                         </script>
->>>>>>> b81861459685c2b7f6b751df84918d0edbe10612
             </section>
                 <?php //} ?>
 <!-------------------------------------------------------------------------->
