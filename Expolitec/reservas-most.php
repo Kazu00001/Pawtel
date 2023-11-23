@@ -77,7 +77,7 @@ tr:nth-child(even) {
         <article id="container">
             <section id="container_search">
                 <form action="" method="post">
-                    <input type="text" name="searP" id="searP" onkeyup="getData()" placeholder="Buscar">
+                    <input type="text" name="searRev" id="searRev" onkeyup="getData()" placeholder="Buscar">
                 </form>
                 <form action="form_addEmp.html" method="post">
                     <input type="submit" value="Nuevo producto" id="addEmp">
@@ -86,22 +86,30 @@ tr:nth-child(even) {
             <section class="container_employees" id="content_invent2">
                 <table>
                     <thead>
-                    <th>id</th>
-                    <th>Nombre del producto</th>
-                    <th>Descripcion</th>
-                    <th>Esxistencia el mes pasado</th>
-                    <th>Stock</th>
+                    <th>Numero de orden</th>
+                    <th>Nombre cliente</th>
+                    <th>Correo</th>
+                    <th>Inicio de estancia</th>
+                    <th>Fin de estancia</th>
+                    <th>Habitaciones</th>
+                    <th>Huspedes</th>
+                    <th>Niños</th>
+                    <th>Nombre del paquete</th>
+                    <th>Nombre targeta</th>
+                    <th>Tipo de targeta</th>
+                    <th>Numero de targeta</th>
+                    <th>Fecha vencimiento targeta</th>
                     </thead>
                     <tbody id="content_invent"></tbody>
                 <script>
                 document.addEventListener("DOMContentLoaded", getData);
 
                 function getData() {
-                    let input = document.getElementById("searP").value;
+                    let input = document.getElementById("searRev").value;
                     let content = document.getElementById("content_invent");
-                    let url = "inventario-load.php";
+                    let url = "reservas-load.php";
                     let formData = new FormData();
-                    formData.append('searP', input);
+                    formData.append('searRev', input);
 
                         fetch(url, {
                                 method: "POST",
