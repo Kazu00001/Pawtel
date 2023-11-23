@@ -1,14 +1,22 @@
-html, body{
-    height: 100%;
-    background-color: #F3E9DC;
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.todo{
+  width: 100vw;
+  height: 100vh;
 }
 .input {
     display: flex;
     flex-direction: column;
     width: 200px;
+    height: 500px;
     background-color: #0D1117;
     justify-content: center;
-    border-radius: 5px
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 2%;
   }
   
   .value {
@@ -52,8 +60,170 @@ html, body{
   }
   
   .value svg {
-    width: 15px
+    width: 35px
   }
-  div{
-    margin-top: 10%;
+ 
+ 
+  .content{
+    display: flex;
+    align-items: center;
+    width: 200%;
+    height: 100%;
+    background: #F3E9DC;
   }
+  .reservaciones{
+    width:80%;
+    height: 20%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-top: 1%;
+  }
+  .padre{
+    height: 700px;
+    width: 100vw;
+  }
+  /* Header */
+
+  header{
+    width: 100vw;
+    height: 250px;
+    float: left;
+    background-color: #43291F;
+}
+#titfo{
+    width: 100%;
+    height: 75%;
+    float: left;
+    background-color: #43291F;
+}
+#titC{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+#tit{
+    margin-left: 10%;
+    margin-top: 1%;
+    font-size: 5vw;
+    color: white;
+    font-family: 'Hammersmith One', sans-serif;;
+}
+#search{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+
+}
+#sear{
+    width: 90%;
+    height: 30%;
+}
+#perfil{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+#pic{
+    width: 6vw;
+    height: 6vw;
+    margin: auto;
+    margin-top: 9%;
+    border-radius: 100px;
+    background-color: #dddddd;
+}
+a{
+    text-decoration: none;
+}
+#bnav{
+    width: 100%;
+    height: 25%;
+    float: left;
+    background-color: #B58463;
+}
+.nave{
+    width: 100%;
+    margin: auto;
+    margin-top: 8px;
+    font-family: 'Hammersmith One', sans-serif;
+}
+.menu{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu > li > a{
+    height: 100%;
+    display: block;
+    padding: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 3vh;
+    transition: .3s;
+}
+.menu > li:hover > a{
+    color: #43291F;
+}
+.menuv{
+    color: white;
+    position: absolute;
+    display: none;
+    padding: 15px;
+    list-style: none;
+    width: 13%;
+    margin-top: 2vh;
+    background-color: #43291F;
+    z-index: 1000;
+    transition: .3s;
+}
+.menu li:hover .menuv{
+    display: block;
+}
+.menuv li:hover{
+    background-color: #332018;
+}
+.menuv li a{
+    display: block;
+    color: white;
+    margin-top: 7%;
+    margin-left: 5%;
+    font-size: 100%;
+}
+.list{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    height: 20vh;
+    float: left;
+    margin-top: 5vh;
+    background-color: #43291F;
+}
+body,html{
+  width: max-content;
+  height: max-content;
+  background-color: #F3E9DC;
+}
+.user{
+  color: #2F81F7;
+  text-align: center;
+  float: left;
+  margin-left: 10%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.user > img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+
+}
+.reservaciones{
+  color: blue ;
+  text-align: center;
+  float: left;
+}

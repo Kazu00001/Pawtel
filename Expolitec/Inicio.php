@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="barra_nav_foot.css">
     </head>
     <body>
-        <header>
+    <header>
             <article id="titfo">
                 <section id="titC">
                     <br>
@@ -18,7 +18,7 @@
                     <input type="search" id="sear">
                 </section>
                 <section id="perfil">
-                    <div id="pic"></div>
+                    <div id="pic"><a href="admin_usser.php">Perfil</a></div>
                 </section>
             </article>
             <section id="bnav">
@@ -41,9 +41,7 @@
 
                 </nav>
             </section>
-            
         </header>
-
         <div class="publicidad"><!-- Esta sección es para colocar una imagen de publicidad-->
             <div class= "carruseles">
                 <section class="slider-carrusel"><img src="imgs/imag1.jpg"></section>
