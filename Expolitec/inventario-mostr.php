@@ -9,42 +9,8 @@
     <meta charset="UTF-8">
     <title>Lista Empleados</title>
     <link rel="stylesheet" href="empleados.css">
+    <link rel="stylesheet" href="inventario.css">
     <link rel="stylesheet" href="admin_bar_foot.css">
-    <style>
-     /* Estilo para el encabezado */
-body {
-    background-color: #1f1f1f; /* Fondo oscuro para resaltar el diseño futurista */
-    font-family: 'Roboto', sans-serif; /* Utilizando una fuente moderna */
-}
-
-table {
-    width: 80%;
-    margin: 20px auto; /* Centra la tabla en la página */
-    border-collapse: collapse;
-    background-color: #333; /* Fondo oscuro para el cuerpo de la tabla */
-    color: #fff; /* Color de texto blanco para contrastar con el fondo oscuro */
-    border-radius: 12px; /* Bordes redondeados para la tabla */
-    overflow: hidden; /* Asegura que los bordes redondeados no se vean afectados por el contenido */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave para un efecto flotante */
-}
-
-th, td {
-    border: 1px solid #444; /* Bordes con un tono más claro que el fondo de la tabla */
-    padding: 12px;
-    text-align: center;
-}
-
-th {
-    background-color: #4a90e2; /* Fondo azul claro para las celdas del encabezado */
-    color: #fff; /* Texto blanco para el encabezado */
-}
-
-/* Estilo para celdas alternas, para mejorar la legibilidad */
-tr:nth-child(even) {
-    background-color: #2c2c2c; /* Fondo oscuro para filas pares */
-}
-
-    </style>
 </head>
 <body>
     <header>
