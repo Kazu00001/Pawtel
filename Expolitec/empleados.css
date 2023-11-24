@@ -85,6 +85,21 @@ main{
     text-align: center;
     color: rgb(139, 139, 139);
 }
+#searRev{
+    width: 30vw;
+    height: 3vw;
+    float: left;
+    margin-top: 7vh;
+    margin-left: 3vw;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgb(143, 143, 143);
+    font-size: 2vwx-large;
+    transition: .3s;
+}
+#searRev:hover{
+    background-color: rgb(238, 238, 238);
+}
 #searP{
     width: 30vw;
     height: 3vw;
