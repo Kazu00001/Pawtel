@@ -7,28 +7,34 @@
     </head>
     <body>
         <header>
-            <br><br>
-            <h1>Iniciar Sesion</h1>
+            <br>
+            <h1>PawTel</h1>
         </header>
-        <aside class="top"></aside>
-        <aside class="top2"></aside>
-        <main>
-            <article id="for">
+    <main>
+        <article id="container_add">
+            <article id="left">
+                <p class="tit"><b><span class="big">Iniciar </span></b>sesion</p>
+            </article>
+            <article id="add_info">
                 <br>
                 <form action="autenticacion.php" method="post">
                     <br><br>
-                    <label for="correo" class="palabras">Correo Electronico:</label><br><br>
-                    <input type="email" name="correo" class="tam"><br><br>
-                    <label for="pass" class="palabras">Contraseña</label><br><br>
-                    <input type="password" name="password" class="tam"><br><br><br>
-                    <input type="submit" value="Iniciar Sesion"  class="bot"><br><br>
-                    <p>¿Ya tienes cuenta?</p>
+                    <div class="inputbox">
+                        <input type="email" name="correo" class="inp" placeholder=" " required><br>
+                        <span class="text_input">Correo Electronico</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" name="password" class="inp" placeholder=" " required><br>
+                        <span class="text_input">Contraseña</span>
+                    </div><br>
+                    <input type="submit" value="Iniciar Sesion" class="bot"><br><br>
+                    <p class="gray">¿No tienes cuenta?</p>
                 </form>
                 <form action="registropaw.html" method="post">
                     <input type="submit" value="Registrarse"  class="bot"><br>
                 </form>
             </article>
-            
+        </article>
         </main>
     </body>
 </html>
