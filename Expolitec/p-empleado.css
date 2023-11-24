@@ -108,3 +108,6 @@ main{
     width: 100%;
     height: auto;
 }
+.gray{
+    color: rgb(168, 168, 168);
+}

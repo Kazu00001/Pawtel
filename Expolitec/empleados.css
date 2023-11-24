@@ -96,6 +96,7 @@ main{
     border-color: rgb(143, 143, 143);
     font-size: 2vwx-large;
     transition: .3s;
+    padding-left: 1vw;
 }
 #searP:hover{
     background-color: rgb(238, 238, 238);

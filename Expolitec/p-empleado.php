@@ -2,7 +2,7 @@
     require_once('conexion.php');
     $id=$_POST['idEmp'];
 
-    $idEmp=mysqli_query($Conexion, "SELECT * FROM allemployee WHERE idemp = '$id'");
+    $idEmp=mysqli_query($Conexion, "SELECT * FROM employees WHERE idEmp = '$id'");
     $emp=mysqli_fetch_array($idEmp);
 ?>
 <!DOCTYPE html>
@@ -55,26 +55,26 @@
             <section class="perf">
             <section id="fotop">
                 <div id="pict">
-                    <img src="emp/<?php echo $emp['fotemple']?>" class="image">
+                    <img src="emp/<?php echo $emp['imageEmp']?>" class="image">
                 </div>
                 </section>
-                <section class="nome"><h1 id="name"><?php echo $emp['emplenom']?></h1></section>
+                <section class="nome"><h1 id="name"><?php echo $emp['nameEmp']?></h1></section>
             </section>
             <section class="data">
                 <section class="data2">
                     <section class="detail">
                         <h1 id="Detal">Detalles del Empleado</h1><br>
-                        <p class="dat">Estado de Empleado:</p>
-                        <p class="dat">Fecha de Nacimiento:</p>
-                        <p class="dat">Email:</p>
-                        <p class="dat">Numero Telefonico:</p>
+                        <p class="dat">Estado de Empleado: <span class="gray">Activo</span></p>
+                        <p class="dat">Fecha de Nacimiento: <span class="gray"><?php echo $emp['birthEmp']?></span></p>
+                        <p class="dat">Email:  <span class="gray"><?php echo $emp['emailEmp']?></span></p>
+                        <p class="dat">Numero Telefonico:  <span class="gray"><?php echo $emp['phoneEmp']?></span></p>
                     </section>
                     <section class="detaile">
-                        <p class="dat">Area de Trabajo:</p>
-                        <p class="dat">Horario de Trabajo:</p>
-                        <p class="dat">Puesto de Trabajo:</p>
-                        <p class="dat">Cuenta Bancaria:</p>
-                        <p class="dat">Salario Mensual:</p>
+                        <p class="dat">Area de Trabajo:  <span class="gray"><?php echo $emp['workArea']?></span></p>
+                        <p class="dat">Horario de Trabajo:  <span class="gray"><?php echo $emp['scheduleEmp']?></span></p>
+                        <p class="dat">Puesto de Trabajo:  <span class="gray"><?php echo $emp['jobEmp']?></span></p>
+                        <p class="dat">Cuenta Bancaria:  <span class="gray"><?php echo $emp['bankEmp']?></span></p>
+                        <p class="dat">Salario Mensual:  <span class="gray"><?php echo $emp['salary']?></span></p>
                     </section>
                 </section>
             </section>

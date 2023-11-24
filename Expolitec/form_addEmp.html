@@ -4,12 +4,48 @@
     <meta charset="UTF-8">
     <title>Contratar Empleado</title>
     <link rel="stylesheet" href="form_addEmp.css">
+    <link rel="stylesheet" href="admin_bar_foot.css">
+    <header>
+        <article id="titfo">
+            <section id="titC">
+                <br>
+                <a href="inicio.php"><h1 id="tit">PawTel</h1></a>
+            </section>
+            <section id="search">
+                <br><br><br>
+                <input type="search" id="sear">
+            </section>
+            <section id="perfil">
+                <div id="pic"></div>
+            </section>
+        </article>
+        <section id="bnav">
+            <nav class="nave">
+                <ul class="menu">
+                    <li><a href="inicio.php">Inicio</a></li>
+                    <li><a href="#">Paquetes</a></li>
+                    <li><a href="#">Servicios</a>
+                        <ul class="menuv">
+                            <li class="list"><a href="cafeteria.php">Cafeteria</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Reservaciones</a>
+                        <ul class="menuv">
+                            <li class="list"><a href="reservas.php">Reserva Hotel</a></li>
+                            <li class="list"><a href="Reserva-resta.php">Reserva Restaurante</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+        </section>
+    </header>
 </head>
 <body>
     <main>
         <article id="container_add">
             <article id="left">
-                <p class="tit"><b>Agregar Empleado</b></p>
+                <p class="tit"><b><span class="big">Agregar </span></b>Empleado</p>
             </article>
             <article id="add_info">
                 <form action="add_emp.php" method="post">
@@ -19,17 +55,8 @@
                         <span class="text_input">Nombre del empleado</span>
                     </div>
                     <div class="inputbox">
-                        <select name="job" id="job" class="inp" required>
-                            <option value=""></option>
-                            <option value="Finanzas">Finanzas</option>
-                            <option value="Seguridad">Seguridad</option>
-                            <option value="Cocinero">Cocinero</option>
-                        </select>
-                        <span class="text_input">Puesto</span>
-                    </div>
-                    <div class="inputbox">
-                        <input type="number" name="salary" class="inp" placeholder=" " required><br>
-                        <span class="text_input">Sueldo mensual</span>
+                        <input type="date" name="date" class="inp" placeholder=" " required><br>
+                        <span class="text_input">Fecha de Nacimiento</span>
                     </div>
                     <div class="inputbox">
                         <input type="tel" name="phone" class="inp" placeholder=" " required><br>
@@ -40,10 +67,36 @@
                         <span class="text_input">Correo Electronico</span>
                     </div>
                     <div class="inputbox">
-                        <input type="file" name="image" class="inp" placeholder=" " required><br>
-                        <span class="text_input">Imagen</span>
+                        <select name="workArea" id="jobArea" class="inp" required>
+                            <option value=""></option>
+                            <option value="Finanzas">Finanzas</option>
+                            <option value="Seguridad">Seguridad</option>
+                            <option value="Cocinero">Cocinero</option>
+                        </select>
+                        <span class="text_input">Area de Trabajo</span>
                     </div>
-                    <input type="submit" value="Contratar">
+                    <div class="inputbox">
+                        <input type="text" name="job" class="inp" placeholder=" " required><br>
+                        <span class="text_input">Puesto</span>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="text" name="schedule" class="inp" placeholder=" " required><br>
+                        <span class="text_input">Horario de trabajo</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="bank" class="inp" placeholder=" " required><br>
+                        <span class="text_input">Cuenta Bancaria</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="number" name="salary" class="inp" placeholder=" " required><br>
+                        <span class="text_input">Sueldo mensual</span>
+                    </div>
+                    <div class="inputFile">
+                        <input type="file" name="image" class="inpFile" placeholder=" " required><br>
+                        <span class="text_inputFile">Agregar Imagen</span>
+                    </div><br>
+                    <input type="submit" value="Contratar" id="bot">
                 </form>
             </article>
 
