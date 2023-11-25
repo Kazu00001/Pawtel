@@ -24,7 +24,7 @@ session_start();
     </header>
     <br>
     <div class="modal">
-<form class="form">
+<form class="form" action="pagos-save.php" method="post">
   <div class="payment--options">
   <button name="paypal" type="button">
       <svg xml:space="preserve" viewBox="0 0 124 33" height="33px" width="124px" y="0px" x="0px" id="Layer_1" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
@@ -93,7 +93,7 @@ session_start();
     <div class="input_container">
       <label for="password_field" class="input_label">Fecha de expiracion / CVV</label>
       <div class="split">
-      <input id="password_field" class="input_field" type="date" name="fechex" title="Expiry Date" placeholder="01/23">
+      <input id="password_field" class="input_field" type="text" name="fechex" title="Expiry Date" placeholder="01/23">
       <input id="password_field" class="input_field" type="number" name="cvv" title="CVV" placeholder="CVV">
     </div>
     </div>
