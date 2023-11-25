@@ -7,34 +7,10 @@
     <meta charset="UTF-8">
     <title>Lista Empleados</title>
     <link rel="stylesheet" href="empleados.css">
-    <link rel="stylesheet" href="inventario.css">
     <link rel="stylesheet" href="admin_bar_foot.css">
-    <style>
-        table {
-    width: 80%;
-    margin: 20px auto; 
-    border-collapse: collapse;
-    background-color: #333; 
-    color: #fff; 
-    border-radius: 12px; 
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-th, td {
-    border: 1px solid #444; 
-    padding: 12px;
-    text-align: center;
-}
-
-th {
-    background-color: #4a90e2;
-    color: #fff;
-}
-tr:nth-child(even) {
-    background-color: #2c2c2c; 
-}
-    </style>
+    <link rel="stylesheet" href="reservas-css.css">
+    
+    
 </head>
 <body>
     <header>
@@ -83,7 +59,7 @@ tr:nth-child(even) {
                     <input type="submit" value="Nuevo producto" id="addEmp">
                 </form>
             </section>
-            <section class="container_employees" id="content_invent2">
+            <section id="content_invent2">
                 <table>
                     <thead>
                     <th>Numero de orden</th>
@@ -96,7 +72,6 @@ tr:nth-child(even) {
                     <th>Niños</th>
                     <th>Nombre del paquete</th>
                     <th>Nombre targeta</th>
-                    <th>Tipo de targeta</th>
                     <th>Numero de targeta</th>
                     <th>Fecha vencimiento targeta</th>
                     </thead>

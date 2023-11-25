@@ -1,0 +1,42 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Hammersmith One', sans-serif;
+}
+html, body{
+    height: 100%;
+    background-color: #F3E9DC;
+}
+table {
+    width: 70%;
+  float: left; 
+    border-collapse: collapse;
+    background-color: #333; 
+    color: #fff; 
+    border-radius: 12px; 
+    overflow: hidden;
+    padding: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    border: 1px solid #444; 
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #4a90e2;
+    color: #fff;
+}
+tr:nth-child(even) {
+    background-color: #2c2c2c; 
+}
+#content_invent2{
+    width: 100vw;
+    height: auto;
+    float: left;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    margin-bottom: 3vw;
+}
