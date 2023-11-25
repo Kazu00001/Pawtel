@@ -45,10 +45,6 @@
         <div id="progre"></div>
         <div class="publicidad"><!-- Esta sección es para colocar una imagen de publicidad-->
             <div class= "carruseles">
-                <section class="slider-carrusel"><img src="imgs/imag1.jpg"></section>
-                <section class="slider-carrusel"><img src="imgs/imag2.jpg"></section>
-                <section class="slider-carrusel"><img src="imgs/imag3.jpg"></section>
-                <section class="slider-carrusel"><img src="imgs/imag4.jpg" ></section>
             </div>
         </div>
         <main>
