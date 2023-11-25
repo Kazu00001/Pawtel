@@ -57,7 +57,7 @@
                 </section>
             </article><!-------------------------------------------------------------------------------->
 
-            <aside class="imagen"></aside> <!--Imagen de publicidad-->
+            <aside class="imagen"><img class="imgc" src="imgs/Perrito.jpg" alt="centered image"></aside> <!--Imagen de publicidad-->
 
 
             <article class="servicios"> <!--Esta parte contendrá una vista rapid de los serviios que ofrece el hotel-->
@@ -155,7 +155,7 @@
                 </section>
             </article><!-------------------------------------------------------------------------------->
 
-            <aside class="imagen2"></aside><!--imagen de publicidad-->
+            <aside class="imagen2"><img class="imgc" src="imgs/gato.jpeg"></aside><!--imagen de publicidad-->
 
             <article class="servicios"> <!--Esta parte contendrá una vista rapida de las actividades existentes en el hotel-->
                 <br><br> 
