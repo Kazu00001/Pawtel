@@ -143,28 +143,21 @@ img{
 a{
     text-decoration:none;
 }
-
+.imgc{
+    object-fit: cover;
+}
 .imagen{
     width: 100%;
     height: 50%;
     float: left;
     margin-top: 2%;
     background-color: #B58463;
-    background-position: center bottom 20% ;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-image: url(https://media.admagazine.com/photos/6222837f818965ae9b89743a/16:9/w_2560%2Cc_limit/Perrito.jpg);
-
 }
 .imagen2{
     width: 100%;
     height: 50%;
     float: left;
     background-color: #B58463;
-    background-position: center bottom 35% ;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-image: url(https://images.pexels.com/photos/236606/pexels-photo-236606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 
 }
 .servicios{
@@ -222,7 +215,7 @@ button{
 }
 @keyframes show{
     from {
-        opacity: 0;
+        opacity: .1;
         translate: 0 100 px;
         scale: .7;
     }
@@ -232,10 +225,10 @@ button{
         scale: 1;
     }
 }
-aside,article{
+.habitacion,.habitacion2,img,.titSer{
     animation: show linear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 50%;
+    animation-range: entry 30% cover 50%;
 }
 #uno{
     height: 100%;
