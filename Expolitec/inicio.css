@@ -8,10 +8,29 @@ html, body{
     height: 100%;
     background-color: #F3E9DC;
 }
+#progre{
+    position: fixed;
+    top: 0;
+    width: 0%;
+    background-color: grey;
+    height: 1em;
+
+    animation: progre-g auto linear;
+    animation-timeline: scroll(root );
+    z-index: 1;
+}
+
+@keyframes progre-g{
+    from{
+        width: 0%;
+    }to{
+        width: 100%;
+    }
+}
 
 .publicidad{
     width: 96%;
-    height: 35%;
+    height: 70%;
     float: left;
     margin-left: 2%;
     margin-top: 1%;
@@ -25,6 +44,7 @@ html, body{
 }
 .slider-carrusel{
     width: calc(100% / 4);
+    transition: .4s;
 }
 .slider-carrusel img{
     /*size: 20%;*/
@@ -176,36 +196,67 @@ a{
     margin-top: 3%;
     margin-bottom: 3%;
 }
-#but{
-    transition: all 0.6s ease;
-}
-#but::after{
-    content: "";
-    position: absolute;
-    width: 40%;
-    height: 100px;
+.conbut{
+    margin-top: 8vh;
+    width: 160vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     float: left;
-    background-color: black;
-    border-radius: 100px;
-    margin-left: 30%;
-    margin-top: 5%;
-    color: white;
-    font-size: xx-large;
-    box-shadow: 6px 3px 3px #43291F;
 }
-#but::before{
+button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 80px;
+    background-color: #B58463;
+    color: whitesmoke;
+    font-size:30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.but span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+.but::after{
     content: "";
-
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(-100% - 80px);
+    border-bottom: 80px solid #43291F;
+    border-right: 80px solid transparent;
+    transition: .4s ease-in-out all;
 }
-@keyframes shaking{
+.but:hover::after{
+    left: 0;
+}
+@keyframes show{
     from {
-        transform: translateX(-100%);
-        opacity: 0.25;
+        opacity: 0;
+        translate: 0 100 px;
+        scale: .5;
     }
     to {
-        transform: translateX(0%);
         opacity: 1;
+        translate: 0 0;
+        scale: 1;
     }
+}
+aside,article{
+    animation: show linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
 }
 #uno{
     height: 100%;
@@ -215,9 +266,6 @@ a{
     background-size: cover;
     background-image: url(https://images.mirai.com/INFOROOMS/100376355/gMTRa4gTj2qTSjgroLJ5/gMTRa4gTj2qTSjgroLJ5_large.jpg);
 }
-#uno:hover{
-    transform: scale(1.1);
-}
 #dos{
     height: 100%;
     width: 100%;
@@ -226,9 +274,6 @@ a{
     background-size: cover;
     background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/9e/9a/14/premium.jpg?w=700&h=-1&s=1);
 }
-#dos:hover{
-    transform: scale(1.1);
-}
 #tres{
     height: 100%;
     width: 100%;
@@ -236,12 +281,6 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(https://media.elvenezolanohouston.com/evh/wp-content/uploads/2022/06/unnamed-1-1161x750.png);
-}
-#tres:hover{
-    transform: scale(1.1);
-}
-.habitacion2:hover{
-    transform: scale(1.1);
 }
 .bott:hover{
     transform: scale(1.1);
