@@ -1,17 +1,17 @@
 header{
     width: 100%;
-    height: 25vh;
+    height: 20vh;
     float: left;
-    background-color: rgb(55, 131, 175);
+    background-color: rgb(45, 113, 153);
 }
 #titfo{
     width: 100%;
-    height: 75%;
+    height: 100%;
     float: left;
     background-color: rgb(45, 113, 153);
 }
 #titC{
-    width: 30%;
+    width: 25%;
     height: 100%;
     float: left;
 }
@@ -22,20 +22,18 @@ header{
     color: white;
     font-family: 'Hammersmith One', sans-serif;;
 }
-#search{
-    width: 50%;
+#barNav{
+    width: 45%;
     height: 100%;
     float: left;
     text-align: center;
+    font-size: small;
 
-}
-#sear{
-    width: 90%;
-    height: 30%;
 }
 #perfil{
     width: 20%;
     height: 100%;
+    margin-left: 10%;
     text-align: center;
     float: left;
 }
@@ -50,17 +48,12 @@ header{
 a{
     text-decoration: none;
 }
-#bnav{
-    width: 100%;
-    height: 25%;
-    float: left;
-    background-color: rgb(45, 113, 153);
-}
 .nave{
     width: 100%;
     margin: auto;
-    margin-top: 8px;
+    margin-top: 8vh;
     font-family: 'Hammersmith One', sans-serif;
+    transition: .3s;
 }
 .menu{
     width: 100%;
@@ -68,6 +61,7 @@ a{
     list-style: none;
     display: flex;
     justify-content: space-around;
+    transition: .3s;
 }
 .menu > li > a{
     height: 100%;
@@ -79,35 +73,38 @@ a{
     transition: .3s;
 }
 .menu > li:hover > a{
-    color: #43291F;
+    color: #4ad4fa;
+    transition: all .3s;
 }
 .menuv{
     color: white;
     position: absolute;
     display: none;
-    padding: 15px;
     list-style: none;
     width: 13%;
-    margin-top: 2vh;
-    background-color: #43291F;
+    background-color: #88ccf7;
     z-index: 1000;
-    transition: .3s;
+    transition: all .3s;
 }
 .menu li:hover .menuv{
     display: block;
+    transition: all .3s;
 }
-.menuv li:hover{
-    background-color: #332018;
+.menuv li:hover a{
+    color: #282866;
 }
 .menuv li a{
     display: block;
     color: white;
-    margin-top: 7%;
-    margin-left: 5%;
-    font-size: 100%;
+    font-size: 2.2vh;
+    margin: 1vw;
+    text-align: left;
+    transition: all .3s;
 }
 .list{
     width: 100%;
+    height: 5vh;
+    align-items: center;
 }
 footer{
     width: 100%;
@@ -115,4 +112,9 @@ footer{
     float: left;
     margin-top: 5vh;
     background-color: #43291F;
+}
+.topM{
+    width: 100%;
+    height: 1vh;
+    background-color: rgb(45, 113, 153);
 }

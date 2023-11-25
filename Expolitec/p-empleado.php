@@ -14,31 +14,25 @@
     <link rel="stylesheet" href="admin_bar_foot.css">
 </head>
 <body>
-    <header>
+<header>
             <article id="titfo">
                 <section id="titC">
                     <br>
                     <a href="inicio.php"><h1 id="tit">PawTel</h1></a>
                 </section>
-                <section id="search">
-                    <br><br><br>
-                    <input type="search" id="sear">
-                </section>
-                <section id="perfil">
-                    <div id="pic"></div>
-                </section>
-            </article>
-            <section id="bnav">
+                <section id="barNav">
                 <nav class="nave">
                     <ul class="menu">
                         <li><a href="inicio.php">Inicio</a></li>
                         <li><a href="#">Paquetes</a></li>
                         <li><a href="#">Servicios</a>
+                            <div class="topM"></div>
                             <ul class="menuv">
                                 <li class="list"><a href="cafeteria.php">Cafeteria</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Reservaciones</a>
+                            <div class="topM"></div>
                             <ul class="menuv">
                                 <li class="list"><a href="reservas.php">Reserva Hotel</a></li>
                                 <li class="list"><a href="Reserva-resta.php">Reserva Restaurante</a></li>
@@ -47,8 +41,11 @@
                     </ul>
 
                 </nav>
-            </section>
-            
+                </section>
+                <section id="perfil">
+                    <div id="pic"></div>
+                </section>
+            </article>
         </header>
     <main>
         <article class="emp">

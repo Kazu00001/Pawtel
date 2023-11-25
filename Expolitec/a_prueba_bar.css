@@ -3,7 +3,6 @@ header{
     height: 20vh;
     float: left;
     background-color: #43291F;
-    
 }
 #titfo{
     width: 100%;
@@ -20,7 +19,7 @@ header{
     margin-top: 1%;
     font-size: 5vw;
     color: white;
-    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Hammersmith One', sans-serif;;
 }
 #barNav{
     width: 45%;
@@ -116,12 +115,5 @@ footer{
 .topM{
     width: 100%;
     height: 1vh;
-    background-color: #43291F;
-}
-footer{
-    width: 100%;
-    height: 20vh;
-    float: left;
-    margin-top: 5vh;
     background-color: #43291F;
 }
