@@ -18,97 +18,148 @@ h1{
     color: white;
     font-size: 50px;
 }
-.top{
-    width: 100%;
-    height: 5%;
-    float: left;
-    background-color: #F3E9DC;
-}
-.top2{
-    width: 30%;
-    height: 10%;
-    float: left;
-    background-color: #F3E9DC;
-}
-main{
-    width: 100%;
-    height: 75%;
+
+.modal {
+    width: fit-content;
+    height: fit-content;
+    background: #FFFFFF;
+    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 26px;
+    max-width: 450px;
     margin: auto;
-    float: left;
-    background-color: #F3E9DC;
-}
-#Central{
-    width: 50%;
-    height:80%;
-    margin: auto;
-    margin-top: 5%;
-    background-color: #37f240;
-}
-#bar1{
-    width: 100%;
-    height: 15%;
-    float: left;
-    background-color: rgb(55, 117, 242);
-}
-#icon{
-    width: 12%;
-    height: 100%;
-    float: left;
-    background-color: rgb(11, 21, 42);
-}
-#cont{
-    width: 100%;
-    height: 110%;
-    float: left;
-    background-color: rgb(55, 89, 242);
-}
-#can{
-max-width: 50%;
-margin-top: 12%;
-margin-left: 23%;
-}
-/* Estilo para el formulario */
-form {
-    width: 70%;
-    margin: 20px auto;
+    margin-top: 10%;
+  }
+  
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: white;
-  }
+}
   
-  /* Estilo para las etiquetas */
-  label {
+.payment--options {
+    width: calc(100% - 40px);
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    gap: 20px;
+    padding: 10px;
+}
+  
+.payment--options button {
+    height: 55px;
+    background: #F2F2F2;
+    border-radius: 11px;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+  
+.payment--options button svg {
+    height: 18px;
+}
+  
+.payment--options button:last-child svg {
+    height: 22px;
+}
+  
+.separator {
+    width: calc(100% - 20px);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    color: #8B8E98;
+    margin: 0 10px;
+}
+  
+.separator > p {
+    word-break: keep-all;
     display: block;
-    margin-bottom: 8px;
-  }
-  
-  /* Estilo para los campos de entrada */
-  input {
+    text-align: center;
+    font-weight: 600;
+    font-size: 11px;
+    margin: auto;
+}
+.separator .line {
+    display: inline-block;
     width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-  }
+    height: 1px;
+    border: 0;
+    background-color: #e8e8e8;
+    margin: auto;
+}
   
-  /* Estilo para los botones de radio */
-  input[type="radio"] {
-    margin-right: 5px;
-  }
+.credit-card-info--form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
   
-  /* Estilo para el botón de enviar */
-  input[type="submit"] {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
+.input_container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
   
-  /* Cambiar el cursor al pasar sobre el botón de enviar */
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }
+.split {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 15px;
+}
   
+.split input {
+    width: 100%;
+}
+  
+.input_label {
+    font-size: 10px;
+    color: #a15d41;
+    font-weight: 600;
+}
+  
+.input_field {
+    width: auto;
+    height: 40px;
+    padding: 0 0 0 16px;
+    border-radius: 9px;
+    outline: none;
+    background-color: #F2F2F2;
+    border: 1px solid #e5e5e500;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+  
+.input_field:focus {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px #242424;
+    background-color: transparent;
+}
+  
+.purchase--btn {
+    height: 55px;
+    background: #F2F2F2;
+    border-radius: 11px;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #895d4c 0%, #4f2e20 50%, #43291F 100%);
+    box-shadow: 0px 0px 0px 0px #FFFFFF, 0px 0px 0px 0px #000000;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+  
+.purchase--btn:hover {
+    box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 4px #43291F;
+}
+  
+  /* Reset input number styles */
+.input_field::-webkit-outer-spin-button,
+.input_field::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+  
+.input_field[type=number] {
+    -moz-appearance: textfield;
+}

@@ -1,7 +1,7 @@
 <?php
 require('conexion.php');
 
-$columas = ['numorder','nombreclient','correo','iniestan','finestan','habitaciones','huspedes','ninos','Nombrpaq','Nombre_propetario_target','Tipo_de_targeta','Numero_de_targeta','Fecha_vencimiento_targeta'];
+$columas = ['numorder','nombreclient','correo','iniestan','finestan','habitaciones','huspedes','ninos','Nombrpaq','Nombre_propetario_target','Numero_de_targeta','Fecha_vencimiento_targeta'];
 $table = "reserva";
 $columas2 = ['numorder','nombreclient'];
 $campo = isset($_POST['searRev']) ? $Conexion->real_escape_string($_POST['searRev']) : null;
@@ -43,7 +43,6 @@ if ($num_rows > 0) {
         echo '<td>' . $row['ninos'] . '</td>';
         echo '<td>' . $row['Nombrpaq'] . '</td>';
         echo '<td>' . $row['Nombre_propetario_target'] . '</td>';
-        echo '<td>' . $row['Tipo_de_targeta'] . '</td>';
         echo '<td>' . $row['Numero_de_targeta'] . '</td>';
         echo '<td>' . $row['Fecha_vencimiento_targeta'] . '</td>';
         echo '<td> <a href="">Editar</a></td>';
