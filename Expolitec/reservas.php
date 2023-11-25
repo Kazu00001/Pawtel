@@ -28,8 +28,8 @@ session_start();
         <section id="izquierda">
             <div class="FormIzq">
                 <form action="reservas-save.php" method="post">
-                <input class=controles type="hidden" name="nombre" value="<?php $_SESSION['name'] ?>">
-                <input class=controles type="hidden" name="correo" value="<?php $_SESSION['email']?>">
+                <input class=controles type="hidden" name="nombre" value="<?php echo  $_SESSION['name'] ?>">
+                <input class=controles type="hidden" name="correo" value="<?php echo $_SESSION['email'] ?>">
                 <label for="icioestan">Fecha de Entrada</label>
                 <input class=controles type="date" name="icioestan" id="icioestan"> <br>
                 <label for="finestan">Fecha de Salida</label>
