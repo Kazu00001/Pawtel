@@ -54,6 +54,7 @@ main{
     margin-top: 7%;
     border-radius: 100%;
     background-color: #dddddd;
+    overflow: hidden;
 }
 .data{
     height: 60%;
@@ -91,7 +92,7 @@ main{
 }
 .dat{
     margin-top: 4%;
-    font-size: 150%;
+    font-size: 120%;
     margin-left: 4%;
 }
 .image{
