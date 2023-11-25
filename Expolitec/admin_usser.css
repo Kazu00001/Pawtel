@@ -3,21 +3,6 @@
   padding: 0;
 }
 
-.todo{
-  width: 100vw;
-  height: 100vh;
-}
-.input {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 500px;
-    background-color: #0D1117;
-    justify-content: center;
-    border-radius: 15px;
-    margin-top: 30px;
-    margin-left: 2%;
-  }
   
   .value {
     background-color: transparent;
@@ -65,26 +50,22 @@
  
  
   .content{
-    display: flex;
     align-items: center;
-    width: 200%;
+    width: 100%;
     height: 100%;
     background: #F3E9DC;
   }
   .reservaciones{
-    width:80%;
-    height: 20%;
+    width:55%;
+    height:100%;
     border: 1px solid black;
     border-radius: 10px;
-    margin-left: 10%;
-    margin-top: 1%;
+    float: left;
   }
   .padre{
     height: 700px;
     width: 100vw;
   }
-  /* Header */
-
   header{
     width: 100vw;
     height: 250px;
@@ -204,26 +185,60 @@ footer{
     background-color: #43291F;
 }
 body,html{
-  width: max-content;
-  height: max-content;
+  width: 100%;
+  height: 100%;
   background-color: #F3E9DC;
 }
-.user{
-  color: #2F81F7;
-  text-align: center;
+.todo{
+  width: 100vw;
+  height: 100vh;
   float: left;
-  margin-left: 10%;
-  border-radius: 50%;
-  border: 1px solid black;
 }
-.user > img{
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height:  200px;
+  background-color: #0D1117;
+  justify-content: center;
+  border-radius: 15px;
+  float: left;
 }
 .reservaciones{
   color: blue ;
   text-align: center;
   float: left;
+  
+}
+
+.user{
+  width: 20%;
+  height: 100%;
+  color: #2F81F7;
+  text-align: center;
+  float: right;
+  margin-left: 0%;
+  float: right;
+}
+.si{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+
+}
+.user > img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+
+#carmela{
+  float: right;
+  text-align: left;
+  
+}
+h1{
+  text-align: center;
 }
