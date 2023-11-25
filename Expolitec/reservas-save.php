@@ -29,7 +29,7 @@ $mascota=$_POST['mascota'];
 $tipohab=$_POST['tipohab'];
 
 // hacer la sentencia de envio 
-$sql="INSERT INTO reserva(nombreclient,correo,iniestan,finestan,habitaciones,huspedes,ninos,Nombrpaq) value('$nom','$correo','$icioestan','$finestan','$habitaciones','$huspedes','$ninos','$mascota','$tipohab')";
+$sql="INSERT INTO reserva(nombreclient,correo,iniestan,finestan,habitaciones,huspedes,ninos,Nombrpaq) value('$nom','$correo','$icioestan','$finestan','$habitaciones','$huspedes','$ninos','$tipohab')";
 //mandar la sentancia de envio
 $envio= mysqli_query($Conexion,$sql);
 // si hay un problema con el envio le damos un mensaje de que no se pudo 
