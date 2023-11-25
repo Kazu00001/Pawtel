@@ -47,9 +47,8 @@
         </div>
         <main>
             <article id="paquetes"><!--Toda esta parte contendrá los diferentes tipos de habitaciones-->
-                <br>
                 <h1 class="tits">Planes de Habitaciones</h1>
-                <section id="container-rooms">
+                <section id="container-roomsC">
                 <section class="habitacion"><section id="uno"></section></section>
                     <section class="habitacion"><section id="dos"></section></section>
                     <section class="habitacion"><section id="tres"></section></section>
@@ -57,12 +56,22 @@
                 </section>
             </article><!-------------------------------------------------------------------------------->
 
-            <aside class="imagen"><img class="imgc" src="imgs/Perrito.jpg" alt="centered image"></aside> <!--Imagen de publicidad-->
+            <aside class="imagen"></aside> <!--Imagen de publicidad-->
 
 
             <article class="servicios"> <!--Esta parte contendrá una vista rapid de los serviios que ofrece el hotel-->
                 <br><br> 
-                <h1 class="titc">Servicios</h1>
+                <section class="serv">
+                    <h1 class="titc">Servicios</h1>
+                    <p class="titet">
+                        texto que descriva los servicios
+                        sdddddddddddddd
+                        sddddddddddddddddddddddd
+                        sddddddddddddddddddd
+                        sssssssssvivabtsaaaaaaaaaaaa
+                        aaaaaaaaaaaaaaaa
+                    </p>
+                </section>
                 <section id="container-rooms">
                     <section class="square_s">
                         <div class="c_icon">
@@ -88,14 +97,14 @@
                             <p class="titS">Wifi</p>
                         </div>
                     </section>
-                    <section class="square_s">
+                    <!--<section class="square_s">
                         <div class="c_icon">
                             <img src="icons/mascotas-permitidas.png" class="icons">
                         </div>
                         <div class="titSer">
                             <p class="titS">Cuidado de Mascotas</p>
                         </div>
-                    </section>
+                    </section>-->
                     <section class="square_s">
                         <div class="c_icon">
                             <img src="icons/television.png" class="icons">
@@ -155,69 +164,78 @@
                 </section>
             </article><!-------------------------------------------------------------------------------->
 
-            <aside class="imagen2"><img class="imgc" src="imgs/gato.jpeg"></aside><!--imagen de publicidad-->
+            <aside class="imagen2"></aside><!--imagen de publicidad-->
 
             <article class="servicios"> <!--Esta parte contendrá una vista rapida de las actividades existentes en el hotel-->
                 <br><br> 
-                <h1 class="titc">Actividades</h1>
+                <section class="serv">
+                    <h1 class="titc">Actividades</h1>
+                    <p class="titet">
+                        texto que descriva las actividades
+                        sdddddddddddddd
+                        sddddddddddddddddddddddd
+                        sddddddddddddddddddd
+                        sssssssssvivabtsaaaaaaaaaaaa
+                        aaaaaaaaaaaaaaaa
+                    </p>
+                </section>
                 <p></p>
-                <section id="container-rooms">
-                    <section class="square_s">
+                <section id="container-roomsdo">
+                    <section class="square_ss">
                         <div class="c_icon">
                             <img src="icons/paseo-perro.png" class="icons">
                         </div>
                         <div class="titSer">
-                            <p class="titS">Paseo al Aire Libre</p>
+                            <p class="titSS">Paseo al Aire Libre</p>
                         </div>
                     </section>
-                    <section class="square_s">
+                    <section class="square_ss">
                         <div class="c_icon">
                             <img src="icons/competencia-de-perros.png" class="icons">
                         </div>
                         <div class="titSer">
-                            <p class="titS">Juegos con tu Mascota</p>
+                            <p class="titSS">Juegos con tu Mascota</p>
                         </div>
                     </section>
-                    <section class="square_s">
+                    <section class="square_ss">
                         <div class="c_icon">
                             <img src="icons/vino.png" class="icons">
                         </div>
                         <div class="titSer">
-                            <p class="titS">Prueba de vinos</p>
+                            <p class="titSS">Prueba de vinos</p>
                         </div>
                     </section>
-                    <section class="square_s">
+                    <section class="square_ss">
                         <div class="c_icon">
                             <img src="icons/mapa.png" class="icons">
                         </div>
                         <div class="titSer">
-                            <p class="titS">Recorridos por la ciudad</p>
+                            <p class="titSS">Recorridos por la ciudad</p>
                         </div>
                     </section>
-                    <section class="square_s">
+                    <section class="square_ss">
                         <div class="c_icon">
                             <img src="icons/camara.png" class="icons">
                         </div>
                         <div class="titSer">
-                            <p class="titS">Fotografias con tu Mascota</p>
+                            <p class="titSS">Fotografias con tu Mascota</p>
                         </div>
                     </section>
-                    <section class="square_s">
+                    <section class="square_ss">
                         <div class="c_icon">
                             <img src="icons/consola.png" class="icons">
                         </div>
                         <div class="titSer">
-                            <p class="titS">Sala de juegos</p>
+                            <p class="titSS">Sala de juegos</p>
                         </div>
                     </section>
-                    <br><br>
-                    <section class="conbut">
-                    <button class="but" onclick='ress()'><span>Reserva Ahora</span></button>
-                    </section>
-                    
+                    <br><br><br>
                 </section>
+                
             </article><!------------------------------------------------------------------------------->
-
+            <section class="conbut">
+                    <button class="but" onclick='ress()'><span>Reserva Ahora</span></button>
+                </section>
             <footer></footer>
         </main>
     </body>
