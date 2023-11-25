@@ -110,7 +110,7 @@
                             <img src="icons/television.png" class="icons">
                         </div>
                         <div class="titSer">
-                            <p class="titS">Television a Cable</p>
+                            <p class="titS">Television de Cable</p>
                         </div>
                     </section>
                     <section class="square_s">
@@ -202,7 +202,7 @@
                             <img src="icons/vino.png" class="icons">
                         </div>
                         <div class="titSer">
-                            <p class="titSS">Prueba de vinos</p>
+                            <p class="titSS">Cata de vinos</p>
                         </div>
                     </section>
                     <section class="square_ss">
