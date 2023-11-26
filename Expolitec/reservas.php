@@ -15,86 +15,133 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas</title>
     <link rel="stylesheet" href="reservas.css">
+    <link rel="stylesheet" href="barra_nav_foot.css">
 </head>
 <body>
-    <header>
-        <br><br>
-        <h1>Haz Tu Reservacion! </h1>
-    </header>
+<header>
+            <article id="titfo">
+                <section id="titC">
+                    <br>
+                    <a href="inicio.php"><h1 id="tit">PawTel</h1></a>
+                </section>
+                <section id="barNav">
+                <nav class="nave">
+                    <ul class="menu">
+                        <li><a href="inicio.php">Inicio</a></li>
+                        <li><a href="#">Paquetes</a></li>
+                        <li><a href="#">Servicios</a>
+                            <div class="topM"></div>
+                            <ul class="menuv">
+                                <li class="list"><a href="cafeteria.php">Cafeteria</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Reservaciones</a>
+                            <div class="topM"></div>
+                            <ul class="menuv">
+                                <li class="list"><a href="reservas.php">Reserva Hotel</a></li>
+                                <li class="list"><a href="Reserva-resta.php">Reserva Restaurante</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+                </section>
+                <section id="perfil">
+                    <div id="pic"></div>
+                </section>
+            </article>
+        </header>
     <aside>
         
     </aside>
     <main>
-        <section id="izquierda">
-            <div class="FormIzq">
+        <article id="izquierda">
+            <section class="FormIzq">
                 <form action="reservas-save.php" method="post">
-                <input class=controles type="hidden" name="nombre" value="<?php echo  $_SESSION['name'] ?>">
-                <input class=controles type="hidden" name="correo" value="<?php echo $_SESSION['email'] ?>">
-                <label for="icioestan">Fecha de Entrada</label>
-                <input class=controles type="date" name="icioestan" id="icioestan"> <br>
-                <label for="finestan">Fecha de Salida</label>
-                <input class=controles type="date" name="finestan" id="finestan">
-                    <legend>
-                        <label for="habitaciones">Habitaciones:</label>
-                    <select name="habitaciones" class="select">
-                        <option value="1">Opción 1</option>
-                        <option value="2">Opción 2</option>
-                        <option value="3">Opción 3</option>
-                        <option value="4">Opción 4</option>
-                        <option value="5">Opción 5</option>
-                        <option value="6">Opción 6</option>
-                        <option value="7">Opción 7</option>
-                        <option value="8">Opción 8</option>
-                        <option value="9">Opción 9</option>
-                        <option value="10">Opción 10</option>
-                    </select>
-                    <label for="huspedes">Huspedes:</label>
-                    <select name="huspedes" class="select">
-                        <option value="1">Opción 1</option>
-                        <option value="2">Opción 2</option>
-                        <option value="3">Opción 3</option>
-                        <option value="4">Opción 4</option>
-                        <option value="5">Opción 5</option>
-                        <option value="6">Opción 6</option>
-                        <option value="7">Opción 7</option>
-                        <option value="8">Opción 8</option>
-                        <option value="9">Opción 9</option>
-                        <option value="10">Opción 10</option>
-                    </select>
-                    <label for="ninos">Niños:</label>
-                    <select name="ninos" class="select">
-                        <option value="1">Opción 1</option>
-                        <option value="2">Opción 2</option>
-                        <option value="3">Opción 3</option>
-                        <option value="4">Opción 4</option>
-                        <option value="5">Opción 5</option>
-                        <option value="6">Opción 6</option>
-                        <option value="7">Opción 7</option>
-                        <option value="8">Opción 8</option>
-                        <option value="9">Opción 9</option>
-                        <option value="10">Opción 10</option>
-                    </select>
-                </legend>
-                <label for="mascota">Mascota:</label>
-                <input class=controles type="text" name="mascota" id="mascota">
-
-                <!-- hace consulta con la base de datos y trae las habitaciones -->
-                <label for="tipohab">Tipo de habitacion:</label>
-                <select name="tipohab" id="tipohab">
-                <?php 
-                    include('conexion.php');
-                    $produc="SELECT * FROM habitaciones";
-                    $resul=mysqli_query($Conexion,$produc);
-                    while($valores= mysqli_fetch_array($resul)){
-                    echo '<option value="'.$valores['idh'].'">'.$valores['nomh'].'</option>';
-                    }
-                ?>
-                </select>
-                <p class=p>Estoy de Acuerdo con los <a href="#">Terminos y Condiciones</a></p>
-                <input class="controles" type="submit" name="reservar" id="reservar" value="Reservar">
-            </form> 
-            </div>
-        </section>
+                    <input class=controles type="hidden" name="nombre" value="<?php echo  $_SESSION['name'] ?>">
+                    <input class=controles type="hidden" name="correo" value="<?php echo $_SESSION['email'] ?>">
+                    <div class="inputbox">
+                        <input type="date" name="icioestan" id="icioestan" class="inp" placeholder=" " required><br>
+                        <span class="text_input">Fecha de Entrada</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="date" name="finestan" id="finestan" class="inp" placeholder=" " required><br>
+                        <span class="text_input">Fecha de Salida</span>
+                    </div>
+                    <div class="inputboxSm">
+                        <select name="habitaciones" class="inp">
+                            <option value=""></option>
+                            <option value="1">Opción 1</option>
+                            <option value="2">Opción 2</option>
+                            <option value="3">Opción 3</option>
+                            <option value="4">Opción 4</option>
+                            <option value="5">Opción 5</option>
+                            <option value="6">Opción 6</option>
+                            <option value="7">Opción 7</option>
+                            <option value="8">Opción 8</option>
+                            <option value="9">Opción 9</option>
+                            <option value="10">Opción 10</option>
+                        </select>
+                        <span class="text_input">Habitaciones</span>
+                    </div>
+                    <div class="inputboxSm">
+                    <select name="huspedes" class="inp">
+                            <option value=""></option>
+                            <option value="1">Opción 1</option>
+                            <option value="2">Opción 2</option>
+                            <option value="3">Opción 3</option>
+                            <option value="4">Opción 4</option>
+                            <option value="5">Opción 5</option>
+                            <option value="6">Opción 6</option>
+                            <option value="7">Opción 7</option>
+                            <option value="8">Opción 8</option>
+                            <option value="9">Opción 9</option>
+                            <option value="10">Opción 10</option>
+                        </select>
+                        <span class="text_input">Huespedes</span>
+                    </div>
+                    <div class="inputbox">
+                        <select name="ninos" class="inp">
+                            <option value=""></option>
+                            <option value="1">Opción 1</option>
+                            <option value="2">Opción 2</option>
+                            <option value="3">Opción 3</option>
+                            <option value="4">Opción 4</option>
+                            <option value="5">Opción 5</option>
+                            <option value="6">Opción 6</option>
+                            <option value="7">Opción 7</option>
+                            <option value="8">Opción 8</option>
+                            <option value="9">Opción 9</option>
+                            <option value="10">Opción 10</option>
+                        </select>
+                        <span class="text_input">Niños</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="mascota" id="mascota" class="inp" placeholder=" " required><br>
+                        <span class="text_input">Mascota</span>
+                    </div>
+                    <div class="inputbox">
+                    <!-- hace consulta con la base de datos y trae las habitaciones -->
+                        <select name="tipohab" id="tipohab" class="inp">
+                            <option value=""></option>
+                        <?php 
+                            include('conexion.php');
+                            $produc="SELECT * FROM habitaciones";
+                            $resul=mysqli_query($Conexion,$produc);
+                            while($valores= mysqli_fetch_array($resul)){
+                            echo '<option value="'.$valores['idh'].'">'.$valores['nomh'].'</option>';
+                            }
+                        ?>
+                        </select>
+                        <span class="text_input">Tipo de habitacion</span>
+                    </div>
+                    <input id="bot" type="submit" name="reservar" id="reservar" value="Reservar">
+                    <div class="tc">
+                    <p class=p>Estoy de Acuerdo con los <a href="#">Terminos y Condiciones</a></p><br>
+                    </div>
+                </form> 
+            </section>
+        </article>
         <br>
         <section id="derecha">
                 <!-- es la estructura del contenrdor de la habitacion -->

@@ -73,7 +73,7 @@ a{
     transition: .3s;
 }
 .menu > li:hover > a{
-    color: #4ad4fa;
+    color: #c5a68c;
     transition: all .3s;
 }
 .menuv{
@@ -82,7 +82,7 @@ a{
     display: none;
     list-style: none;
     width: 13%;
-    background-color: #88ccf7;
+    background-color: #c5a68c;
     z-index: 1000;
     transition: all .3s;
 }
@@ -91,7 +91,7 @@ a{
     transition: all .3s;
 }
 .menuv li:hover a{
-    color: #282866;
+    color: #43291F;
 }
 .menuv li a{
     display: block;
