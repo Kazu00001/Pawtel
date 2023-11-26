@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Lista Empleados</title>
-    <link rel="stylesheet" href="empleados.css">
+ 
     <link rel="stylesheet" href="admin_bar_foot.css">
     <link rel="stylesheet" href="reservas-css.css">
     
