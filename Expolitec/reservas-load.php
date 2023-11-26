@@ -62,7 +62,7 @@ if ($num_rows > 0) {
         </script>
         </button>'
         ;
-        echo '<td> <a href="">Eliminar</a></td>';
+        echo '<td> <a href="">Editar</a></td>';
         echo '</tr>';
     }
 } else {
