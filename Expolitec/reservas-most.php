@@ -71,6 +71,7 @@
                     <th>Nombre targeta</th>
                     <th>Numero de targeta</th>
                     <th>Fecha vencimiento targeta</th>
+                    <th colspan="2">Otras</th>
                     </thead>
                     <tbody id="content_invent"></tbody>
                 <script>
