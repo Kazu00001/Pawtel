@@ -14,13 +14,13 @@
     // Verifica si el archivo es una imagen
 if (isset($_FILES["image"])) {
     $image = basename($_FILES["image"]["name"]);
-    $targetDirectory = "C:\wamp64\www\Pawtel\Expolitec\emp";  // Ajusta la ruta al directorio correcto
+    $targetDirectory = "C:/wamp64/www/Pawtel/Expolitec/emp/";  // Ajusta la ruta al directorio correcto
     $targetFile = $targetDirectory . $image;  // Ruta completa del archivo
 
     $esImagen = getimagesize($_FILES["image"]["tmp_name"]);
     if ($esImagen !== false) {
         // Mueve el archivo a la ubicación deseada
-        if (move_uploaded_file($_FILES["archivo"]["tmp_name"], $targetFile)) {
+        if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile)) {
             echo "El archivo $image ha sido subido correctamente.";
         } else {
             echo "Hubo un error al subir el archivo.";
