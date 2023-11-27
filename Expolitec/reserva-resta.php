@@ -18,8 +18,8 @@ if (!isset($_SESSION['loggedin'])) {
     <link rel="stylesheet" href="barra_nav_foot.css">
     <title>Pawtel</title>
 </head>
-<body>
-<header>
+    <body>
+        <header>
             <article id="titfo">
                 <section id="titC">
                     <br>
@@ -28,15 +28,14 @@ if (!isset($_SESSION['loggedin'])) {
                 <section id="barNav">
                 <nav class="nave">
                     <ul class="menu">
-                        <li><a href="inicio.php">Inicio</a></li>
-                        <li><a href="#">Paquetes</a></li>
-                        <li><a href="#">Servicios</a>
+                        <li class="men"><a href="inicio.php">Inicio</a></li>
+                        <li class="men"><a href="#">Servicios</a>
                             <div class="topM"></div>
                             <ul class="menuv">
                                 <li class="list"><a href="cafeteria.php">Cafeteria</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Reservaciones</a>
+                        <li class="men"><a href="#">Reservaciones</a>
                             <div class="topM"></div>
                             <ul class="menuv">
                                 <li class="list"><a href="reservas.php">Reserva Hotel</a></li>
@@ -85,4 +84,5 @@ if (!isset($_SESSION['loggedin'])) {
         </section>
     </main>
 </body>
+<script src="barr.js"></script>
 </html>

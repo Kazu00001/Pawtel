@@ -12,7 +12,7 @@ html, body{
     position: fixed;
     top: 0;
     width: 0%;
-    background-color: grey;
+    background-color: #43291F;;
     height: 1em;
 
     animation: progre-g auto linear;

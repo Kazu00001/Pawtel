@@ -115,3 +115,17 @@ a{
     height: 1vh;
 }
 
+.men a {
+    color: #FFFFFF; /* Color predeterminado */
+    /* Otros estilos ... */
+}
+
+.men.scrolled a {
+    color: #43291F; /* Color cuando se ha desplazado */
+}
+
+.men a:hover,
+.men.scrolled a:hover {
+    color: white;
+    transition: all .3s;
+}
