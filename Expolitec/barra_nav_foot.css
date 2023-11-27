@@ -6,7 +6,7 @@ header{
     display: flex;
     background-color: #43291F;
     z-index: 1;
-    /*#B58463*/
+    
 }
 #titfo{
     width: 100%;
@@ -17,11 +17,12 @@ header{
     width: 25%;
     height: 100%;
     float: left;
+    display: flex;
+    align-items: center;
 }
 #tit{
-    margin-left: 10%;
-    margin-top: 1%;
-    font-size: 5vw;
+    margin-left: 4vw;
+    font-size: 4vw;
     color: white;
     font-family: 'Hammersmith One', sans-serif;
 }
@@ -31,6 +32,8 @@ header{
     float: left;
     text-align: center;
     font-size: small;
+    display: flex;
+    align-items: center;
 
 }
 #perfil{
@@ -54,9 +57,10 @@ a{
 .nave{
     width: 100%;
     margin: auto;
-    margin-top: 8vh;
     font-family: 'Hammersmith One', sans-serif;
     transition: .3s;
+    display: flex;
+    align-items: center;
 }
 .menu{
     width: 100%;
@@ -65,6 +69,8 @@ a{
     display: flex;
     justify-content: space-around;
     transition: .3s;
+    display: flex;
+    align-items: center;
 }
 .menu > li > a{
     height: 100%;
