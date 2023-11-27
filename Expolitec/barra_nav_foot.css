@@ -2,7 +2,10 @@ header{
     width: 100%;
     height: 20vh;
     float: left;
+    position: fixed;
+    display: flex;
     background-color: #43291F;
+    z-index: 1;
     
 }
 #titfo{
@@ -106,22 +109,9 @@ a{
     height: 5vh;
     align-items: center;
 }
-footer{
-    width: 100%;
-    height: 20vh;
-    float: left;
-    margin-top: 5vh;
-    background-color: #43291F;
-}
+
 .topM{
     width: 100%;
     height: 1vh;
-    background-color: #43291F;
-}
-footer{
-    width: 100%;
-    height: 20vh;
-    float: left;
-    margin-top: 5vh;
     background-color: #43291F;
 }

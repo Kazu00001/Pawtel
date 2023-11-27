@@ -236,7 +236,26 @@
             <section class="conbut">
                     <button class="but" onclick='ress()'><span>Reserva Ahora</span></button>
                 </section>
-            <footer></footer>
+            <footer>
+                <section id="aviso">
+                    <span id="av">
+                        PawTel no realiza activamente llamadas para ofrecer/vender vacaciones. Tampoco pide a través de SMS o de las redes sociales datos bancarios, tarjetas de crédito, clave NIP, <br>
+                        contraseñas o datos sensibles de cualquier tipo. Si necesitas aclarar cualquier duda, puedes contactar con el Call Center en 800 225 5748.
+                    </span>
+                </section>
+                <section id="logo">
+                    <h1 id="log">PawTel</h1>
+                    <p id="lo">© Reservation Shop S.L.U - I-AV-0000886.1· NIF B35978311·<br>
+                        Declaración de Privacidad Términos y Condiciones Política de Cookies</p>
+                </section>
+                <section id="redes">
+                    <a href="#"><img src="imgs/instagram.png" class="ic"></a>
+                    <a href="#"><img src="imgs/twitter.png" class="ic"></a>
+                    <a href="#"><img src="imgs/facebook.png" class="ic"></a>
+                    <a href="#"><img src="imgs/youtube.png" class="ic"></a>
+                </section>
+                
+            </footer>
         </main>
     </body>
     <script>
