@@ -7,42 +7,6 @@ html,body{
     height: 100%;
     background-color: #F3E9DC;
 }
-.publicidad{
-    width: 96%;
-    height: 35%;
-    float: left;
-    margin-left: 2%;
-    margin-top: 10vw;
-    overflow: hidden;
-    position: relative;
-}
-.carruseles{
-    width: 400%;
-    height: 100%;
-    display: flex;
-}
-.slider-carrusel{
-    width: calc(100% / 4);
-}
-.slider-carrusel img{
-    width: 100%;
-    position: center top 50%;
-    object-fit: cover;
-    animation: slide 15s infinite cubic-bezier(0.55, 0.48, 0.37, 0.92);
-}
-@keyframes slide{
-    0%{margin-left: 0;}
-    20%{margin-left: 0;}
-
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
-}
 img{
     width: 100%;
     height: 100%;
@@ -53,107 +17,158 @@ main{
     float: left;
     background-color: #F3E9DC;
 }
-.cont{
-    margin-top: 1%;
-    margin-left: 28%;
-    height: 71%;
-    width: 45%;
-    float: left;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px black;
-    background-color: whitesmoke;
-    position: relative;
-}
-.form{
+#cont1{
+    width: 40%;
     height: 100%;
-    width: 56%;
-    margin-top: 4%;
-    margin-left: 22%;
-    position: relative;
-    
+    margin-top: 15vh;
+    float: left;
+    background-size: cover;
+    background-image: url(imgs/restaurante.jpg);
 }
-form{
-    color: grey;
-    margin-left: 2%;
-    margin-top: 2%;
-    position: relative;
-} 
-label{
-    font-size: 30px;
+#cont2{
+    width: 60%;
+    height: 100%;
+    margin-top: 15vh;
+    float: left;
+    background-color: #F3E9DC;
 }
-/*.inputs{
+#container_add{
+    width: 50vw;
+    min-height: 80vh;
+    float: left;
+    margin-left: 5vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgb(162, 162, 162);
+    text-align: center;
+    overflow: hidden;
+}
+.tit{
+    font-size: 2vw;
+    margin: 2vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.big{ 
+    font-size: 4vw;
+}
+#left{
+    width: 40%;
+    min-height: 87.9vh;
+    float: left;
+    background-image: linear-gradient(#c5a68c,#B58463);
+    display: flex;
+    align-items: center;
+    object-position: center;
+    object-fit: cover;
+}
+#add_info{
+    width: 60%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.inputbox{
+    position: relative;
+    width: 70%;
+    height: 5vh;
+    margin-left: 15%;
+    background-color: brown;
+    box-sizing: border-box;
+    margin-top: 1vw;
+    border-radius: 5px;
+}
+.avis{
+    color: rgb(167, 163, 163);
+    position: relative;
+    width: 70%;
+    height: 5vh;
+    margin-left: 15%;
+    box-sizing: border-box;
+    margin-top: 1vw;
+    border-radius: 5px;
+}
+.inputbox .inp{
+    background-color: whitesmoke;
     width: 100%;
-    height: 40px;
-    border: 0;
-    border-bottom: 2px solid gray;
+    height: 100%;
     outline: 0;
-    font-size: 1.3rem;
-    background: transparent;
-    transition: border-color 0.2s;
-}*/
-
-.inputs {
-  font-family: inherit;
-  width: 100%;
-  border: 0;
-  border-bottom: 2px solid #9b9b9b;
-  outline: 0;
-  font-size: 1.3rem;
-  color: black;
-  padding: 7px 0;
-  background: transparent;
-  transition: border-color 0.2s;
-
-  &::placeholder {
-    color: transparent;
-  }
-
-  &:placeholder-shown ~ .form__label {
-    font-size: 1.3rem;
-    cursor: text;
-    top: 20px;
-  }
+    border: 0;
+    padding-left: 5px;
+    border: 1px solid rgb(176, 176, 176);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
 }
-
-.form__label {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 1rem;
-  color: black;
+.inputbox .text_input{
+    position: absolute;
+    background-color: whitesmoke;
+    float: left;
+    top: 25%;
+    left: 5px;
+    color: rgb(182, 182, 182);
+    font-size: 1vw;
+    transition: .3s;
+    pointer-events: none;
 }
-
-.inputs:focus {
-  ~ .form__label {
+.inputbox .inp:focus ~ .text_input,
+.inputbox .inp:valid ~ .text_input{
+    color: #c5a68c;
+    top: -20%;
+    font-size: small;
+}
+.inputbox .inp:placeholder-shown + .text_input{
+    top: -20%;
+    font-size: 0.9em;
+}
+#bot{
+    background-color: #43291F;
+    width: 70%;
+    height: 5vh;
+    color: whitesmoke;
+    border: 0;
+    padding-left: 5px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 5vw;
+}
+#bot:hover{
+    box-shadow: 0 0 5px 2px rgb(190, 190, 190);
+}
+.inputFile{
+    position: relative;
+    width: 10vw;
+    height: 5vh;
+    margin-left: 15%;
+    background-color: rgb(76, 148, 189);
+    box-sizing: border-box;
+    margin-top: 1vw;
+    border-radius: 5px;
+    text-align: center;
+}
+.inputFile:hover{
+    box-shadow: 0 0 5px 2px rgb(190, 190, 190);
+}
+.text_inputFile{
+    position: absolute;
+    float: left;
+    top: 25%;
+    text-align: center;
+    left: 1vw;
+    color: white;
+    font-size: 1vw;
+    transition: .3s;
+    pointer-events: none;
+}
+.inpFile{
     position: absolute;
     top: 0;
-    display: block;
-    transition: 0.2s;
-    font-size: 1rem;
-    color: brown;
-    font-weight:700;    
-  }
-  padding-bottom: 6px;  
-  font-weight: 700;
-  border-width: 3px;
-  border-image: linear-gradient(to right, chocolate,brown);
-  border-image-slice: 1;
-}
-/* reset input */
-.inputs{
-  &:required,&:invalid { box-shadow:none; }
-}
-p{
-    font-size: 20px;
-}
-.reservar{
-    width: 70%;
-    height: 40px;
-    border-radius: 15px;
-    font-size: 25px;
-    background-color: #8D7272;
-    color: whitesmoke;
-    text-shadow: 0 1px 1px black;
-    font-weight: bold;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
 }
