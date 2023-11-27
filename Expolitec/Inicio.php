@@ -5,6 +5,7 @@
         <Title>Inicio</Title>
         <link rel="stylesheet" href="inicio.css">
         <link rel="stylesheet" href="barra_nav_foot.css">
+        <link rel="stylesheet" href="barr.js">
     </head>
     <body>
     <header>
@@ -264,4 +265,5 @@
         }
         
     </script>
+    <script src="barr.js"></script>
 </html>
