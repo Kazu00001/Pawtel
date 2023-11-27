@@ -4,24 +4,57 @@
     font-family: 'Hammersmith One', sans-serif;
 }
 body{
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(236, 236, 236);
     min-height: 97vh;
 
+}
+main{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 15vh;
 }
 #process{
     width: 100%;
     height: 8vh;
     float: left;
-    background-color: rgb(172, 169, 169);
+    background-color: rgb(196, 196, 196);
+    position: fixed;
+    display: flex;
+}
+.step{
+    width: 33.3333%;
+    height: 100%;
+    float: left;
+    border-left: 1px solid gray;
+    display: flex;
+    align-items: center;
+}
+.select{
+    width: 33.3333%;
+    height: 100%;
+    float: left;
+    background-color: gray;
+    border-left: 1px solid gray;
+    display: flex;
+    align-items: center;
+}
+.tit_process{
+    margin: auto;
+    font-size: 2vw;
 }
 #left{
     width: 25%;
-    height: 77vh;
+    height: 76.9vh;
     float: left;
     display: flex;
     align-items: center;
     border-bottom: 1px solid gainsboro;
-    background-color: white;
+    background-color: rgb(216, 216, 216);
+    position: fixed;
+    display: flex;
+    margin-top: 8vh;
+    /*border-right: 1px solid gray;*/
 }
 #container_filter{
     width: 90%;
@@ -29,7 +62,6 @@ body{
     float: left;
     background-color: white;
     margin-left: 5%;
-    border: 1px solid rgb(158, 158, 158);
     border-radius: 5px;
 }
 
@@ -160,6 +192,8 @@ body{
     height: auto;
     float: left;
     text-align: center;
+    margin-left: 25%;
+    margin-top: 8vh;
 }
 .container_room{
     width: 70vw;
@@ -176,6 +210,9 @@ body{
     height: 20vw;
     float: left;
     background-color: gray;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 .info_room{
     width: 45vw;
@@ -187,4 +224,8 @@ body{
     min-height: 4vw;
     float: left;
     background-color: rgb(201, 201, 201);
+}
+.img{
+    width: 100%;
+    height: auto;
 }
