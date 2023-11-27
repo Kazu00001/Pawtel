@@ -17,15 +17,15 @@
                 <section id="barNav">
                 <nav class="nave">
                     <ul class="menu">
-                        <li><a href="inicio.php">Inicio</a></li>
-                        <li><a href="#">Paquetes</a></li>
-                        <li><a href="#">Servicios</a>
+                        <li id="men"><a href="inicio.php">Inicio</a></li>
+                        <li id="men"><a href="#">Paquetes</a></li>
+                        <li id="men"><a href="#">Servicios</a>
                             <div class="topM"></div>
                             <ul class="menuv">
                                 <li class="list"><a href="cafeteria.php">Cafeteria</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Reservaciones</a>
+                        <li id="men"><a href="#">Reservaciones</a>
                             <div class="topM"></div>
                             <ul class="menuv">
                                 <li class="list"><a href="reservas.php">Reserva Hotel</a></li>
@@ -250,7 +250,7 @@
                         Declaración de Privacidad Términos y Condiciones Política de Cookies</p>
                 </section>
                 <section id="redes">
-                    <a href="#"><img src="imgs/instagram.png" class="ic"></a>
+                    <a href="https://www.instagram.com/thv/?hl=es"><img src="imgs/instagram.png" class="ic"></a>
                     <a href="#"><img src="imgs/twitter.png" class="ic"></a>
                     <a href="#"><img src="imgs/facebook.png" class="ic"></a>
                     <a href="#"><img src="imgs/youtube.png" class="ic"></a>
@@ -266,4 +266,4 @@
         
     </script>
     <script src="barr.js"></script>
-</html>
+</html> 
