@@ -1,0 +1,154 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Hammersmith One', sans-serif;
+}
+body{
+    background-color: white;
+    min-height: 97vh;
+
+}
+#left{
+    width: 25%;
+    height: 80vh;
+    float: left;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    align-items: center;
+}
+#right{
+    width: 75%;
+    height: 280vh;
+    float: left;
+}
+#container_filter{
+    width: 90%;
+    height: auto;
+    float: left;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 3px  rgb(184, 184, 184);
+}
+
+.inputbox{
+    position: relative;
+    width: 90%;
+    height: 7vh;
+    margin-left: 5%;
+    float: left;
+    background-color: brown;
+    box-sizing: border-box;
+    margin-top: 1vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.inputbox .inp{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    padding-left: 5px;
+    border: 1px solid rgb(176, 176, 176);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+}
+.inputbox .text_input{
+    position: absolute;
+    background-color: white;
+    float: left;
+    left: 5px;
+    color: rgb(182, 182, 182);
+    font-size: 1vw;
+    transition: .3s;
+    pointer-events: none;
+}
+.inputbox .inp:focus ~ .text_input,
+.inputbox .inp:valid ~ .text_input{
+    color: #43291F;
+    top: -20%;
+    font-size: small;
+}
+.inputbox .inp:placeholder-shown + .text_input{
+    top: -20%;
+    font-size: 0.9em;
+}
+/*-----------------------------------------------------------------------------*/
+.inputboxSm{
+    position: relative;
+    width: 42.5%;
+    height: 7vh;
+    margin-left: 5%;
+    float: left;
+    background-color: brown;
+    box-sizing: border-box;
+    margin-top: 1vw;
+    border-radius: 5px;
+}
+.inputboxSm .inp{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    padding-left: 5px;
+    border: 1px solid rgb(176, 176, 176);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+}
+.inputboxSm .text_input{
+    position: absolute;
+    background-color: white;
+    float: left;
+    top: 25%;
+    left: 5px;
+    color: rgb(182, 182, 182);
+    font-size: 1vw;
+    transition: .3s;
+    pointer-events: none;
+}
+.inputboxSm .inp:focus ~ .text_input,
+.inputboxSm .inp:valid ~ .text_input{
+    color: #43291F;
+    top: -20%;
+    font-size: small;
+}
+.inputboxSm .inp:placeholder-shown + .text_input{
+    top: -20%;
+    font-size: 0.9em;
+}
+
+#bot{
+    background-color: #43291F;
+    width: 90%;
+    height: 7vh;
+    color: whitesmoke;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    float: left;
+}
+#bot:hover{
+    box-shadow: 0 0 5px 2px rgb(190, 190, 190);
+}
+.text{
+    margin-left: 6%;
+    margin-top: 5%;
+    font-size: 3vw;
+    color: gray;
+}
+.line{
+    width: 90%;
+    margin-left: 5%;
+    color: gray;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
