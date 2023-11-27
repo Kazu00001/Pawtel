@@ -51,8 +51,8 @@
             <section id="container_filter">
                 <p class="text">Busqueda <br><hr class="line"></p>
                 <form action="#" method="post">
-                    <input class=controles type="hidden" name="nombre" value="<?php echo  $_SESSION['name'] ?>">
-                    <input class=controles type="hidden" name="correo" value="<?php echo $_SESSION['email'] ?>">
+                    <input class=controles type="hidden" name="nombre" value="">
+                    <input class=controles type="hidden" name="correo" value="">
                     <div class="inputbox">
                         <input type="date" name="icioestan" id="icioestan" class="inp" placeholder=" " required><br>
                         <span class="text_input">Fecha de Entrada</span>
