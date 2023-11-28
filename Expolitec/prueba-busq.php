@@ -30,7 +30,6 @@ $resultado_habitaciones = $Conexion->query($consulta_habitaciones);
 if ($resultado_habitaciones === false) {
     die("Error en la consulta de habitaciones: " . $Conexion->error);
 }
-echo "Consulta SQL: $consulta_habitaciones";
 
 $num_rows_habitaciones = $resultado_habitaciones->num_rows;
 
