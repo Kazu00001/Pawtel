@@ -1,0 +1,407 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Hammersmith One', sans-serif;
+}
+body{
+    background-color: rgb(236, 236, 236);
+    min-height: 97vh;
+
+}
+main{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 15vh;
+}
+#process{
+    width: 100%;
+    height: 8vh;
+    float: left;
+    background-color: rgb(196, 196, 196);
+    position: fixed;
+    display: flex;
+}
+.step{
+    width: 33.3333%;
+    height: 100%;
+    float: left;
+    border-left: 1px solid gray;
+    display: flex;
+    align-items: center;
+}
+.select{
+    width: 33.3333%;
+    height: 100%;
+    float: left;
+    background-color: gray;
+    border-left: 1px solid gray;
+    display: flex;
+    align-items: center;
+}
+.tit_process{
+    margin: auto;
+    font-size: 2vw;
+}
+#left{
+    width: 50%;
+    height: 76.9vh;
+    float: left;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gainsboro;
+    background-color: rgb(216, 216, 216);
+    position: fixed;
+    display: flex;
+    margin-top: 8vh;
+    /*border-right: 1px solid gray;*/
+}
+#container_filter{
+    width: 90%;
+    height: 60vh;
+    float: left;
+    background-color: white;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+#container_tras{
+    width: 95%;
+    height: 30vh;
+    float: left;
+    background-color: white;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+.inputbox{
+    position: relative;
+    width: 90%;
+    height: 6vh;
+    margin-left: 5%;
+    float: left;
+    background-color: brown;
+    box-sizing: border-box;
+    margin-top: 1vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.inputboxx{
+    position: relative;
+    width: 40%;
+    height: 6vh;
+    margin-left: 5%;
+    float: left;
+    background-color: brown;
+    box-sizing: border-box;
+    margin-top: 1vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.inputboxxx{
+    position: relative;
+    width: 40%;
+    height: 6vh;
+    margin-left: 5%;
+    float: left;
+    background-color: brown;
+    box-sizing: border-box;
+    margin-top: 1vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.inputboxxxx{
+    position: relative;
+    width: 40%;
+    height: 6vh;
+    margin-left: 3%;
+    float: left;
+    background-color: brown;
+    box-sizing: border-box;
+    margin-top: 1vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.inputbox .inp{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    padding-left: 5px;
+    border: 1px solid rgb(176, 176, 176);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+}
+.inputboxx .inpt{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    padding-left: 5px;
+    border: 1px solid rgb(176, 176, 176);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+}
+.inputboxxx .inptt{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    padding-left: 5px;
+    border: 1px solid rgb(176, 176, 176);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+}
+.inputboxxxx .inptt{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    padding-left: 5px;
+    border: 1px solid rgb(176, 176, 176);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+}
+.inputboxxxx .inptt{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    padding-left: 5px;
+    border: 1px solid rgb(176, 176, 176);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+}
+
+
+.inputbox .text_input{
+    position: absolute;
+    background-color: white;
+    float: left;
+    left: 5px;
+    color: rgb(182, 182, 182);
+    font-size: 1vw;
+    transition: .3s;
+    pointer-events: none;
+}
+.inputboxx .text_input{
+    position: absolute;
+    background-color: white;
+    float: left;
+    left: 5px;
+    color: rgb(182, 182, 182);
+    font-size: 1vw;
+    transition: .3s;
+    pointer-events: none;
+}
+
+.inputboxxx .text_input{
+    position: absolute;
+    background-color: white;
+    float: left;
+    left: 5px;
+    color: rgb(182, 182, 182);
+    font-size: 1vw;
+    transition: .3s;
+    pointer-events: none;
+}
+.inputboxxxx .text_input{
+    position: absolute;
+    background-color: white;
+    float: left;
+    left: 5px;
+    color: rgb(182, 182, 182);
+    font-size: 1vw;
+    transition: .3s;
+    pointer-events: none;
+}
+
+
+
+.inputbox .inp:focus ~ .text_input,
+.inputbox .inp:valid ~ .text_input{
+    color: #43291F;
+    top: -20%;
+    font-size: small;
+}
+.inputbox .inp:placeholder-shown + .text_input{
+    top: -20%;
+    font-size: 0.9em;
+}
+
+
+.inputboxx .inpt:focus ~ .text_input,
+.inputboxx .inpt:valid ~ .text_input{
+    color: #43291F;
+    top: -20%;
+    font-size: small;
+}
+.inputboxx .inpt:placeholder-shown + .text_input{
+    top: -20%;
+    font-size: 0.9em;
+}
+
+
+.inputboxxx .inptt:focus ~ .text_input,
+.inputboxxx .inptt:valid ~ .text_input{
+    color: #43291F;
+    top: -20%;
+    font-size: small;
+}
+.inputboxxx .inptt:placeholder-shown + .text_input{
+    top: -20%;
+    font-size: 0.9em;
+}
+
+
+.inputboxxxx .inptt:focus ~ .text_input,
+.inputboxxxx .inptt:valid ~ .text_input{
+    color: #43291F;
+    top: -20%;
+    font-size: small;
+}
+.inputboxxxx .inptt:placeholder-shown + .text_input{
+    top: -20%;
+    font-size: 0.9em;
+}
+/*-----------------------------------------------------------------------------*/
+.inputboxSm{
+    position: relative;
+    width: 40%;
+    height: 6vh;
+    margin-left: 5%;
+    float: left;
+    background-color: brown;
+    box-sizing: border-box;
+    margin-top: 1vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.inputboxSm .inp{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    padding-left: 5px;
+    border: 1px solid rgb(176, 176, 176);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+}
+.inputboxSm .text_input{
+    position: absolute;
+    background-color: white;
+    float: left;
+    top: 25%;
+    left: 5px;
+    color: rgb(182, 182, 182);
+    font-size: 1vw;
+    transition: .3s;
+    pointer-events: none;
+}
+.inputboxSm .inp:focus ~ .text_input,
+.inputboxSm .inp:valid ~ .text_input{
+    color: #43291F;
+    top: -20%;
+    font-size: small;
+}
+.inputboxSm .inp:placeholder-shown + .text_input{
+    top: -20%;
+    font-size: 0.9em;
+}
+
+#bot{
+    background-color: #43291F;
+    width: 90%;
+    height: 7vh;
+    color: whitesmoke;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    float: left;
+}
+#bot:hover{
+    box-shadow: 0 0 5px 2px rgb(190, 190, 190);
+}
+.text{
+    margin-left: 6%;
+    margin-top: 5%;
+    font-size: 3vw;
+    color: gray;
+}
+.textt{
+    margin-left: 6%;
+    margin-top: 2%;
+    font-size: 1.5vw;
+    color: gray;
+}
+.line{
+    width: 90%;
+    margin-left: 5%;
+    color: gray;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+/*--Contenedor de Habitaciones---------------------------------------------------------------------------------*/
+
+#right{
+    width: 40%;
+    height: auto;
+    float: right;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 15vh;
+    background-color: blue;
+}
+.container_room{
+    width: 70vw;
+    min-height: 20vw;
+    float: left;
+    margin-left: 3%;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 1vw;
+    overflow: hidden;
+}
+.c_image{
+    width: 25vw;
+    height: 20vw;
+    float: left;
+    background-color: gray;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.info_room{
+    width: 45vw;
+    min-height: 16vw;
+    float: left;
+}
+.c_reserve{
+    width: 45vw;
+    min-height: 4vw;
+    float: left;
+    background-color: rgb(201, 201, 201);
+}
+.img{
+    width: auto;
+    height: 100%;
+}
