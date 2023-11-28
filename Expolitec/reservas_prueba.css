@@ -21,6 +21,7 @@ main{
     background-color: rgb(196, 196, 196);
     position: fixed;
     display: flex;
+    z-index: 1;
 }
 .step{
     width: 33.3333%;
