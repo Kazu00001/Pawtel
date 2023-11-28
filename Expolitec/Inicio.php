@@ -17,14 +17,15 @@
                 <section id="barNav">
                 <nav class="nave">
                     <ul class="menu">
-                        <li class="men"><a href="inicio.php">Inicio</a></li>
-                        <li class="men"><a href="#">Servicios</a>
+                        <li><a href="inicio.php">Inicio</a></li>
+                        <li><a href="#">Paquetes</a></li>
+                        <li><a href="#">Servicios</a>
                             <div class="topM"></div>
                             <ul class="menuv">
                                 <li class="list"><a href="cafeteria.php">Cafeteria</a></li>
                             </ul>
                         </li>
-                        <li class="men"><a href="#">Reservaciones</a>
+                        <li><a href="#">Reservaciones</a>
                             <div class="topM"></div>
                             <ul class="menuv">
                                 <li class="list"><a href="reservas.php">Reserva Hotel</a></li>
@@ -249,11 +250,10 @@
                         Declaración de Privacidad Términos y Condiciones Política de Cookies</p>
                 </section>
                 <section id="redes">
-                    <a href="https://www.instagram.com/thv/?hl=es" target="_blank" rel="noopener noreferrer"><img src="imgs/instagram.png" class="ic"></a>
-                    <a href="https://twitter.com/bts_bighit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer"><img src="imgs/twitter.png" class="ic"></a>
-                    <a href="https://www.facebook.com/share/v/vE8F3jJBMivuGgHa/?mibextid=WC7FNe" target="_blank" rel="noopener noreferrer"><img src="imgs/facebook.png" class="ic"></a>
-                    <a href="https://www.youtube.com/watch?v=0lapF4DQPKQ" target="_blank" rel="noopener noreferrer"><img src="imgs/youtube.png" class="ic"></a>
-                    <a href="https://vm.tiktok.com/ZM6e1cn55/" target="_blank" rel="noopener noreferrer"><img src="imgs/tiktok.png" class="ic"></a>
+                    <a href="#"><img src="imgs/instagram.png" class="ic"></a>
+                    <a href="#"><img src="imgs/twitter.png" class="ic"></a>
+                    <a href="#"><img src="imgs/facebook.png" class="ic"></a>
+                    <a href="#"><img src="imgs/youtube.png" class="ic"></a>
                 </section>
                 
             </footer>
@@ -266,4 +266,4 @@
         
     </script>
     <script src="barr.js"></script>
-</html> 
+</html>

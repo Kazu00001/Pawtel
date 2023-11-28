@@ -5,6 +5,7 @@
     <title>Reservas</title>
     <link rel="stylesheet" href="barra_nav_foot.css">
     <link rel="stylesheet" href="reservas_prueba.css">
+    <script type="text/javascript" src="barr.js"></script>
 </head>
 <body>
     <header>
@@ -42,14 +43,16 @@
     </header>
     <main>
         <article id="process">
-            <section></section>
+            <section class="select"> <p class="tit_process">Buscar habitacion</p></section>
+            <section class="step"> <p class="tit_process">Reserva</p></section>
+            <section class="step"><p class="tit_process">Paga</p></section>
         </article>
         <article id="left">
             <section id="container_filter">
                 <p class="text">Busqueda <br><hr class="line"></p>
                 <form action="#" method="post">
-                    <input class=controles type="hidden" name="nombre" value="<?php echo  $_SESSION['name'] ?>">
-                    <input class=controles type="hidden" name="correo" value="<?php echo $_SESSION['email'] ?>">
+                    <input class=controles type="hidden" name="nombre" value="">
+                    <input class=controles type="hidden" name="correo" value="">
                     <div class="inputbox">
                         <input type="date" name="icioestan" id="icioestan" class="inp" placeholder=" " required><br>
                         <span class="text_input">Fecha de Entrada</span>
@@ -117,6 +120,28 @@
         </article>
         <article id="right">
             <br>
+            <section class="container_room">
+                <div class="c_image">
+                    <img src="../Expolitec/rooms/room1.jpg"  class="img">
+                </div>
+                <div class="info_room">
+
+                </div>
+                <div class="c_reserve">
+                    
+                </div>
+            </section>
+            <section class="container_room">
+                <div class="c_image">
+
+                </div>
+                <div class="info_room">
+
+                </div>
+                <div class="c_reserve">
+                    
+                </div>
+            </section>
             <section class="container_room">
                 <div class="c_image">
 
