@@ -68,40 +68,6 @@
             </section>
         </article>
         <article id="right">
-            <br>
-            <section class="container_room">
-                <div class="c_image">
-                    <img src="../Expolitec/rooms/room1.jpg"  class="img">
-                </div>
-                <div class="info_room">
-
-                </div>
-                <div class="c_reserve">
-                    
-                </div>
-            </section>
-            <section class="container_room">
-                <div class="c_image">
-
-                </div>
-                <div class="info_room">
-
-                </div>
-                <div class="c_reserve">
-                    
-                </div>
-            </section>
-            <section class="container_room">
-                <div class="c_image">
-
-                </div>
-                <div class="info_room">
-
-                </div>
-                <div class="c_reserve">
-                    
-                </div>
-            </section>
             <script>
                 document.addEventListener("DOMContentLoaded", getData);
 
