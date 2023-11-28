@@ -44,7 +44,7 @@ main{
     font-size: 2vw;
 }
 #left{
-    width: 25%;
+    width: 50%;
     height: 76.9vh;
     float: left;
     display: flex;
@@ -58,7 +58,15 @@ main{
 }
 #container_filter{
     width: 90%;
-    height: auto;
+    height: 60vh;
+    float: left;
+    background-color: white;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+#container_tras{
+    width: 95%;
+    height: 30vh;
     float: left;
     background-color: white;
     margin-left: 5%;
@@ -70,6 +78,45 @@ main{
     width: 90%;
     height: 6vh;
     margin-left: 5%;
+    float: left;
+    background-color: brown;
+    box-sizing: border-box;
+    margin-top: 1vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.inputboxx{
+    position: relative;
+    width: 40%;
+    height: 6vh;
+    margin-left: 5%;
+    float: left;
+    background-color: brown;
+    box-sizing: border-box;
+    margin-top: 1vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.inputboxxx{
+    position: relative;
+    width: 40%;
+    height: 6vh;
+    margin-left: 5%;
+    float: left;
+    background-color: brown;
+    box-sizing: border-box;
+    margin-top: 1vw;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.inputboxxxx{
+    position: relative;
+    width: 40%;
+    height: 6vh;
+    margin-left: 3%;
     float: left;
     background-color: brown;
     box-sizing: border-box;
@@ -90,6 +137,56 @@ main{
     position: relative;
     border-radius: 5px;
 }
+.inputboxx .inpt{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    padding-left: 5px;
+    border: 1px solid rgb(176, 176, 176);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+}
+.inputboxxx .inptt{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    padding-left: 5px;
+    border: 1px solid rgb(176, 176, 176);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+}
+.inputboxxxx .inptt{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    padding-left: 5px;
+    border: 1px solid rgb(176, 176, 176);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+}
+.inputboxxxx .inptt{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    padding-left: 5px;
+    border: 1px solid rgb(176, 176, 176);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+}
+
+
 .inputbox .text_input{
     position: absolute;
     background-color: white;
@@ -100,6 +197,40 @@ main{
     transition: .3s;
     pointer-events: none;
 }
+.inputboxx .text_input{
+    position: absolute;
+    background-color: white;
+    float: left;
+    left: 5px;
+    color: rgb(182, 182, 182);
+    font-size: 1vw;
+    transition: .3s;
+    pointer-events: none;
+}
+
+.inputboxxx .text_input{
+    position: absolute;
+    background-color: white;
+    float: left;
+    left: 5px;
+    color: rgb(182, 182, 182);
+    font-size: 1vw;
+    transition: .3s;
+    pointer-events: none;
+}
+.inputboxxxx .text_input{
+    position: absolute;
+    background-color: white;
+    float: left;
+    left: 5px;
+    color: rgb(182, 182, 182);
+    font-size: 1vw;
+    transition: .3s;
+    pointer-events: none;
+}
+
+
+
 .inputbox .inp:focus ~ .text_input,
 .inputbox .inp:valid ~ .text_input{
     color: #43291F;
@@ -110,10 +241,46 @@ main{
     top: -20%;
     font-size: 0.9em;
 }
+
+
+.inputboxx .inpt:focus ~ .text_input,
+.inputboxx .inpt:valid ~ .text_input{
+    color: #43291F;
+    top: -20%;
+    font-size: small;
+}
+.inputboxx .inpt:placeholder-shown + .text_input{
+    top: -20%;
+    font-size: 0.9em;
+}
+
+
+.inputboxxx .inptt:focus ~ .text_input,
+.inputboxxx .inptt:valid ~ .text_input{
+    color: #43291F;
+    top: -20%;
+    font-size: small;
+}
+.inputboxxx .inptt:placeholder-shown + .text_input{
+    top: -20%;
+    font-size: 0.9em;
+}
+
+
+.inputboxxxx .inptt:focus ~ .text_input,
+.inputboxxxx .inptt:valid ~ .text_input{
+    color: #43291F;
+    top: -20%;
+    font-size: small;
+}
+.inputboxxxx .inptt:placeholder-shown + .text_input{
+    top: -20%;
+    font-size: 0.9em;
+}
 /*-----------------------------------------------------------------------------*/
 .inputboxSm{
     position: relative;
-    width: 42.5%;
+    width: 40%;
     height: 6vh;
     margin-left: 5%;
     float: left;
@@ -121,6 +288,8 @@ main{
     box-sizing: border-box;
     margin-top: 1vw;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 .inputboxSm .inp{
     background-color: white;
@@ -157,27 +326,31 @@ main{
 }
 
 #bot{
+    background-color: #43291F;
     width: 90%;
     height: 7vh;
     color: whitesmoke;
     border: 0;
     box-sizing: border-box;
-    background-color: #8a6e63;
     border-radius: 10px;
     margin-left: 5%;
-    margin-top: 3vw;
+    margin-top: 1vw;
     margin-bottom: 2vw;
     float: left;
-    transition: .3s;
 }
 #bot:hover{
     box-shadow: 0 0 5px 2px rgb(190, 190, 190);
-    background-color: #43291F;
 }
 .text{
     margin-left: 6%;
     margin-top: 5%;
     font-size: 3vw;
+    color: gray;
+}
+.textt{
+    margin-left: 6%;
+    margin-top: 2%;
+    font-size: 1.5vw;
     color: gray;
 }
 .line{
@@ -190,12 +363,13 @@ main{
 /*--Contenedor de Habitaciones---------------------------------------------------------------------------------*/
 
 #right{
-    width: 75%;
+    width: 40%;
     height: auto;
-    float: left;
+    float: right;
     text-align: center;
     margin-left: 25%;
-    margin-top: 8vh;
+    margin-top: 15vh;
+    background-color: blue;
 }
 .container_room{
     width: 70vw;
@@ -216,56 +390,18 @@ main{
     display: flex;
     align-items: center;
 }
-.img{
-    width: auto;
-    height: 100%;
-}
 .info_room{
     width: 45vw;
     min-height: 16vw;
     float: left;
-}
-.tit_hb{
-    color: gray;
-    font-size: 4vh;
-    margin-top: 1vw;
-    margin-left: 1vw;
-    text-align: left;
-}
-.desc{
-    font-size: 15px;
-    margin: 1vw;
-    text-align: left;
 }
 .c_reserve{
     width: 45vw;
     min-height: 4vw;
     float: left;
     background-color: rgb(201, 201, 201);
-    text-align: right;
 }
-.bot_reserve{
-    width: 10vw;
-    height: 3vw;
-    margin: .5vw;
-    float: right;
-    background-color: #8a6e63;
-    border: 0cap;
-    color: white;
-    transition: .3s;
-
-}
-.bot_reserve:hover{
-    background-color: #694435;
-}
-.c_precio{
-    width: 10vw;
-    height: 4vw;
-    float: right;
-    display: flex;
-    align-items: center;
-}
-.precio{
-    font-size: 2vw;
-    color: rgb(87, 87, 87);
+.img{
+    width: auto;
+    height: 100%;
 }
