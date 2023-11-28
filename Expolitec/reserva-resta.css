@@ -30,15 +30,16 @@ main{
     height: 100%;
     margin-top: 15vh;
     float: left;
+    margin-bottom: 10vw;
     background-color: #F3E9DC;
 }
 #container_add{
     width: 50vw;
-    min-height: 80vh;
+    min-height: 50vh;
     float: left;
     margin-left: 5vw;
     margin-top: 3vw;
-    margin-bottom: 3vw;
+    margin-bottom: 10vw;
     background-color: whitesmoke;
     border-radius: 5px;
     box-shadow: 0 0 5px 2px rgb(162, 162, 162);
@@ -56,13 +57,14 @@ main{
 }
 #left{
     width: 40%;
-    min-height: 87.9vh;
+    min-height: 75vh;
     float: left;
     background-image: linear-gradient(#c5a68c,#B58463);
     display: flex;
     align-items: center;
     object-position: center;
     object-fit: cover;
+    z-index: 1;
 }
 #add_info{
     width: 60%;

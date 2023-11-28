@@ -5,6 +5,7 @@
         <Title>Inicio</Title>
         <link rel="stylesheet" href="inicio.css">
         <link rel="stylesheet" href="barra_nav_foot.css">
+        <link rel="stylesheet" href="footer.css">
         <link rel="stylesheet" href="barr.js">
     </head>
     <body>
@@ -18,7 +19,6 @@
                 <nav class="nave">
                     <ul class="menu">
                         <li><a href="inicio.php">Inicio</a></li>
-                        <li><a href="#">Paquetes</a></li>
                         <li><a href="#">Servicios</a>
                             <div class="topM"></div>
                             <ul class="menuv">
@@ -237,7 +237,7 @@
             <section class="conbut">
                     <button class="but" onclick='ress()'><span>Reserva Ahora</span></button>
                 </section>
-            <footer>
+                <footer>
                 <section id="aviso">
                     <span id="av">
                         PawTel no realiza activamente llamadas para ofrecer/vender vacaciones. Tampoco pide a través de SMS o de las redes sociales datos bancarios, tarjetas de crédito, clave NIP, <br>
@@ -250,12 +250,12 @@
                         Declaración de Privacidad Términos y Condiciones Política de Cookies</p>
                 </section>
                 <section id="redes">
-                    <a href="#"><img src="imgs/instagram.png" class="ic"></a>
-                    <a href="#"><img src="imgs/twitter.png" class="ic"></a>
-                    <a href="#"><img src="imgs/facebook.png" class="ic"></a>
-                    <a href="#"><img src="imgs/youtube.png" class="ic"></a>
+                    <a href="https://www.youtube.com/watch?v=0lapF4DQPKQ" target="_blank" rel="noopener noreferrer"><img src="imgs/instagram.png" class="ic"></a>
+                    <a href="https://twitter.com/bts_bighit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer"><img src="imgs/twitter.png" class="ic"></a>
+                    <a href="https://www.facebook.com/share/v/vE8F3jJBMivuGgHa/?mibextid=WC7FNe" target="_blank" rel="noopener noreferrer"><img src="imgs/facebook.png" class="ic"></a>
+                    <a href="https://www.youtube.com/watch?v=0lapF4DQPKQ" target="_blank" rel="noopener noreferrer"><img src="imgs/youtube.png" class="ic"></a>
+                    <a href="https://vm.tiktok.com/ZM6e1cn55/" target="_blank" rel="noopener noreferrer"><img src="imgs/tiktok.png" class="ic"></a>
                 </section>
-                
             </footer>
         </main>
     </body>

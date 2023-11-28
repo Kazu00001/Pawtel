@@ -1,10 +1,10 @@
 <?php
-session_start();
+/*session_start();
     if (!isset($_SESSION['loggedin'])) {
 
     header('Location: Login.html');
     exit;
-}
+}*/
 
 ?>
 
@@ -15,14 +15,27 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas</title>
     <link rel="stylesheet" href="pagos.css">
+    <link rel="stylesheet" href="barra_nav_foot.css">
+    <link rel="stylesheet" href="footer.css">
 
 </head>
 <body>
-    <header>
-        <br><br>
-        <h1>Metodo de pago!</h1>
-    </header>
-    <br>
+<header>
+            <article id="titfo">
+                <section id="titC">
+                    <br>
+                    <a href="#"><h1 id="tit">PawTel</h1></a>
+                </section>
+                <section id="barNav">
+                <h1>Metodo de pago</h1>
+            </article>
+        </header>
+  <main>
+    <article id="process">
+            <section class="select"> <p class="tit_process">Buscar habitacion</p><img src="imgs/flecha.png" class="ic"></section>
+            <section class="select"> <p class="tit_process">Reserva</p><img src="imgs/flecha.png" class="ic"></section>
+            <section class="select"><p class="tit_process">Paga</p><img src="imgs/flecha.png" class="ic"></section>
+    </article>
     <div class="modal">
 <form class="form" action="pagos-save.php" method="post">
   <div class="payment--options">
@@ -84,7 +97,7 @@ session_start();
   <div class="credit-card-info--form">
     <div class="input_container">
       <label for="password_field" class="input_label">Nombre completo del titular de la tarjeta</label>
-      <input id="password_field" class="input_field" type="text" name="namet" title="Inpit title" placeholder="Enter your full name">
+      <input id="password_field" class="input_field" type="text" name="namet" title="Inpit title" placeholder="Nombre Completo">
     </div>
     <div class="input_container">
       <label for="password_field" class="input_label">Numeros de la targeta</label>
@@ -93,13 +106,34 @@ session_start();
     <div class="input_container">
       <label for="password_field" class="input_label">Fecha de expiracion / CVV</label>
       <div class="split">
-      <input id="password_field" class="input_field" type="text" name="fechex" title="Expiry Date" placeholder="01/23">
+      <input id="password_field" class="input_field" type="text" name="fechex" title="Expiry Date" placeholder="dd/mm">
       <input id="password_field" class="input_field" type="number" name="cvv" title="CVV" placeholder="CVV">
     </div>
     </div>
   </div>
-    <button class="purchase--btn">Checkout</button>
+    <button class="purchase--btn">Pagar</button>
 </form>
 </div>
+</main>
+<footer>
+                <section id="aviso">
+                    <span id="av">
+                        PawTel no realiza activamente llamadas para ofrecer/vender vacaciones. Tampoco pide a través de SMS o de las redes sociales datos bancarios, tarjetas de crédito, clave NIP, <br>
+                        contraseñas o datos sensibles de cualquier tipo. Si necesitas aclarar cualquier duda, puedes contactar con el Call Center en 800 225 5748.
+                    </span>
+                </section>
+                <section id="logo">
+                    <h1 id="log">PawTel</h1>
+                    <p id="lo">© Reservation Shop S.L.U - I-AV-0000886.1· NIF B35978311·<br>
+                        Declaración de Privacidad Términos y Condiciones Política de Cookies</p>
+                </section>
+                <section id="redes">
+                    <a href="https://www.youtube.com/watch?v=0lapF4DQPKQ" target="_blank" rel="noopener noreferrer"><img src="imgs/instagram.png" class="ic"></a>
+                    <a href="https://twitter.com/bts_bighit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer"><img src="imgs/twitter.png" class="ic"></a>
+                    <a href="https://www.facebook.com/share/v/vE8F3jJBMivuGgHa/?mibextid=WC7FNe" target="_blank" rel="noopener noreferrer"><img src="imgs/facebook.png" class="ic"></a>
+                    <a href="https://www.youtube.com/watch?v=0lapF4DQPKQ" target="_blank" rel="noopener noreferrer"><img src="imgs/youtube.png" class="ic"></a>
+                    <a href="https://vm.tiktok.com/ZM6e1cn55/" target="_blank" rel="noopener noreferrer"><img src="imgs/tiktok.png" class="ic"></a>
+                </section>
+            </footer>
 </body>
 </html>

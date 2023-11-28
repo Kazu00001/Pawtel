@@ -16,6 +16,7 @@ if (!isset($_SESSION['loggedin'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reserva-resta.css">
     <link rel="stylesheet" href="barra_nav_foot.css">
+    <link rel="stylesheet" href="footer.css">
     <title>Pawtel</title>
 </head>
     <body>
@@ -38,7 +39,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <li class="men"><a href="#">Reservaciones</a>
                             <div class="topM"></div>
                             <ul class="menuv">
-                                <li class="list"><a href="reservas.php">Reserva Hotel</a></li>
+                                <li class="list"><a href="reservas_prueba.php">Reserva Hotel</a></li>
                                 <li class="list"><a href="Reserva-resta.php">Reserva Restaurante</a></li>
                             </ul>
                         </li>
@@ -47,7 +48,7 @@ if (!isset($_SESSION['loggedin'])) {
                 </nav>
                 </section>
                 <section id="perfil">
-                    <div id="pic"></div>
+                    <div id="pic"><a href="admin_usser.php">jiji</a></div>
                 </section>
             </article>
         </header>
@@ -104,11 +105,32 @@ if (!isset($_SESSION['loggedin'])) {
                     <input type="submit" value="Reservar" id="bot">
                 </form>
             </article>
-
-        </article> 
+            
+        </article>
+         
         </section>
         </section>
     </main>
+    <footer id="footer">
+                <section id="aviso">
+                    <span id="av">
+                        PawTel no realiza activamente llamadas para ofrecer/vender vacaciones. Tampoco pide a través de SMS o de las redes sociales datos bancarios, tarjetas de crédito, clave NIP, <br>
+                        contraseñas o datos sensibles de cualquier tipo. Si necesitas aclarar cualquier duda, puedes contactar con el Call Center en 800 225 5748.
+                    </span>
+                </section>
+                <section id="logo">
+                    <h1 id="log">PawTel</h1>
+                    <p id="lo">© Reservation Shop S.L.U - I-AV-0000886.1· NIF B35978311·<br>
+                        Declaración de Privacidad Términos y Condiciones Política de Cookies</p>
+                </section>
+                <section id="redes">
+                    <a href="https://www.youtube.com/watch?v=0lapF4DQPKQ" target="_blank" rel="noopener noreferrer"><img src="imgs/instagram.png" class="ic"></a>
+                    <a href="https://twitter.com/bts_bighit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer"><img src="imgs/twitter.png" class="ic"></a>
+                    <a href="https://www.facebook.com/share/v/vE8F3jJBMivuGgHa/?mibextid=WC7FNe" target="_blank" rel="noopener noreferrer"><img src="imgs/facebook.png" class="ic"></a>
+                    <a href="https://www.youtube.com/watch?v=0lapF4DQPKQ" target="_blank" rel="noopener noreferrer"><img src="imgs/youtube.png" class="ic"></a>
+                    <a href="https://vm.tiktok.com/ZM6e1cn55/" target="_blank" rel="noopener noreferrer"><img src="imgs/tiktok.png" class="ic"></a>
+                </section>
+            </footer>
 </body>
 <script src="barr.js"></script>
 </html>
