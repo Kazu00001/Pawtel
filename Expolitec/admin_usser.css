@@ -199,10 +199,12 @@
     flex-direction: column;
     width: 20%;
     height:  200px;
-    background-color: #0D1117;
+    background-color: #43291F;
     justify-content: center;
     border-radius: 15px;
     float: left;
+    margin-top: 300px;
+    back
   }
   .reservaciones{
     color: blue ;
