@@ -157,20 +157,22 @@ main{
 }
 
 #bot{
-    background-color: #43291F;
     width: 90%;
     height: 7vh;
     color: whitesmoke;
     border: 0;
     box-sizing: border-box;
+    background-color: #8a6e63;
     border-radius: 10px;
     margin-left: 5%;
-    margin-top: 1vw;
+    margin-top: 3vw;
     margin-bottom: 2vw;
     float: left;
+    transition: .3s;
 }
 #bot:hover{
     box-shadow: 0 0 5px 2px rgb(190, 190, 190);
+    background-color: #43291F;
 }
 .text{
     margin-left: 6%;
@@ -214,18 +216,56 @@ main{
     display: flex;
     align-items: center;
 }
+.img{
+    width: auto;
+    height: 100%;
+}
 .info_room{
     width: 45vw;
     min-height: 16vw;
     float: left;
+}
+.tit_hb{
+    color: gray;
+    font-size: 4vh;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    text-align: left;
+}
+.desc{
+    font-size: 15px;
+    margin: 1vw;
+    text-align: left;
 }
 .c_reserve{
     width: 45vw;
     min-height: 4vw;
     float: left;
     background-color: rgb(201, 201, 201);
+    text-align: right;
 }
-.img{
-    width: auto;
-    height: 100%;
+.bot_reserve{
+    width: 10vw;
+    height: 3vw;
+    margin: .5vw;
+    float: right;
+    background-color: #8a6e63;
+    border: 0cap;
+    color: white;
+    transition: .3s;
+
+}
+.bot_reserve:hover{
+    background-color: #694435;
+}
+.c_precio{
+    width: 10vw;
+    height: 4vw;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.precio{
+    font-size: 2vw;
+    color: rgb(87, 87, 87);
 }
