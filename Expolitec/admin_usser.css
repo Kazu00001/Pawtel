@@ -211,13 +211,14 @@
     width: 58.5%;
     margin-left: 1%;
     margin-top: 5%;
-    font-size: xx-large;
+    font-size: xx-large; 
+    margin:0%;
   }
   
   .user{
     width: 20%;
     height: 100%;
-    color: #2F81F7;
+    color: gray;
     text-align: center;
     float: right;
     margin-left: 0%;
