@@ -3,6 +3,8 @@ require('conexion.php');
 
 $inicio_estan = isset($_POST['inicioestan']) ? $Conexion->real_escape_string($_POST['inicioestan']) : null;
 $fin_estan = isset($_POST['finestan']) ? $Conexion->real_escape_string($_POST['finestan']) : null;
+echo $inicio_estan;
+echo $fin_estan;
 
 $where = '';
 
@@ -22,7 +24,7 @@ if ($inicio_estan != null && $fin_estan != null) {
 }
 
 
-$consulta_habitaciones = "SELECT id_habitacion,nombre,tipo,precio,descrip,imagen,	 COUNT(*) as cantidad FROM habitaciones3 $where GROUP BY nombre";
+$consulta_habitaciones = "SELECT id_habitacion,nombre,tipo,precio,descrip,imagen,	 COUNT(*) as cantidad FROM habitaciones3 '' GROUP BY nombre";
 
 $Conexion->set_charset("utf8");
 header('Content-Type: text/html; charset=utf-8');
