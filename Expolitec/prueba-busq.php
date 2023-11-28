@@ -21,7 +21,7 @@ if ($inicio_estan != null && $fin_estan != null) {
     )";
 }
 
-$consulta_habitaciones = "SELECT nombre, COUNT(*) as cantidad FROM habitaciones2 $where GROUP BY nombre";
+$consulta_habitaciones = "SELECT nombre,precio, COUNT(*) as cantidad FROM habitaciones2 $where GROUP BY nombre";
 
 $Conexion->set_charset("utf8");
 header('Content-Type: text/html; charset=utf-8');
@@ -36,26 +36,31 @@ $num_rows_habitaciones = $resultado_habitaciones->num_rows;
 if ($num_rows_habitaciones > 0) {
     while ($row_habitacion = $resultado_habitaciones->fetch_assoc()) {
         $nombre_habitacion = $row_habitacion['nombre'];
+        $precio_habitacion = $row_habitacion['precio'];
         $cantidad_habitaciones = $row_habitacion['cantidad'];
 
-        // Ahora, puedes usar $nombre_habitacion y $cantidad_habitaciones para construir tu HTML
         echo '<section class="container_room">';
         echo '<div class="c_image">';
-        echo '<img src="../Expolitec/rooms/room1.jpg" class="img">';
+        echo '<img src="../Expolitec/rooms/room1.jpg"  class="img">';
         echo '</div>';
         echo '<div class="info_room">';
-        echo "<p>$nombre_habitacion</p>";
-        echo "<p>Cantidad disponible: $cantidad_habitaciones</p>";
-        // Imprime más información si es necesario
+        echo '<p class="tit_hb">' . $nombre_habitacion . '</p>'; // Aquí corregí $row['nombre']
+        echo '<p class="desc">Amplias y confortables, estas estancias de 34m2 cuentan con las mejores facilidades para disfrutar de tu estancia en Panamá. Las habitaciones Deluxe te ofrecen zona de estar con sofá, TV satélite, baño con bañera y lavabo doble, aire acondicionado, minibar, máquina de café y conexión WiFi.</p>';
         echo '</div>';
         echo '<div class="c_reserve">';
-        // Aquí puedes incluir el formulario de reserva o cualquier otra información relacionada
+        echo '<form action="" method="post">';
+        echo '<input type="submit" value="Reservar" class="bot_reserve">';
+        echo '</form>';
+        echo '<div class="c_precio">';
+        echo '<p class="precio">$'. $precio_habitacion .'</p>';
+        echo '</div>';
         echo '</div>';
         echo '</section>';
     }
 } else {
     echo '<p>No hay habitaciones disponibles para el rango de fechas seleccionado.</p>';
 }
+
 
 // Cerrar la conexión a la base de datos
 $Conexion->close();
