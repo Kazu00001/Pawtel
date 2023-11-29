@@ -112,7 +112,7 @@
                                 </tr>
                                 <tr>
                                     <td class="tt">
-                                        <a href="cerrar-sesion.php" style="color:white;"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
+                                        <a href="cerrar-sesion.php" style="color:white;" class="aa"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
                                     </td>
                                 </tr>
                                 
