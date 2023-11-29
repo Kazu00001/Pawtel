@@ -109,8 +109,8 @@
                                         </form>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="tt">
+                                <tr class="tt">
+                                    <td >
                                         <a href="cerrar-sesion.php" style="color:white;" class="aa"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
                                     </td>
                                 </tr>
