@@ -97,11 +97,12 @@ img{
     font-size: 70px;
     font-family: 'Hammersmith One', sans-serif;
     color: rgb(99, 99, 99);
+    margin-left: 1vw
 }
 .titet{
-    width: 100%;
     font-size: 30px;
     margin-top: 5vh;
+    margin: 1vw;
     font-family: 'Hammersmith One', sans-serif;
 }
 .habitacion{
@@ -215,7 +216,7 @@ a{
     margin-bottom: 3%;
 }
 .serv{
-    width: 40vh;
+    width: 35vw;
     float: left;
     margin-top: 6vh;
     margin-left: 7%;

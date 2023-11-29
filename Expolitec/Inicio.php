@@ -28,7 +28,7 @@
                         <li><a href="#">Reservaciones</a>
                             <div class="topM"></div>
                             <ul class="menuv">
-                                <li class="list"><a href="reservas.php">Reserva Hotel</a></li>
+                                <li class="list"><a href="reservas_prueba.php">Reserva Hotel</a></li>
                                 <li class="list"><a href="Reserva-resta.php">Reserva Restaurante</a></li>
                             </ul>
                         </li>
@@ -37,7 +37,18 @@
                 </nav>
                 </section>
                 <section id="perfil">
-                    <div id="pic"></div>
+                <nav class="nave">
+                    <ul class="menu">
+                        <li><a href="#"><div id="pic"></div></a>
+                            <div class="topM"></div>
+                            <ul class="menuv">
+                                <li class="list"><a href="#">Perfil</a></li>
+                                <li class="list"><a href="#">Cerrar Sesión</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                    
                 </section>
             </article>
         </header>
@@ -65,12 +76,7 @@
                 <section class="serv">
                     <h1 class="titc">Servicios</h1>
                     <p class="titet">
-                        texto que descriva los servicios
-                        sdddddddddddddd
-                        sddddddddddddddddddddddd
-                        sddddddddddddddddddd
-                        sssssssssvivabtsaaaaaaaaaaaa
-                        aaaaaaaaaaaaaaaa
+                    En nuestras instalaciones, nos dedicamos a ofrecer una experiencia excepcional tanto para nuestros clientes como para sus queridas mascotas, con servicios y espacios diseñados pensando en su bienestar y comodidad.
                     </p>
                 </section>
                 <section id="container-rooms">
@@ -172,12 +178,7 @@
                 <section class="serv">
                     <h1 class="titc">Actividades</h1>
                     <p class="titet">
-                        texto que descriva las actividades
-                        sdddddddddddddd
-                        sddddddddddddddddddddddd
-                        sddddddddddddddddddd
-                        sssssssssvivabtsaaaaaaaaaaaa
-                        aaaaaaaaaaaaaaaa
+                    Contamos con diversas actividades cuidadosamente diseñadas para ofrecer experiencias de calidad, propiciando así momentos enriquecedores tanto para usted como para sus seres queridos, incluyendo a sus mascotas.
                     </p>
                 </section>
                 <p></p>
