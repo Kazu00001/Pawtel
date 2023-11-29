@@ -59,16 +59,19 @@
             <section id="content_invent2">
                 <table>
                     <thead>
-                    <th>Numero de orden</th>
-                    <th>Nombre cliente</th>
-                    <th>Correo</th>
+                    <th>id_reserva</th>
+                    <th>id_habitacion</th>
+                    <th>id_usuario</th>
                     <th>Inicio de estancia</th>
                     <th>Fin de estancia</th>
-                    <th>Habitaciones</th>
-                    <th>Huspedes</th>
-                    <th>Niños</th>
-                    <th>Nombre del paquete</th>
-                    <th>Nombre targeta</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Tipo de habitacion</th>
+                    <th>Email</th>
+                    <th>Telfono</th>
+                    <th>Mascota</th>
+                    <th>No. M</th>
+                    <th>Nombre propetario target</th>
                     <th>Numero de targeta</th>
                     <th>Fecha vencimiento targeta</th>
                     <th colspan="2">Otras</th>
