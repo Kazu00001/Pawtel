@@ -84,7 +84,6 @@
                             <section class="photo"></section>
                             </section>
                             <br>
-                            <p>La siguiente es la información registrada de tu cuenta</p>
 
                             <table>
                                 <tr>
