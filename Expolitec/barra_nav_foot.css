@@ -5,13 +5,14 @@ header{
     position: fixed;
     display: flex;
     background-color: #43291F;
-    z-index: 1;
+    z-index: 100;
     
 }
 #titfo{
     width: 100%;
     height: 100%;
     float: left;
+    transition: background-color 0.3s ease;
 }
 #titC{
     width: 25%;
@@ -25,15 +26,18 @@ header{
     font-size: 4vw;
     color: white;
     font-family: 'Hammersmith One', sans-serif;
+    transition: color 0.3s ease;
 }
 #barNav{
-    width: 45%;
+    width: 40%;
     height: 100%;
     float: left;
     text-align: center;
     font-size: small;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 2;
 
 }
 #perfil{
@@ -90,10 +94,11 @@ a{
     position: absolute;
     display: none;
     list-style: none;
-    width: 13%;
+    width: 35%;
     background-color: #c5a68c;
-    z-index: 1000;
     transition: all .3s;
+    position: absolute;
+    z-index: 200;
 }
 .menu li:hover .menuv{
     display: block;

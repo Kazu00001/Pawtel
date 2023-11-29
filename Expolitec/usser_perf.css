@@ -1,0 +1,60 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Hammersmith One', sans-serif;
+}
+body{
+    background-color: #F3E9DC;
+    min-height: 97vh;
+
+}
+main{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 15vh;
+}
+.left{
+    width: 60%;
+    min-height: 80vh;
+    float: left;
+    background-color: aqua;
+}
+.reser{
+    width: 90%;
+    height: 50%;
+    float: left;
+    background-color: greenyellow;
+}
+#con1{
+    width: 50%;
+    height: 50%;
+    float: left;
+    background-color: blue;
+}
+.line{
+    width: 90%;
+    margin-left: 5%;
+    color: gray;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+#perf {
+    width: 40%;
+    min-height: 80vh;
+    float: left;
+    background-color: blueviolet;
+}
+
+#per {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    background-color: green;
+}
+
+.photo {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: #dddddd;
+}

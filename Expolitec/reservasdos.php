@@ -5,10 +5,10 @@
     <title>Reservas</title>
     <link rel="stylesheet" href="barra_nav_foot.css">
     <link rel="stylesheet" href="reservasdos.css">
-    <script type="text/javascript" src="barr.js"></script>
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
-    <header>
+<header>
             <article id="titfo">
                 <section id="titC">
                     <br>
@@ -43,8 +43,8 @@
         </header>
     <main>
         <article id="process">
-            <section class="select"> <p class="tit_process">Buscar habitacion</p></section>
-            <section class="select"> <p class="tit_process">Reserva</p></section>
+            <section class="select"> <p class="tit_process">Buscar habitacion</p><img src="imgs/flecha.png" class="ic"></section>
+            <section class="select"> <p class="tit_process">Reserva</p><img src="imgs/flecha.png" class="ic"></section>
             <section class="step"><p class="tit_process">Paga</p></section>
         </article>
         <article id="left">
@@ -96,20 +96,68 @@
                     <input id="bot" type="submit" name="reservar" id="reservar" value="Buscar">
 
                 </form> 
+               
             </section>
-
             <section id="container_tras">
-                <p class="text">Servicion de Traslado<br><hr class="line"></p>
+                <p class="teext">Servicion de Traslado<br><hr class="line"></p>
                 <form action="#" method="post">
-                    <input type="checkbox" name="tras" class="inp">
-                    <span class="text_input">Sí, deseo contratar el servicio de traslados</span>
+                    <input type="checkbox" name="tras" class="chec">
+                    <span class="textt">Sí, deseo contratar el servicio de traslados</span>
                 </form> 
             </section>
+            
         </article>
         <article id="right">
-            <br>
+            <section id="contres">
+                <p class="text">Resumen<br><hr class="line"></p>
+                <div class="habpic"></div>
+                <section class="detalles">
+                    <h1 class="texxt">Habitacion:<span class="tod">Todo Incluido</span></h1>
+                    <h1 class="texxt">Fecha de entrada:<span class="tod">Todo Incluido</span></h1>
+                    <h1 class="texxt">Fecha de Salida:<span class="tod">Todo Incluido</span></h1>
+                    <h1 class="texxt">Días de Estadia:<span class="tod">Todo Incluido</span></h1>
+                    <h1 class="texxt">Regimen:<span class="tod">Todo Incluido</span></h1><br>
+                    <!--<section id="container_res">-->
+                        
+                    <!--</section>-->
+                </section>
+                <p class="text"><br><hr class="line"></p>
+                        <p class="rese"><span id="rem">No reembolsable</span> <br>Esta tarifa no admite 
+                            cambios ni devoluciones. En caso de cancelación o de no presentarse el
+                            día de la llegada, no se realizará ningún reembolso.</p>
+                        <section class="conbut">
+                            <button class="but" onclick='ress()'><span>Reservar</span></button>
+                        </section>
+            </section>
             
         </article>
     </main>
+    <footer>
+                <section id="aviso">
+                    <span id="av">
+                        PawTel no realiza activamente llamadas para ofrecer/vender vacaciones. Tampoco pide a través de SMS o de las redes sociales datos bancarios, tarjetas de crédito, clave NIP, <br>
+                        contraseñas o datos sensibles de cualquier tipo. Si necesitas aclarar cualquier duda, puedes contactar con el Call Center en 800 225 5748.
+                    </span>
+                </section>
+                <section id="logo">
+                    <h1 id="log">PawTel</h1>
+                    <p id="lo">© Reservation Shop S.L.U - I-AV-0000886.1· NIF B35978311·<br>
+                        Declaración de Privacidad Términos y Condiciones Política de Cookies</p>
+                </section>
+                <section id="redes">
+                    <a href="https://www.youtube.com/watch?v=0lapF4DQPKQ" target="_blank" rel="noopener noreferrer"><img src="imgs/instagram.png" class="ic"></a>
+                    <a href="https://twitter.com/bts_bighit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noopener noreferrer"><img src="imgs/twitter.png" class="ic"></a>
+                    <a href="https://www.facebook.com/share/v/vE8F3jJBMivuGgHa/?mibextid=WC7FNe" target="_blank" rel="noopener noreferrer"><img src="imgs/facebook.png" class="ic"></a>
+                    <a href="https://www.youtube.com/watch?v=0lapF4DQPKQ" target="_blank" rel="noopener noreferrer"><img src="imgs/youtube.png" class="ic"></a>
+                    <a href="https://vm.tiktok.com/ZM6e1cn55/" target="_blank" rel="noopener noreferrer"><img src="imgs/tiktok.png" class="ic"></a>
+                </section>
+            </footer>
 </body>
+<script>
+        function ress() {
+            location.href ='pagos.php';
+        }
+        
+    </script>
+<script src="barr.js"></script>
 </html>

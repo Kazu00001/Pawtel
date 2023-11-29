@@ -4,7 +4,7 @@
     font-family: 'Hammersmith One', sans-serif;
 }
 body{
-    background-color: rgb(236, 236, 236);
+    background-color: #F3E9DC;
     min-height: 97vh;
 
 }
@@ -21,7 +21,7 @@ main{
     background-color: rgb(196, 196, 196);
     position: fixed;
     display: flex;
-    z-index: 1;
+    z-index: 2;
 }
 .step{
     width: 33.3333%;
@@ -35,7 +35,7 @@ main{
     width: 33.3333%;
     height: 100%;
     float: left;
-    background-color: gray;
+    background-color: #c5a68c;
     border-left: 1px solid gray;
     display: flex;
     align-items: center;
@@ -46,15 +46,16 @@ main{
 }
 #left{
     width: 25%;
-    height: 76.9vh;
+    height: 94vh;
     float: left;
     display: flex;
     align-items: center;
     border-bottom: 1px solid gainsboro;
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(213, 201, 201);
     position: fixed;
     display: flex;
     margin-top: 8vh;
+    z-index: 1;
     /*border-right: 1px solid gray;*/
 }
 #container_filter{
@@ -269,4 +270,13 @@ main{
 .precio{
     font-size: 2vw;
     color: rgb(87, 87, 87);
+}
+footer{
+    z-index: 2;
+    clear: both; /* Asegura que el footer esté debajo del contenido */
+    text-align: center; /* Alinea el texto en el centro */
+    padding: 10px; /* Añade algún espacio interno al footer */
+    background-color: #ccc; /* Color de fondo del footer */
+    position: relative; /* Cambia la posición a relativa */
+    margin-top: 20px;
 }

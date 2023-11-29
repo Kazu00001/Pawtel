@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="admin_usser.css">
-    <link rel="stylesheet" href="barra_nav_foot.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-</head>
-<body>
-<header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="admin_usser.css">
+        <link rel="stylesheet" href="barra_nav_foot.css">
+        <title>Perfil</title>
+    </head>
+    <body>
+        <header>
             <article id="titfo">
                 <section id="titC">
                     <br>
@@ -29,7 +29,7 @@
                         <li><a href="#">Reservaciones</a>
                             <div class="topM"></div>
                             <ul class="menuv">
-                                <li class="list"><a href="reservas.php">Reserva Hotel</a></li>
+                                <li class="list"><a href="reservas_prueba.php">Reserva Hotel</a></li>
                                 <li class="list"><a href="Reserva-resta.php">Reserva Restaurante</a></li>
                             </ul>
                         </li>
@@ -42,7 +42,7 @@
                 </section>
             </article>
         </header>
-
+<main>
       <div class="todo">
         <div class="input">
             <button class="value">
@@ -76,8 +76,8 @@
                     </center>
                 </div>
       </div>
-    
+      </main>
 
 </body>
+<script src="barr.js"></script>
 </html>
-</div>
