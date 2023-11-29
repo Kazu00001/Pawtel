@@ -44,8 +44,11 @@ header{
     width: 20%;
     height: 100%;
     margin-left: 10%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     float: left;
+
 }
 #pic{
     width: 5.5vw;
