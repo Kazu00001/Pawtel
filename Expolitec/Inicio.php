@@ -37,18 +37,7 @@
                 </nav>
                 </section>
                 <section id="perfil">
-                <nav class="nave">
-                    <ul class="menu">
-                        <li><a href="#"><div id="pic"></div></a>
-                            <div class="topM"></div>
-                            <ul class="menuv">
-                                <li class="list"><a href="#">Perfil</a></li>
-                                <li class="list"><a href="#">Cerrar Sesión</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                    
+                <div id="pic"><a href="usser_perf.php"><img src="<?php echo'imgs/'.$_SESSION['img']?>" ></a></div>
                 </section>
             </article>
         </header>

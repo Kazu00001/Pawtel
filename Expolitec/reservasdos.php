@@ -18,7 +18,6 @@
                 <nav class="nave">
                     <ul class="menu">
                         <li><a href="inicio.php">Inicio</a></li>
-                        <li><a href="#">Paquetes</a></li>
                         <li><a href="#">Servicios</a>
                             <div class="topM"></div>
                             <ul class="menuv">
@@ -37,7 +36,7 @@
                 </nav>
                 </section>
                 <section id="perfil">
-                    <div id="pic"></div>
+                    <div id="pic"><img src="<?php echo'imgs/'.$_SESSION['img']?>" ></div>
                 </section>
             </article>
         </header>
