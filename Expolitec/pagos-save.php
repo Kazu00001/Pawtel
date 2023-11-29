@@ -19,7 +19,7 @@ $fechex = isset($_POST['fechex']) ? mysqli_real_escape_string($Conexion, $_POST[
 $posion = isset($_SESSION['email']) ? mysqli_real_escape_string($Conexion, $_SESSION['email']) : '';
 
 // Utiliza un UPDATE para intentar actualizar el registro
-$sql_update = "UPDATE reserva SET Nombre_propetario_target = ?, Numero_de_targeta = ?, Fecha_vencimiento_targeta = ? WHERE correo = ?";
+$sql_update = "UPDATE reservas SET Nombre_propetario_target = ?, Numero_de_targeta = ?, Fecha_vencimiento_targeta = ? WHERE correo = ?";
 
 if ($stmt = mysqli_prepare($Conexion, $sql_update)) {
     mysqli_stmt_bind_param($stmt, "ssss", $nom, $numbertar, $fechex, $posion);
