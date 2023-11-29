@@ -51,7 +51,7 @@
             <section id="container_filter">
                 <p class="text">Ingresa tus datos<br><hr class="line"></p>
                 <p class="textt"> Datos de Contacto</p>
-                <form action="#" method="post">
+                <form action="#" method="post" id="form_rever">
                     <input class=controles type="hidden" name="nombre" value="">
                     <input class=controles type="hidden" name="correo" value="">
                     <div class="inputbox">
@@ -113,13 +113,15 @@
                         </select>
                         <span class="text_input">Numero de Mascotas</span>
                     </div>  
-                    <input id="bot" type="submit" name="reservar" id="reservar" value="Buscar">
+                    <section class="conbut">
+                            <button class="but" onclick='enviarFo()'><span>Reservar</span></button>
+                        </section>
 
                 </form> 
                <script>
-                  function ress() {
-            location.href ='pagos.php';
-        }
+                   function enviarFo() {
+                            document.getElementById('form_rever').submit();
+                        }
 
         
         document.addEventListener("DOMContentLoaded", () => {
