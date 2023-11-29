@@ -62,35 +62,35 @@
                         <input type="date" name="finestan" id="finestan" class="inp" placeholder=" " required><br>
                         <span class="text_input">Fecha de Salida</span>
                     </div>
-                    <div class="inputboxx">
-                        <input type="text" name="nombre" id="mascota" class="inpt" placeholder=" " required><br>
+                    <div class="inputboxSm">
+                        <input type="text" name="nombre" id="mascota" class="inp" placeholder=" " required><br>
                         <span class="text_input">Nombres</span>
                     </div>
 
-                    <div class="inputboxx">
-                        <input type="text" name="apellido" id="mascota" class="inpt" placeholder=" " required><br>
+                    <div class="inputboxSm">
+                        <input type="text" name="apellido" id="mascota" class="inp" placeholder=" " required><br>
                         <span class="text_input">Apellidos</span>
                     </div>
-                    <div class="inputboxx">
-                    <select id="tipoHabitacion" name="tipoHabitacion" class="inp" onchange="getCantidadDisponible()">
-                    <option value="">Seleccione el tipo de habitación</option>
-                        <!-- Las opciones se llenarán con datos obtenidos mediante JavaScript -->
-                    </select>
-                    <span class="text_input">Tipo de Habitación</span>
+                    <div class="inputboxSm">
+                        <select id="tipoHabitacion" name="tipoHabitacion" class="inp" onchange="getCantidadDisponible()">
+                        <option value="">Seleccione el tipo de habitación</option>
+                            <!-- Las opciones se llenarán con datos obtenidos mediante JavaScript -->
+                        </select>
+                        <span class="text_input">Tipo de Habitación</span>
                     </div>
-                    <div class="inputboxx">
-                    <select id="tipoHabitacion2" name="tipoHabitacion2" class="inp" onchange="getCantidadDisponible()">
-                    <option value="">Seleccione la habitacion</option>
-                        <!-- Las opciones se llenarán con datos obtenidos mediante JavaScript -->
-                    </select>
-                    <span class="text_input">Tipo de Habitación</span>
+                    <div class="inputboxSm">
+                        <select id="tipoHabitacion2" name="tipoHabitacion2" class="inp" onchange="getCantidadDisponible()">
+                        <option value="">Seleccione la habitacion</option>
+                            <!-- Las opciones se llenarán con datos obtenidos mediante JavaScript -->
+                        </select>
+                        <span class="text_input">Tipo de Habitación</span>
                     </div>
-                    <div class="inputboxxx">
-                        <input type="email" name="email" id="mascota" class="inptt" placeholder=" " required><br>
+                    <div class="inputboxSm">
+                        <input type="email" name="email" id="mascota" class="inp" placeholder=" " required><br>
                         <span class="text_input">Email</span>
                     </div>
-                    <div class="inputboxxx">
-                        <input type="tel" name="telefono" id="mascota" class="inptt" placeholder=" " required><br>
+                    <div class="inputboxSm">
+                        <input type="tel" name="telefono" id="mascota" class="inp" placeholder=" " required><br>
                         <span class="text_input">Telefono</span>
                     </div>
 

@@ -52,7 +52,7 @@ main{
 }
 #container_filter{
     width: 80%;
-    height: 60vh;
+    min-height: 60vh;
     float: left;
     background-color: white;
     margin-left: 5%;
@@ -283,7 +283,7 @@ main{
     position: relative;
     width: 40%;
     height: 6vh;
-    margin-left: 5%;
+    margin-left: 6.666%;
     float: left;
     background-color: brown;
     box-sizing: border-box;
