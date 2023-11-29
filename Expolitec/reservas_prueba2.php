@@ -62,31 +62,41 @@
                         <span class="text_input">Fecha de Salida</span>
                     </div>
 
-                    <input id="bot" type="submit" name="reservar" id="reservar" value="Buscar">
+                    <input id="bot" type="button" name="reservar" value="Buscar" onclick="getData()">
 
                 </form> 
             </section>
         </article>
         <article id="right">
             <script>
-                document.addEventListener("DOMContentLoaded", getData);
+            function getData() {
+                let input = document.getElementById("icioestan").value;
+                let input2 = document.getElementById("finestan").value;
+                let content = document.getElementById("right");
+                let url = "prueba-busq.php";
+                let formData = new FormData();
+                formData.append('inicioestan', input);
+                formData.append('finestan', input2);
 
-                function getData() {
-                    let input = document.getElementById("icioestan").value;
-                    let content = document.getElementById("right");
-                    let url = "prueba-busq.php";
-                    let formData = new FormData();
-                    formData.append('icioestan', input);
+                fetch(url, {
+                    method: "POST",
+                    body: formData
+                }).then(response => response.text())
+                    .then(data => {
+                        console.log(data);
+                        content.innerHTML = data;
+                    }).catch(err => console.log(err));
+            }
 
-                    fetch(url, {
-                                method: "POST",
-                                body: formData
-                        }).then(response => response.text())
-                            .then(data => {
-                                console.log(data);
-                                content.innerHTML = data;
-                            }).catch(err => console.log(err));
-                }
+            document.addEventListener("DOMContentLoaded", () => {
+                const icioestan = document.getElementById("icioestan");
+                const finestan = document.getElementById("finestan");
+
+                icioestan.addEventListener("change", getData);
+                finestan.addEventListener("change", getData);
+            });
+
+
             </script>
                
             </section>
