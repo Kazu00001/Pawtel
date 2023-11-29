@@ -22,13 +22,8 @@
                 <nav class="nave">
                     <ul class="menu">
                         <li><a href="inicio.php">Inicio</a></li>
-                        <li><a href="#">Paquetes</a></li>
-                        <li><a href="#">Servicios</a>
-                            <div class="topM"></div>
-                            <ul class="menuv">
-                                <li class="list"><a href="cafeteria.php">Cafeteria</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="empleados.php">Empleados</a></li>
+                        <li><a href="inventario-mostr.php">Inventario</a></li>
                         <li><a href="#">Reservaciones</a>
                             <div class="topM"></div>
                             <ul class="menuv">
