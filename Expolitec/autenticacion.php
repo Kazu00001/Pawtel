@@ -30,7 +30,7 @@ if (!isset($_POST['correo'], $_POST['password'])) {
 
 // evitar inyección sql
 
-if ($Result = $Conexion->prepare('SELECT id, cotra, correo, nombres FROM usser WHERE correo = ?')) {
+if ($Result = $Conexion->prepare('SELECT id, cotra, correo, nombres,categorio,foto FROM usser WHERE correo = ?')) {
     // parámetros de enlace de la cadena s
     //s=string i=intenger 
     $Result->bind_param('s', $_POST['correo']);
@@ -44,28 +44,47 @@ if ($Result = $Conexion->prepare('SELECT id, cotra, correo, nombres FROM usser W
 
 $Result->store_result();
 if ($Result->num_rows > 0) {
-    $Result->bind_result($id, $hash_password,$email,$nombres);
+    $Result->bind_result($id, $hash_password,$email,$nombres,$categorio,$foto);
     $Result->fetch();
+    if($categorio==1){
+        if (password_verify($_POST['password'], $hash_password)) {
 
-    // se confirma que la cuenta existe ahora validamos la contraseña
-
-    if (password_verify($_POST['password'], $hash_password)) {
-
-        // la conexion sería exitosa, se crea la sesión
-        
-        session_regenerate_id();
-        $_SESSION['loggedin'] = TRUE;
-        $_SESSION['name'] = $nombres;
-        $_SESSION['id'] = $id;
-        $_SESSION['email']= $email;
-        $_SESSION['foto']= $imagen;
-        header('Location: inicio.php');
-    } else {
-        // contraseña incorrecta
-        echo '<SCRIPT> alert("Tu contraseña es incorecta")</SCRIPT>';
-        header('Location: Login.html');
-        
+            // la conexion sería exitosa, se crea la sesión
+            
+            session_regenerate_id();
+            $_SESSION['loggedin'] = TRUE;
+            $_SESSION['name'] = $nombres;
+            $_SESSION['id'] = $id;
+            $_SESSION['email']= $email;
+            $_SESSION['foto']= $imagen;
+            header('Location: inicio.php');
+        } else {
+            // contraseña incorrecta
+            echo '<SCRIPT> alert("Tu contraseña es incorecta")</SCRIPT>';
+            header('Location: Login.html');
+            
+        }
     }
+    elseif($categorio==2){
+        if (password_verify($_POST['password'], $hash_password)) {
+
+            // la conexion sería exitosa, se crea la sesión
+            
+            session_regenerate_id();
+            $_SESSION['loggedin'] = TRUE;
+            $_SESSION['name'] = $nombres;
+            $_SESSION['id'] = $id;
+            $_SESSION['email']= $email;
+            $_SESSION['foto']= $imagen;
+            header('Location: inicio-admin.php');
+        } else {
+            // contraseña incorrecta
+            echo '<SCRIPT> alert("Tu contraseña es incorecta")</SCRIPT>';
+            header('Location: Login.html');
+            
+        }
+    }
+    // se confirma que la cuenta existe ahora validamos la contraseña
 } else {
     // usuario incorrecto
     header('Location: Login.html');
