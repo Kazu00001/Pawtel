@@ -281,9 +281,9 @@ main{
 /*-----------------------------------------------------------------------------*/
 .inputboxSm{
     position: relative;
-    width: 40%;
+    width: 42.5%;
     height: 6vh;
-    margin-left: 6.666%;
+    margin-left: 5%;
     float: left;
     background-color: brown;
     box-sizing: border-box;
