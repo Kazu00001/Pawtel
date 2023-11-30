@@ -2,3 +2,6 @@ modificar reservas (agrgar campos reserva)//
 modificar adm reservas(load)//
 eliminar reservas //
 login para adm {regristro campo para saber si es adm y o usser}
+
+
+Hola Alex, nO C que falta 
