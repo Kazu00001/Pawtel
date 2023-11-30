@@ -5,7 +5,6 @@
     header('Location: Login.html');
     exit;
 }*/
-
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +36,20 @@
             <section class="select"><p class="tit_process">Paga</p><img src="imgs/flecha.png" class="ic"></section>
     </article>
     <div class="modal">
-<form class="form" action="pagos-save.php" method="post">
+<form class="form" action="reservas_add.php" method="post">
+  <?php
+  ?>
+  <input type="hidden" name="icioestan" value="<?php $_POST['icioestan']:?>">
+  <input type="hidden" name="icioestan" value="<?php $_POST['finestan'];?>">
+  <input type="hidden" name="icioestan" value="<?php $_POST['nombre'];?>">
+  <input type="hidden" name="icioestan" value="<?php $_POST['apellido'];?>">
+  <input type="hidden" name="icioestan" value="<?php $_POST['tipoHabitacion'];?>">
+  <input type="hidden" name="icioestan" value="<?php $_POST['tipoHabitacion2'];?>">
+  <input type="hidden" name="icioestan" value="<?php $_POST['email'];?>">
+  <input type="hidden" name="icioestan" value="<?php $_POST['telefono'];?>">
+  <input type="hidden" name="icioestan" value="<?php $_POST['mascota'];?>">
+  <input type="hidden" name="icioestan" value="<?php $_POST['mascota2'];?>">
+
   <div class="payment--options">
   <button name="paypal" type="button">
       <svg xml:space="preserve" viewBox="0 0 124 33" height="33px" width="124px" y="0px" x="0px" id="Layer_1" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
