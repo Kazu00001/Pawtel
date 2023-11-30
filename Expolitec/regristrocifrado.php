@@ -1,47 +1,78 @@
-<?php 
-//credenciales de acceso a la base datos
+<?php
+// Credenciales de acceso a la base de datos
+$hostname = 'localhost';
+$username = 'root';
+$password = '';
+$database = 'pawtel';
 
-$hostname='localhost';
-$username='root';
-$password='';
-$database='pawtel';
-
-// conexion a la base de datos
-
+// Conexión a la base de datos
 $Conexion = mysqli_connect($hostname, $username, $password, $database);
 
 if (mysqli_connect_error()) {
-
-    // si se encuentra error en la conexión
-
+    // Si hay un error en la conexión
     exit('Fallo en la conexión de MySQL:' . mysqli_connect_error());
 }
 
-$Nom= $_POST['nombre'];
-$correo= $_POST['correo'];
-$fecha= $_POST['fecha'];
-$telefono= $_POST['telefono'];
-$cat='1';
-$hash=password_hash($_POST['pass'], PASSWORD_DEFAULT, ['cost'=> 15]);
+// Obtener el correo del formulario
+$correo = $_POST['correo'];
 
-if (!isset($_POST['nombre'], $_POST['correo'],$_POST['fecha'],$_POST['telefono'],$_POST['pass'])) {
+// Comprobación si el correo ya existe en la base de datos
+$comprobacion = "SELECT correo FROM usser WHERE correo='$correo'";
+$resultadoComprobacion = mysqli_query($Conexion, $comprobacion);
 
-    // si no hay datos muestra error y re direccionar
-
-    header('Location: registropaw.html');// form_user.html redicionamiento del sito si hay un error
-}
-// hacer la sentencia de envio 
-$sql="INSERT INTO usser(nombres,correo,fech,telefono,cotra,categorio) value('$Nom','$correo','$fecha','$telefono','$hash','$cat')";
-//mandar la sentancia de envio
-$envio= mysqli_query($Conexion,$sql);
-// si hay un problema con el envio le damos un mensaje de que no se pudo 
-if(!$envio){
-    echo '<SCRIPT> alert("tu regristro no se puedo regristar")</SCRIPT>';
-    echo ' Error de MySQL:'.mysqli_error($Conexion);
+if (!$resultadoComprobacion) {
+    // Manejo de error en la consulta de comprobación
+    echo 'Error de MySQL: ' . mysqli_error($Conexion);
 } else {
-    echo'Parece que todo va bien';
-    header('Location: Login.html');
+    // Si el correo ya existe, mostrar un mensaje y redireccionar
+    if (mysqli_num_rows($resultadoComprobacion) > 0) {
+        echo '<script>alert("El correo ya está registrado. Utiliza otro correo.");</script>';
+        header('Location: registropaw.html');
+    } else {
+        // Si el correo no existe, proceder con el registro
+        $Nom = $_POST['nombre'];
+        $fecha = $_POST['fecha'];
+        $telefono = $_POST['telefono'];
+        $cat = '1';
+        $hash = password_hash($_POST['pass'], PASSWORD_DEFAULT, ['cost' => 15]);
+
+        if (isset($_FILES["image"]) && $_FILES["image"]["error"] == 0) {
+            $image = basename($_FILES["image"]["name"]);
+            $targetDirectory = "usser/"; // Ajusta la ruta al directorio correcto (puede ser relativa o absoluta)
+            $targetFile = $targetDirectory . $image; // Ruta completa del archivo
+
+            $esImagen = getimagesize($_FILES["image"]["tmp_name"]);
+            if ($esImagen !== false) {
+                // Mueve el archivo a la ubicación deseada
+                if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile)) {
+                    echo "El archivo $image ha sido subido correctamente.";
+                } else {
+                    echo "Hubo un error al subir el archivo.";
+                }
+            } else {
+                echo "El archivo no es una imagen válida.";
+            }
+        } else {
+            echo "No se ha seleccionado ningún archivo.";
+        }
+
+        // Hacer la sentencia de envío
+        $sql = "INSERT INTO usser(nombres, correo, fech, telefono, cotra, categorio, foto) VALUES ('$Nom','$correo','$fecha','$telefono','$hash','$cat','$image')";
+
+        // Mandar la sentencia de envío
+        $envio = mysqli_query($Conexion, $sql);
+
+        // Si hay un problema con el envío, mostrar un mensaje de error
+        if (!$envio) {
+            echo '<script>alert("Tu registro no se pudo registrar. Error de MySQL: ' . mysqli_error($Conexion) . '");</script>';
+            header('Location: registropaw.html');
+        } else {
+            echo 'Parece que todo va bien';
+            header('Location: Login.html');
+        }
+    }
 }
-// cerramos la conecxion de la base de datos 
+
+// Cerrar la conexión de la base de datos
 mysqli_close($Conexion);
 ?>
