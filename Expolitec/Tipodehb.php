@@ -12,15 +12,32 @@
         <article id="titfo">
             <section id="titC">
                 <br>
-                <a href="Inicio.php"><h1 id="tit">PawTel</h1></a>
-                </section>
-                <section id="search">
-                    <br><br><br>
-                    <input type="search" id="sear">
-                </section>
-                <section id="perfil">
+                <a href="#"><h1 id="tit">PawTel</h1></a>
+            </section>
+            <section id="barNav">
+            <nav class="nave">
+                <ul class="menu">
+                <li><a href="#">Reservaciones</a>
+                        <div class="topM"></div>
+                        <ul class="menuv">
+                            <li class="list"><a href="reservas-most.php">Mostrar Reservaciones</a></li>
+                            <li class="list"><a href="Tipodehb.php">Mostrar Habitaciones</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Empleados</a>
+                        <div class="topM"></div>
+                        <ul class="menuv">
+                            <li class="list"><a href="empleados.php">Lista de Empleados</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="inventario-mostr.php">Inventario</a></li>
+                </ul>
+
+            </nav>
+            </section>
+            <section id="perfil">
                 <div id="pic"></div>
-                </section>
+            </section>
         </article>
     </header>
     <main>

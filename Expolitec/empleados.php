@@ -12,34 +12,38 @@
     <link rel="stylesheet" href="admin_bar_foot.css">
 </head>
 <body>
-    <header>
-            <article id="titfo">
-                <section id="titC">
-                    <br>
-                    <a href="inicio.php"><h1 id="tit">PawTel</h1></a>
-                </section>
-                <section id="barNav">
-                <nav class="nave">
-                    <ul class="menu">
-                        <li><a href="inicio.php">Inicio</a></li>
-                        <li><a href="empleados.php">Empleados</a></li>
-                        <li><a href="inventario-mostr.php">Inventario</a></li>
-                        <li><a href="#">Reservaciones</a>
-                            <div class="topM"></div>
-                            <ul class="menuv">
-                                <li class="list"><a href="reservas.php">Reserva Hotel</a></li>
-                                <li class="list"><a href="Reserva-resta.php">Reserva Restaurante</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+<header>
+        <article id="titfo">
+            <section id="titC">
+                <br>
+                <a href="inicio.php"><h1 id="tit">PawTel</h1></a>
+            </section>
+            <section id="barNav">
+            <nav class="nave">
+                <ul class="menu">
+                <li><a href="#">Reservaciones</a>
+                        <div class="topM"></div>
+                        <ul class="menuv">
+                            <li class="list"><a href="reservas-most.php">Mostrar Reservaciones</a></li>
+                            <li class="list"><a href="Tipodehb.php">Mostrar Habitaciones</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Empleados</a>
+                        <div class="topM"></div>
+                        <ul class="menuv">
+                            <li class="list"><a href="empleados.php">Lista de Empleados</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="inventario-mostr.php">Inventario</a></li>
+                </ul>
 
-                </nav>
-                </section>
-                <section id="perfil">
-                <div id="pic"><a href="usser_perf.php"><img src="<?php echo'imgs/'.$_SESSION['img']?>" ></a></div>
-                </section>
-            </article>
-        </header>
+            </nav>
+            </section>
+            <section id="perfil">
+                <div id="pic"></div>
+            </section>
+        </article>
+    </header>
     <main>
         <article id="container">
             <section id="container_search">
