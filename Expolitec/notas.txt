@@ -3,8 +3,8 @@ modificar adm reservas(load)//
 eliminar reservas //
 login para adm {regristro campo para saber si es adm y o usser}//
 regristro agregar cat //
-regtristro campo para subir imagen y agregr php/
-fincion de no regristrar doble correo
+regtristro campo para subir imagen y agregr php//
+fincion de no regristrar doble correo//
 
 
 

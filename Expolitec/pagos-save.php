@@ -13,31 +13,32 @@ if (mysqli_connect_error()) {
 }
 
 // Verifica y filtra los datos de entrada
-$nom = isset($_POST['namet']) ? mysqli_real_escape_string($Conexion, $_POST['namet']) : '';
-$numbertar = isset($_POST['numbertar']) ? mysqli_real_escape_string($Conexion, $_POST['numbertar']) : '';
-$fechex = isset($_POST['fechex']) ? mysqli_real_escape_string($Conexion, $_POST['fechex']) : '';
-$posion = isset($_SESSION['email']) ? mysqli_real_escape_string($Conexion, $_SESSION['email']) : '';
+$nom = isset($_POST['namet']) ? $_POST['namet'] : '';
+$numbertar = isset($_POST['numbertar']) ? $_POST['numbertar'] : '';
+$fechex = isset($_POST['fechex']) ? $_POST['fechex'] : '';
+$posion = isset($_SESSION['id']) ? (int)$_SESSION['id'] : 0; // Asegúrate de que sea un número entero
 
-// Utiliza un UPDATE para intentar actualizar el registro
-$sql_update = "UPDATE reservas SET Nombre_propetario_target = ?, Numero_de_targeta = ?, Fecha_vencimiento_targeta = ? WHERE correo = ?";
+// Utiliza un UPDATE con sentencia preparada para intentar actualizar el registro
+$sql_update = "UPDATE `reservas` SET `Nombre_propetario_target`=?, `Numero_de_targeta`=?, `Fecha_vencimiento_targeta`=? WHERE `id_usuario`=?";
 
 if ($stmt = mysqli_prepare($Conexion, $sql_update)) {
-    mysqli_stmt_bind_param($stmt, "ssss", $nom, $numbertar, $fechex, $posion);
-    $envio_update = mysqli_stmt_execute($stmt);
+    mysqli_stmt_bind_param($stmt, "sssi", $nom, $numbertar, $fechex, $posion);
+    $resultado = mysqli_stmt_execute($stmt);
 
-    if (!$envio_update) {
-        // Registra el error en un archivo de registro
-        error_log('Error de MySQL: ' . mysqli_error($Conexion), 3, 'ruta_del_archivo_de_registro.log');
-        echo '<script>alert("Error al intentar actualizar el registro. Por favor, inténtalo de nuevo más tarde.");</script>';
+    if (!$resultado) {
+        echo "Error en la consulta: " . mysqli_error($Conexion);
+        echo "Consulta SQL: $sql_update";
+        exit();
     } else {
-        echo 'Actualización exitosa o el registro no existía.';
         header('Location: Login.html');
+        exit();
     }
 
     mysqli_stmt_close($stmt);
 } else {
-    echo 'Error al preparar la sentencia de actualización: ' . mysqli_error($Conexion);
+    echo "Error al preparar la sentencia de actualización: " . mysqli_error($Conexion);
 }
 
+// Cierra la conexión
 mysqli_close($Conexion);
 ?>

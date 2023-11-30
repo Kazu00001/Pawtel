@@ -18,6 +18,7 @@
                 <nav class="nave">
                     <ul class="menu">
                         <li><a href="inicio.php">Inicio</a></li>
+                        <li><a href="#">Paquetes</a></li>
                         <li><a href="#">Servicios</a>
                             <div class="topM"></div>
                             <ul class="menuv">
@@ -36,7 +37,7 @@
                 </nav>
                 </section>
                 <section id="perfil">
-                    <div id="pic"><img src="<?php echo'imgs/'.$_SESSION['img']?>" ></div>
+                    <div id="pic"></div>
                 </section>
             </article>
         </header>
@@ -50,9 +51,7 @@
             <section id="container_filter">
                 <p class="text">Ingresa tus datos<br><hr class="line"></p>
                 <p class="textt"> Datos de Contacto</p>
-                <form action="pagos.php" method="post">
-                    <input class=controles type="hidden" name="nombre" value="">
-                    <input class=controles type="hidden" name="correo" value="">
+                <form action="reservas-save.php" method="post" id="form-reservas">
                     <div class="inputbox">
                         <input type="date" name="icioestan" id="icioestan" class="inp" placeholder=" " required><br>
                         <span class="text_input">Fecha de Entrada</span>
@@ -62,12 +61,12 @@
                         <span class="text_input">Fecha de Salida</span>
                     </div>
                     <div class="inputboxSm">
-                        <input type="text" name="nombre" id="mascota" class="inp" placeholder=" " required><br>
+                        <input type="text" name="nombre" id="nombre" class="inp" placeholder=" " required><br>
                         <span class="text_input">Nombres</span>
                     </div>
 
                     <div class="inputboxSm">
-                        <input type="text" name="apellido" id="mascota" class="inp" placeholder=" " required><br>
+                        <input type="text" name="apellido" id="apellidos" class="inp" placeholder=" " required><br>
                         <span class="text_input">Apellidos</span>
                     </div>
                     <div class="inputboxSm">
@@ -96,14 +95,14 @@
                     <div class="inputboxSm">
                         <select name="mascota" class="inp">
                             <option value=""></option>
-                            <option value="1">Perro</option>
-                            <option value="2">Gato</option>
-                            <option value="3">Ambos</option>
+                            <option value="Perro">Perro</option>
+                            <option value="Gato">Gato</option>
+                            <option value="Ambos">Ambos</option>
                         </select>
                         <span class="text_input">Mascota</span>
                     </div>
                     <div class="inputboxSm">
-                    <select name="mascota2" class="inp">
+                    <select name="no_masc" class="inp">
                             <option value=""></option>
                             <option value="1">Opción 1</option>
                             <option value="2">Opción 2</option>
@@ -112,55 +111,59 @@
                         </select>
                         <span class="text_input">Numero de Mascotas</span>
                     </div>  
-                    <input id="bot" type="submit" name="reservar" id="reservar" value="Buscar">
-
+                    <section class="conbut">
+                            <button class="but" onclick='ress()'><span>Reservar</span></button>
+                    </section>
                 </form> 
-               <script>
-                  function ress() {
-            location.href ='pagos.php';
-        }
+                <script>
+    function ress() {
+        document.getElementById('form-reservas').submit();
+    }
 
-        
-        document.addEventListener("DOMContentLoaded", () => {
-            // Obtener y llenar el select de tipos de habitaciones
-            fetch("obtener-tipos-habitacion.php")
-                .then(response => response.json())
-                .then(data => {
-                    const tipoHabitacionSelect = document.getElementById("tipoHabitacion");
+    document.addEventListener("DOMContentLoaded", () => {
+        // Obtener y llenar el select de tipos de habitaciones
+        fetch("obtener-tipos-habitacion.php")
+            .then(response => response.json())
+            .then(data => {
+                const tipoHabitacionSelect = document.getElementById("tipoHabitacion");
 
-                    data.forEach(tipo => {
-                        const option = document.createElement("option");
-                        option.value = tipo; // Suponiendo que el tipo es un valor único
-                        option.textContent = tipo;
-                        tipoHabitacionSelect.appendChild(option);
-                    });
-                })
-                .catch(err => console.log(err));
-        });
+                data.forEach(tipo => {
+                    const option = document.createElement("option");
+                    option.value = tipo; // Suponiendo que el tipo es un valor único
+                    option.textContent = tipo;
+                    tipoHabitacionSelect.appendChild(option);
+                });
+            })
+            .catch(err => console.log(err));
+    });
 
-        // Función para obtener y mostrar información detallada sobre las habitaciones disponibles
-        function getCantidadDisponible() {
-            const tipoSeleccionado = document.getElementById("tipoHabitacion").value;
-            const inicioEstan = document.getElementById("icioestan").value;
-            const finEstan = document.getElementById("finestan").value;
+    // Función para obtener y mostrar información detallada sobre las habitaciones disponibles
+    function getCantidadDisponible() {
+        const tipoSeleccionado = document.getElementById("tipoHabitacion").value;
+        const inicioEstan = document.getElementById("icioestan").value;
+        const finEstan = document.getElementById("finestan").value;
 
-            // Hacer la solicitud al servidor para obtener información detallada sobre las habitaciones disponibles
-            fetch(`obtener-id-habitacion.php?tipo=${tipoSeleccionado}&inicioestan=${inicioEstan}&finestan=${finEstan}`)
-                .then(response => response.json())
-                .then(data => {
-                    const resultadoHabitaciones = document.getElementById("tipoHabitacion2");
-                    resultadoHabitaciones.innerHTML = ""; // Limpiar el contenido anterior
+        // Hacer la solicitud al servidor para obtener información detallada sobre las habitaciones disponibles
+        fetch(`obtener-id-habitacion.php?tipo=${tipoSeleccionado}&inicioestan=${inicioEstan}&finestan=${finEstan}`)
+            .then(response => response.json())
+            .then(data => {
+                const resultadoHabitaciones = document.getElementById("tipoHabitacion2");
+                resultadoHabitaciones.innerHTML = ""; // Limpiar el contenido anterior
 
-                    data.forEach(habitacion => {
-                        const option = document.createElement("option");
-                        option.value = habitacion.id_habitacion;
-                        option.textContent = `${habitacion.nombre}: ${habitacion.id_habitacion}`;
-                        resultadoHabitaciones.appendChild(option);
-                    });
-                })
-                .catch(err => console.log(err));
-        }
-    </script>
+                data.forEach(habitacion => {
+                    const option = document.createElement("option");
+                    option.value = habitacion.id_habitacion;
+                    option.textContent = `${habitacion.nombre}: ${habitacion.id_habitacion}`;
+                    resultadoHabitaciones.appendChild(option);
+                });
+
+                // Habilitar el segundo selector
+                document.getElementById("tipoHabitacion2").disabled = false;
+            })
+            .catch(err => console.log(err));
+    }
+</script>
+
             </section>
             <section id="container_tras">
                 <p class="teext">Servicion de Traslado<br><hr class="line"></p>
