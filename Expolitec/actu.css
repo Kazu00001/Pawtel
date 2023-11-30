@@ -1,0 +1,241 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Cabin', sans-serif;
+  
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: #F3E9DC;
+}
+h1{
+    text-align: center;
+    color: white;
+    margin-left: 12vw;
+    font-size: 50px;
+}
+#title2 {
+    width: 20%;
+    height: 15%;
+    margin: auto;
+    text-align: center; /* Para centrar el contenido horizontalmente */
+    margin-bottom: 8%;
+
+}
+#title {
+    width: 20%;
+    height: 20%;
+    margin: auto;
+    text-align: center; /* Para centrar el contenido horizontalmente */
+    margin-bottom: 8%;
+
+}
+
+main{
+    border-radius: 5px;
+    width: 50%;
+    height: 68%;
+    margin: auto;
+    background-color: whitesmoke;
+}
+#for{
+    width: 70%;
+    height: 60%;
+    margin: auto;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.label{
+    font-size:larger;
+    font-family: 'Cabin', sans-serif;
+}
+.tam{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 8%;
+
+}
+#not{
+color: #9C9C9C;
+text-align: center;
+margin-bottom: 2%;
+}
+.boten{
+    margin-bottom: 3%;
+    width: 70%;
+    height: 40px;
+    text-align: center;
+    background-color: #78855F;
+    border-color: #78855F;
+    color: white;
+    border-radius: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 5%;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #78855F;
+    text-align: center;
+}
+  .boten:hover {
+    background-color: #78855F;
+  }
+
+.main3{
+    border-radius: 5px;
+    width: 50%;
+    height: 55%;
+    margin: auto;
+}
+#main2{
+    border-radius: 5px;
+    width: 50%;
+    height: 68%;
+    margin-top: 20vh;
+}
+#for2{
+    width: 70%;
+    height: 75%;
+    margin: auto;
+    margin-right: 10%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: whitesmoke;
+    color: #fff;
+    border: 1px solid #333;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #363232;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #43291F;
+  }
+  
+  .message, 
+  .signin {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .signin a {
+    color: #00bfff;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    background-color: #c5a68c;
+    color: #fff;
+    width: 100%;
+    padding: 25px 05px 05px 1px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,
+  .form label .input:valid + span {
+    color: #4d352c;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .input {
+    font-size: medium;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 2%;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #4d352c;
+    text-align: center;
+  }
+  
+  .submit:hover {
+    background-color: #4d352c;
+  }

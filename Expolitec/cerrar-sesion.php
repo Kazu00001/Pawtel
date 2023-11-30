@@ -4,4 +4,4 @@ session_unset();
 session_destroy();
 
 
-header('Location: Incios.html');
+header('Location: inicio.php');

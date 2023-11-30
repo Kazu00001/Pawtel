@@ -39,7 +39,7 @@
 <form class="form" action="reservas_add.php" method="post">
   <?php
   ?>
-  <input type="hidden" name="icioestan" value="<?php $_POST['icioestan']:?>">
+  <input type="hidden" name="icioestan" value="<?php $_POST['icioestan'];?>">
   <input type="hidden" name="icioestan" value="<?php $_POST['finestan'];?>">
   <input type="hidden" name="icioestan" value="<?php $_POST['nombre'];?>">
   <input type="hidden" name="icioestan" value="<?php $_POST['apellido'];?>">
