@@ -53,6 +53,7 @@ main{
     margin: 1%;
     border-radius: 100%;
     transition: .3s;
+    overflow: hidden;
 }
 .drink:hover{
     box-shadow: 0 0 5px 2px rgb(206, 206, 206);

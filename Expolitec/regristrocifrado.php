@@ -21,6 +21,7 @@ $Nom= $_POST['nombre'];
 $correo= $_POST['correo'];
 $fecha= $_POST['fecha'];
 $telefono= $_POST['telefono'];
+$cat='1';
 $hash=password_hash($_POST['pass'], PASSWORD_DEFAULT, ['cost'=> 15]);
 
 if (!isset($_POST['nombre'], $_POST['correo'],$_POST['fecha'],$_POST['telefono'],$_POST['pass'])) {
@@ -30,7 +31,7 @@ if (!isset($_POST['nombre'], $_POST['correo'],$_POST['fecha'],$_POST['telefono']
     header('Location: registropaw.html');// form_user.html redicionamiento del sito si hay un error
 }
 // hacer la sentencia de envio 
-$sql="INSERT INTO usser(nombres,correo,fech,telefono,cotra) value('$Nom','$correo','$fecha','$telefono','$hash')";
+$sql="INSERT INTO usser(nombres,correo,fech,telefono,cotra,categorio) value('$Nom','$correo','$fecha','$telefono','$hash','$cat')";
 //mandar la sentancia de envio
 $envio= mysqli_query($Conexion,$sql);
 // si hay un problema con el envio le damos un mensaje de que no se pudo 
