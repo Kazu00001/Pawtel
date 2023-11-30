@@ -50,7 +50,7 @@
             <section id="container_filter">
                 <p class="text">Ingresa tus datos<br><hr class="line"></p>
                 <p class="textt"> Datos de Contacto</p>
-                <form action="#" method="post">
+                <form action="pagos.php" method="post">
                     <input class=controles type="hidden" name="nombre" value="">
                     <input class=controles type="hidden" name="correo" value="">
                     <div class="inputbox">
