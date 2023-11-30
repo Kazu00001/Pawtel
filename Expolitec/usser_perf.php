@@ -37,7 +37,7 @@
                 </nav>
                 </section>
                 <section id="perfil">
-                    <div id="pic"></div>
+                <div id="pic"><a href="usser_perf.php"><img src="<?php echo'imgs/'.$_SESSION['img']?>" ></a></div>
                 </section>
             </article>
         </header>
@@ -109,8 +109,8 @@
                                         </form>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="tt">
+                                <tr class="tt">
+                                    <td >
                                         <a href="cerrar-sesion.php" style="color:white;" class="aa"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
                                     </td>
                                 </tr>

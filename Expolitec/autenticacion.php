@@ -1,79 +1,62 @@
 <?php
 session_start();
 
-//credenciales de acceso a la base datos 
-
-$hostname='localhost';
-$username='root';
-$password='';
-$database='pawtel';
-
-// conexion a la base de datos :hh jjjj
+$hostname = 'localhost';
+$username = 'root';
+$password = '';
+$database = 'pawtel';
 
 $Conexion = mysqli_connect($hostname, $username, $password, $database);
 
 if (mysqli_connect_error()) {
-
-    // si se encuentra error en la conexión
-
     exit('Fallo en la conexión de MySQL:' . mysqli_connect_error());
 }
 
-// Se valida si se ha enviado información, con la función isset()
-
 if (!isset($_POST['correo'], $_POST['password'])) {
-
-    // si no hay datos muestra error y re direccionar
-
     header('Location: Login.html');
 }
 
-// evitar inyección sql
-
-if ($Result = $Conexion->prepare('SELECT id, cotra, correo, nombres FROM usser WHERE correo = ?')) {
-    // parámetros de enlace de la cadena s
-    //s=string i=intenger 
-    $Result->bind_param('s', $_POST['correo']);
+if ($Result = $Conexion->prepare('SELECT id, cotra, correo, nombres, categorio, foto FROM usser WHERE correo = ?')) {
+    $correo = mysqli_real_escape_string($Conexion, $_POST['correo']);
+    $Result->bind_param('s', $correo);
     $Result->execute();
-} else {
-    // Si la preparación de la consulta falla, muestra el error
-    die('Error en la preparación de la consulta: ' . mysqli_error($Conexion));
-}
+    $Result->store_result();
 
-// acá se valida si lo ingresado coincide con la base de datos
+    if ($Result->num_rows > 0) {
+        $Result->bind_result($id, $hash_password, $email, $nombres, $categorio, $foto);
+        $Result->fetch();
 
-$Result->store_result();
-if ($Result->num_rows > 0) {
-    $Result->bind_result($id, $hash_password,$email,$nombres);
-    $Result->fetch();
+        if ($categorio == 1 || $categorio == 2) {
+            if (password_verify($_POST['password'], $hash_password)) {
+                session_regenerate_id();
+                $_SESSION['loggedin'] = TRUE;
+                $_SESSION['name'] = $nombres;
+                $_SESSION['id'] = $id;
+                $_SESSION['email'] = $email;
+                $_SESSION['foto'] = $foto;
 
-    // se confirma que la cuenta existe ahora validamos la contraseña
-
-    if (password_verify($_POST['password'], $hash_password)) {
-
-        // la conexion sería exitosa, se crea la sesión
-        
-        session_regenerate_id();
-        $_SESSION['loggedin'] = TRUE;
-        $_SESSION['name'] = $nombres;
-        $_SESSION['id'] = $id;
-        $_SESSION['email']= $email;
-        $_SESSION['foto']= $imagen;
-        header('Location: inicio.php');
+                if ($categorio == 1) {
+                    header('Location: inicio.php');
+                } elseif ($categorio == 2) {
+                    header('Location: inicio-admin.php');
+                }
+            } else {
+                echo '<script>alert("Tu contraseña es incorrecta");</script>';
+                header('Location: Login.html');
+            }
+        } else {
+            echo '<script>alert("Categoría de usuario no válida");</script>';
+            header('Location: Login.html');
+        }
     } else {
-        // contraseña incorrecta
-        echo '<SCRIPT> alert("Tu contraseña es incorecta")</SCRIPT>';
+        echo '<script>alert("Usuario incorrecto");</script>';
         header('Location: Login.html');
-        
     }
+
+    $Result->close();
 } else {
-    // usuario incorrecto
-    header('Location: Login.html');
-    echo '<SCRIPT> alert("Tu usuario es incorrecto") </SCRIPT>';
+    echo 'Error en la preparación de la consulta: ' . $Conexion->error;
 }
 
-//vaciar el stock
-$Result->close();
-//cierrara base de datos :D
 $Conexion->close();
 ?>

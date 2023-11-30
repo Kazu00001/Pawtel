@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<?php session_start()?>
+<DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -37,7 +38,7 @@
             </nav>
             </section>
             <section id="perfil">
-                <div id="pic"></div>
+            <div id="pic"><a href="usser_perf.php"><img src="<?php echo'imgs/'.$_SESSION['foto']?>" ></a></div>
             </section>
         </article>
     </header>

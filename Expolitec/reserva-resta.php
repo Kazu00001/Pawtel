@@ -48,7 +48,7 @@ if (!isset($_SESSION['loggedin'])) {
                 </nav>
                 </section>
                 <section id="perfil">
-                    <div id="pic"><a href="admin_usser.php">jiji</a></div>
+                <div id="pic"><a href="usser_perf.php"><img src="<?php echo'imgs/'.$_SESSION['img']?>" ></a></div>
                 </section>
             </article>
         </header>
