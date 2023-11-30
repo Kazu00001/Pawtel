@@ -19,7 +19,7 @@
                 </article>
                 <article id="add_info">
                     <br>
-                    <form action="regristrocifrado.php" method="post">
+                    <form action="regristrocifrado.php" method="post" enctype="multipart/form-data">
                         <br><br>
                         <div class="inputbox">
                             <input type="text" name="nombre" class="inp" placeholder=" " required><br>
@@ -40,7 +40,11 @@
                         <div class="inputbox">
                             <input type="password" name="pass" class="inp" placeholder=" " required><br>
                             <span class="text_input">Crear Contraseña</span>
-                        </div><br>
+                        </div>
+                        <div class="inputFile">
+                            <input type="file" name="image" class="inpFile" placeholder=" " required><br>
+                            <span class="text_inputFile">Agregar Imagen</span>
+                        </div>
                         <input type="submit" value="Registrarse" class="bot"><br><br>
                         <p class="gray">¿Ya tienes cuenta?</p>
                     </form>
