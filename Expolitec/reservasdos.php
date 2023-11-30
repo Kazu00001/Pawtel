@@ -51,7 +51,7 @@
             <section id="container_filter">
                 <p class="text">Ingresa tus datos<br><hr class="line"></p>
                 <p class="textt"> Datos de Contacto</p>
-                <form action="#" method="post" id="form_rever">
+                <form action="#" method="post">
                     <input class=controles type="hidden" name="nombre" value="">
                     <input class=controles type="hidden" name="correo" value="">
                     <div class="inputbox">
@@ -86,11 +86,11 @@
                         <span class="text_input">Tipo de Habitación</span>
                     </div>
                     <div class="inputboxSm">
-                        <input type="email" name="email" id="mascota" class="inp" placeholder=" " required><br>
+                        <input type="email" name="email" id="email" class="inp" placeholder=" " required><br>
                         <span class="text_input">Email</span>
                     </div>
                     <div class="inputboxSm">
-                        <input type="tel" name="telefono" id="mascota" class="inp" placeholder=" " required><br>
+                        <input type="tel" name="telefono" id="telefono" class="inp" placeholder=" " required><br>
                         <span class="text_input">Telefono</span>
                     </div>
 
@@ -104,7 +104,7 @@
                         <span class="text_input">Mascota</span>
                     </div>
                     <div class="inputboxSm">
-                    <select name="huspedes" class="inp">
+                    <select name="mascota2" class="inp">
                             <option value=""></option>
                             <option value="1">Opción 1</option>
                             <option value="2">Opción 2</option>
@@ -113,15 +113,13 @@
                         </select>
                         <span class="text_input">Numero de Mascotas</span>
                     </div>  
-                    <section class="conbut">
-                            <button class="but" onclick='enviarFo()'><span>Reservar</span></button>
-                        </section>
+                    <input id="bot" type="submit" name="reservar" id="reservar" value="Buscar">
 
                 </form> 
                <script>
-                   function enviarFo() {
-                            document.getElementById('form_rever').submit();
-                        }
+                  function ress() {
+            location.href ='pagos.php';
+        }
 
         
         document.addEventListener("DOMContentLoaded", () => {
