@@ -255,7 +255,7 @@ require_once('conexion.php');
     </body>
     <script>
         function ress() {
-            location.href ='reservas.php';
+            location.href ='reservas_prueba2.php';
         }
         
     </script>
