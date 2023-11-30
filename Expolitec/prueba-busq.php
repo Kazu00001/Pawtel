@@ -38,7 +38,7 @@ if ($num_rows_habitaciones > 0) {
         echo '<p class="desc">Tipo de habitacion: '. $tipo_habitacion .'</p>';
         echo '</div>';
         echo '<div class="c_reserve">';
-        echo '<form action="" method="post">';
+        echo '<form action="reservasdos.php" method="post">';
         echo '<input type="submit" value="Reservar" class="bot_reserve">';
         echo '</form>';
         echo '<div class="c_precio">';

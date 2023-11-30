@@ -33,7 +33,7 @@ require_once('conexion.php');
                         <li><a href="#">Reservaciones</a>
                             <div class="topM"></div>
                             <ul class="menuv">
-                                <li class="list"><a href="reservas_prueba.php">Reserva Hotel</a></li>
+                                <li class="list"><a href="reservas_prueba2.php">Reserva Hotel</a></li>
                                 <li class="list"><a href="Reserva-resta.php">Reserva Restaurante</a></li>
                             </ul>
                         </li>

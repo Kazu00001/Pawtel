@@ -1,3 +1,11 @@
+<?php session_start() ;
+   if (!isset($_SESSION['loggedin'])) {
+
+    header('Location: Login.html');
+    exit;
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +36,7 @@
                         <li><a href="#">Reservaciones</a>
                             <div class="topM"></div>
                             <ul class="menuv">
-                                <li class="list"><a href="reservas.php">Reserva Hotel</a></li>
+                                <li class="list"><a href="reservas_prueba.php">Reserva Hotel</a></li>
                                 <li class="list"><a href="Reserva-resta.php">Reserva Restaurante</a></li>
                             </ul>
                         </li>
@@ -37,7 +45,8 @@
                 </nav>
                 </section>
                 <section id="perfil">
-                    <div id="pic"></div>
+                <div id="pic"><a href="usser_perf.php"><img src="<?php echo'imgs/' . $_SESSION['foto']  ?>" ></a></div>
+
                 </section>
             </article>
         </header>
@@ -192,9 +201,7 @@
                         <p class="rese"><span id="rem">No reembolsable</span> <br>Esta tarifa no admite 
                             cambios ni devoluciones. En caso de cancelación o de no presentarse el
                             día de la llegada, no se realizará ningún reembolso.</p>
-                        <section class="conbut">
-                            <button class="but" onclick='ress()'><span>Reservar</span></button>
-                        </section>
+                      
             </section>
             
         </article>
@@ -220,11 +227,5 @@
                 </section>
             </footer>
 </body>
-<script>
-        function ress() {
-            location.href ='pagos.php';
-        }
-        
-    </script>
 <script src="barr.js"></script>
 </html>
