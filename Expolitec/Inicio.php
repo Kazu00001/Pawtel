@@ -1,4 +1,8 @@
-<?php session_start() ?>
+<?php 
+session_start();
+require_once('conexion.php');
+?>
+
 <!doctype html>
 <html>
     <head>
@@ -36,7 +40,6 @@
                     </ul>
 
                 </nav>
-                </section>
                 <section id="perfil">
                 <div id="pic"><a href="usser_perf.php"><img src="<?php echo'imgs/' . $_SESSION['foto']  ?>" ></a></div>
                 </section>

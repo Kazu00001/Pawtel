@@ -1,3 +1,13 @@
+<?php 
+session_start();
+require_once('conexion.php');
+
+if (!isset($_SESSION['loggedin'])) {
+
+    header('Location: login.html');
+    exit;}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +47,7 @@
                 </nav>
                 </section>
                 <section id="perfil">
-                <div id="pic"><a href="usser_perf.php"><img src="<?php echo'imgs/'.$_SESSION['img']?>" ></a></div>
+                <div id="pic"><a href="usser_perf.php"><img id="imag" src="<?php echo'imgs/' . $_SESSION['foto']  ?>" ></a></div>
                 </section>
             </article>
         </header>
@@ -58,7 +68,7 @@
                             <section class="imgg"></section>
                             <section class="inf">
                             <section class="con3"><p class="textt">Habitacion:<br></p></section>
-                                <section class="con3"><p class="textt">Fecha De Entrada:</p><br></section>
+                                <section class="con3"><p class="textt">Fecha De <span><?= $_SESSION['nombres']?></span></p><br></section>
                                 <section class="con3"><p class="textt">Fecha De Salida:</p><br></section>
                             </section>
                         </section>
@@ -88,29 +98,29 @@
                             <table>
                                 <tr>
                                     <td>Usuario:</td>
-                                    <td><?/*= $_SESSION['name'] */?></td>
+                                    <td><?= $_SESSION['nombres']?></td>
                                 </tr>
                                 <tr>
                                     <td>Email:</td>
-                                    <td><?/*= $_SESSION['email'] */?></td>
+                                    <td><?= $_SESSION['correo']?></td>
                                 </tr>
                                 <tr>
                                     <td>Fecha de nacimiento:</td>
-                                    <td><?/*= $_SESSION['birthdate'] */?></td>
+                                    <td><?= $_SESSION['fech']?></td>
                                 </tr>
                                 <tr>
                                     <td>Telefono:</td>
-                                    <td><?/*= $_SESSION['phone'] */?></td>
+                                    <td><?= $_SESSION['telefono']?></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <form action="actualizacion-datosa.php" class="boten">
+                                        <form action="Actualizar-perf.php" class="boten">
                                             <input type="submit" class="submit" value="Editar">
                                         </form>
                                     </td>
                                 </tr>
-                                <tr class="tt">
-                                    <td >
+                                <tr >
+                                    <td class="tt">
                                         <a href="cerrar-sesion.php" style="color:white;" class="aa"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a>
                                     </td>
                                 </tr>

@@ -11,7 +11,7 @@
         <article id="titfo">
             <section id="titC">
                 <br>
-                <a href="inicio.php"><h1 id="tit">PawTel</h1></a>
+                <a href="#"><h1 id="tit">PawTel</h1></a>
             </section>
             <section id="barNav">
             <nav class="nave">
@@ -112,10 +112,6 @@
                     <div class="inputbox">
                         <input type="text" name="salary" class="inp" placeholder=" " required><br>
                         <span class="text_input">Fecha de Caducidad de Tarjeta</span>
-                    </div>
-                    <div class="inputbox">
-                        <input type="text" name="salary" class="inp" placeholder=" " required><br>
-                        <span class="text_input">Otro</span>
                     </div><br>
                     <input type="submit" value="Guardar" id="bot">
                 </form>
