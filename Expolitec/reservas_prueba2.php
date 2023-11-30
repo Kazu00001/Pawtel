@@ -36,7 +36,7 @@
 
                 </nav>
                 <section id="perfil">
-                <div id="pic"><a href="usser_perf.php"><img src="<?php echo'imgs/' . $_SESSION['foto']  ?>" ></a></div>
+                <div id="pic"><a href="usser_perf.php"><img id="imagen-per" src="<?php echo'imgs/' . $_SESSION['foto']  ?>" ></a></div>
                 </section>
             </article>
         </header>

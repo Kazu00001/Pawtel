@@ -423,7 +423,7 @@ main{
 }
 .habpic{
     width: 40vh;
-    height: 30vh;
+    height: auto;
     float: left;
     margin-left: 3vh;
     margin-bottom: 5vh;
@@ -520,4 +520,9 @@ button{
 }
 .but:hover::after{
     left: 0;
+}
+#imagen-per{
+    max-width: 150%;
+}#imagen-per2{
+    max-width: 100%;
 }

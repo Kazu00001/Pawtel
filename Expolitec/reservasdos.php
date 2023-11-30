@@ -45,8 +45,7 @@
                 </nav>
                 </section>
                 <section id="perfil">
-                <div id="pic"><a href="usser_perf.php"><img src="<?php echo'imgs/' . $_SESSION['foto']  ?>" ></a></div>
-
+                <div id="pic"><a href="usser_perf.php"><img id="imagen-per" src="<?php echo'imgs/' . $_SESSION['foto']  ?>" ></a></div>
                 </section>
             </article>
         </header>
@@ -186,7 +185,7 @@
         <article id="right">
             <section id="contres">
                 <p class="text">Resumen<br><hr class="line"></p>
-                <div class="habpic"></div>
+                <div class="habpic"><img src="rooms\SUK_tcm49-126377.webp" id="imagen-per2" ></div>
                 <section class="detalles">
                     <h1 class="texxt">Habitacion:<span class="tod">Todo Incluido</span></h1>
                     <h1 class="texxt">Fecha de entrada:<span class="tod">Todo Incluido</span></h1>
@@ -201,6 +200,7 @@
                         <p class="rese"><span id="rem">No reembolsable</span> <br>Esta tarifa no admite 
                             cambios ni devoluciones. En caso de cancelación o de no presentarse el
                             día de la llegada, no se realizará ningún reembolso.</p>
+                            <br><br>
                       
             </section>
             

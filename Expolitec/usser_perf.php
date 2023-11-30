@@ -2,10 +2,12 @@
 session_start();
 require_once('conexion.php');
 
-if (!isset($_SESSION['loggedin'])) {
+    if (!isset($_SESSION['loggedin'])) {
 
     header('Location: login.html');
     exit;}
+    
+
 ?>
 
 <!DOCTYPE html>
@@ -38,49 +40,56 @@ if (!isset($_SESSION['loggedin'])) {
                         <li><a href="#">Reservaciones</a>
                             <div class="topM"></div>
                             <ul class="menuv">
-                                <li class="list"><a href="reservas.php">Reserva Hotel</a></li>
+                                <li class="list"><a href="reservas_prueba2.php">Reserva Hotel</a></li>
                                 <li class="list"><a href="Reserva-resta.php">Reserva Restaurante</a></li>
                             </ul>
                         </li>
                     </ul>
 
                 </nav>
-                </section>
                 <section id="perfil">
-                <div id="pic"><a href="usser_perf.php"><img id="imag" src="<?php echo'imgs/' . $_SESSION['foto']  ?>" ></a></div>
+                <a href="usser_perf.php"><div id="pic">
+                    <?php
+                         ?>
+                            <img src="<?php echo'imgs/' . $_SESSION['foto']  ?>" id="imag" >
+                
+                        <?php 
+                    ?>
+                        </div>
+                    </a>
+
                 </section>
             </article>
         </header>
         <main>
             <article class="left">
+            <form action="" method="post">
+                    <input type="text" name="searRev" id="searRev" onkeyup="getData()" placeholder="Buscar">
+                    </form>
                 <section class="reser">
                     <section id="con1"><h1 class="text">Tus Reservas<br><hr class="line"></h1>
-                        <section class="con2">
-                            <section class="imgg"></section>
-                            <section class="inf">
-                                <section class="con3"><p class="textt">Habitacion:<br></p></section>
-                                <section class="con3"><p class="textt">Fecha De Entrada:</p><br></section>
-                                <section class="con3"><p class="textt">Fecha De Salida:</p><br></section>
-                            </section>
-                        </section>
+                    <section id="con2"><h1 class="text">Tus Reservas<br><hr class="line"></h1>
+                    
+                    <script>
+                            document.addEventListener("DOMContentLoaded", getData);
 
-                        <section class="con2">
-                            <section class="imgg"></section>
-                            <section class="inf">
-                            <section class="con3"><p class="textt">Habitacion:<br></p></section>
-                                <section class="con3"><p class="textt">Fecha De <span><?= $_SESSION['nombres']?></span></p><br></section>
-                                <section class="con3"><p class="textt">Fecha De Salida:</p><br></section>
-                            </section>
-                        </section>
+                            function getData() {
+                                let input = document.getElementById("searRev").value;
+                                let content = document.getElementById("con2");
+                                let url = "reservas-loadper.php";
+                                let formData = new FormData();
+                                formData.append('searRev', input);
 
-                        <section class="con2">
-                            <section class="imgg"></section>
-                            <section class="inf">
-                            <section class="con3"><p class="textt">Habitacion:<br></p></section>
-                                <section class="con3"><p class="textt">Fecha De Entrada:</p><br></section>
-                                <section class="con3"><p class="textt">Fecha De Salida:</p><br></section>
-                            </section>
-                        </section>
+                                    fetch(url, {
+                                            method: "POST",
+                                            body: formData
+                                        }).then(response => response.text())
+                                            .then(data => {
+                                            console.log(data);
+                                            content.innerHTML = data;
+                                            }).catch(err => console.log(err));
+                                        }
+                        </script>
                     </section>
                 </section>
                     
@@ -91,26 +100,26 @@ if (!isset($_SESSION['loggedin'])) {
                         <div id="content2">
                             <h2>Información del Usuario</h2>
                             <section id="pe">
-                            <section class="photo"></section>
+                            <section class="photo"><img src="<?php echo'imgs/' . $_SESSION['foto']  ?>" id="imag" ></section>
                             </section>
                             <br>
 
                             <table>
                                 <tr>
                                     <td>Usuario:</td>
-                                    <td><?= $_SESSION['nombres']?></td>
+                                    <td><?php echo $_SESSION['name']; ?></td>
                                 </tr>
                                 <tr>
                                     <td>Email:</td>
-                                    <td><?= $_SESSION['correo']?></td>
+                                    <td><?php echo $_SESSION['email']; ?></td>
                                 </tr>
                                 <tr>
                                     <td>Fecha de nacimiento:</td>
-                                    <td><?= $_SESSION['fech']?></td>
+                                    <td><?php echo $_SESSION['fech']; ?></td>
                                 </tr>
                                 <tr>
                                     <td>Telefono:</td>
-                                    <td><?= $_SESSION['telefono']?></td>
+                                    <td><?php echo $_SESSION['telefono']; ?></td>
                                 </tr>
                                 <tr>
                                     <td>
