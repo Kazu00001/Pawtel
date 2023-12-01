@@ -35,9 +35,6 @@
 
             </nav>
             </section>
-            <section id="perfil">
-                <div id="pic"></div>
-            </section>
         </article>
     </header>
     <main>

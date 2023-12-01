@@ -1,3 +1,8 @@
+<?php 
+session_start();
+require_once('conexion.php');
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +13,7 @@
     <link rel="stylesheet" href="footer.css">
 </head>
 <body>
-    <header>
+<header>
             <article id="titfo">
                 <section id="titC">
                     <br>
@@ -27,16 +32,24 @@
                         <li><a href="#">Reservaciones</a>
                             <div class="topM"></div>
                             <ul class="menuv">
-                                <li class="list"><a href="reservas.php">Reserva Hotel</a></li>
+                                <li class="list"><a href="reservas_prueba2.php">Reserva Hotel</a></li>
                                 <li class="list"><a href="Reserva-resta.php">Reserva Restaurante</a></li>
                             </ul>
                         </li>
                     </ul>
 
                 </nav>
-                </section>
                 <section id="perfil">
-                <div id="pic"><a href="usser_perf.php"><img src="<?php echo'imgs/'.$_SESSION['img']?>" ></a></div>
+                <a href="usser_perf.php"><div id="pic">
+                    <?php
+                        if(isset($_SESSION['loggedin'])){ ?>
+                            <img id="imag" src="<?php echo'imgs/' . $_SESSION['foto']  ?>" >
+                
+                        <?php }
+                    ?>
+                        </div>
+                    </a>
+
                 </section>
             </article>
         </header>

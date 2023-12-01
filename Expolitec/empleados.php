@@ -16,7 +16,7 @@
         <article id="titfo">
             <section id="titC">
                 <br>
-                <a href="inicio.php"><h1 id="tit">PawTel</h1></a>
+                <a href="#"><h1 id="tit">PawTel</h1></a>
             </section>
             <section id="barNav">
             <nav class="nave">
@@ -38,9 +38,6 @@
                 </ul>
 
             </nav>
-            </section>
-            <section id="perfil">
-                <div id="pic"></div>
             </section>
         </article>
     </header>

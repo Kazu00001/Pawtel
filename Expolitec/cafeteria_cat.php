@@ -1,6 +1,8 @@
 <?php
     $id= $_POST['id'];
     require_once('conexion.php');
+    session_start();
+
     
     $cat=mysqli_query($Conexion, "SELECT DISTINCT subcategoria FROM cafeteria WHERE categoria = '$id'");
 ?>
@@ -33,16 +35,24 @@
                         <li><a href="#">Reservaciones</a>
                             <div class="topM"></div>
                             <ul class="menuv">
-                                <li class="list"><a href="reservas_prueba.php">Reserva Hotel</a></li>
+                                <li class="list"><a href="reservas_prueba2.php">Reserva Hotel</a></li>
                                 <li class="list"><a href="Reserva-resta.php">Reserva Restaurante</a></li>
                             </ul>
                         </li>
                     </ul>
 
                 </nav>
-                </section>
                 <section id="perfil">
-                <div id="pic"><a href="usser_perf.php"><img src="<?php echo'imgs/'.$_SESSION['img']?>" ></a></div>
+                <a href="usser_perf.php"><div id="pic">
+                    <?php
+                        if(isset($_SESSION['loggedin'])){ ?>
+                            <img id="imag" src="<?php echo'imgs/' . $_SESSION['foto']  ?>" >
+                
+                        <?php }
+                    ?>
+                        </div>
+                    </a>
+
                 </section>
             </article>
         </header>

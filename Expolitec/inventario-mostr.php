@@ -64,9 +64,6 @@ tr:nth-child(even) {
 
             </nav>
             </section>
-            <section id="perfil">
-                <div id="pic"></div>
-            </section>
         </article>
     </header>
     <main>
@@ -75,7 +72,7 @@ tr:nth-child(even) {
                 <form action="" method="post">
                     <input type="text" name="searP" id="searP" onkeyup="getData()" placeholder="Buscar">
                 </form>
-                <form action="form_addEmp.html" method="post">
+                <form action="inventario-add.php" method="post">
                     <input type="submit" value="Nuevo producto" id="addEmp">
                 </form>
             </section>

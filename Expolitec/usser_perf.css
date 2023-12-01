@@ -60,7 +60,7 @@ main {
     width: 30%;
     height: 19.5vh;
     border-bottom: 2vh;
-    background-color: chocolate;
+    background-image: url(imgs/pawtel.jpg);
     background-size: cover;
     background-position: center;
 }

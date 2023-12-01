@@ -35,7 +35,7 @@ main{
 }
 #container_add{
     width: 50vw;
-    min-height: 50vh;
+    min-height: 40vh;
     float: left;
     margin-left: 5vw;
     margin-top: 3vw;
@@ -57,9 +57,9 @@ main{
 }
 #left{
     width: 40%;
-    min-height: 75vh;
+    min-height: 77vh;
     float: left;
-    background-image: linear-gradient(#c5a68c,#B58463);
+    background-image: linear-gradient(#B58463, #c5a68c);
     display: flex;
     align-items: center;
     object-position: center;
