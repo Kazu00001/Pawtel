@@ -45,22 +45,22 @@
                 <p class="tit"><b><span class="big">Añadir </span></b>Producto</p>
             </article>
             <article id="add_info">
-                <form action="add_emp.php" method="post" enctype="multipart/form-data">
+                <form action="inven-add.php" method="post" enctype="multipart/form-data">
                     <br>
                     <div class="inputbox">
                         <input type="text" name="name" class="inp" placeholder=" " required><br>
                         <span class="text_input">Nombre del Producto</span>
                     </div>
                     <div class="inputbox">
-                        <input type="text" name="date" class="inp" placeholder=" " required><br>
+                        <input type="text" name="descrip" class="inp" placeholder=" " required><br>
                         <span class="text_input">Descripcion</span>
                     </div>
                     <div class="inputbox">
-                        <input type="text" name="phone" class="inp" placeholder=" " required><br>
+                        <input type="text" name="exist" class="inp" placeholder=" " required><br>
                         <span class="text_input">Existencia del Mes Pasado</span>
                     </div>
                     <div class="inputbox">
-                        <input type="number" name="email" class="inp" placeholder=" " required><br>
+                        <input type="number" name="stock" class="inp" placeholder=" " required><br>
                         <span class="text_input">Stock</span>
                     </div>
                     <br>

@@ -34,10 +34,9 @@ if ($num_rows > 0) {
         echo '<tr>';
         echo '<td>' . $row['id'] . '</td>';
         echo '<td>' . $row['nombreprod'] . '</td>';
+        echo '<td>' . $row['descrip'] . '</td>';
         echo '<td>' . $row['existnafterm'] . '</td>';
         echo '<td>' . $row['stock'] . '</td>';
-        echo '<td> <a href="">Editar</a></td>';
-        echo '<td> <a href="">Eliminar</a></td>';
         echo '</tr>';
     }
 } else {

@@ -1,11 +1,12 @@
 
-<?php /*
+<?php
 session_start();
 if (!isset($_SESSION['loggedin'])) {
 
     header('Location: Login.html');
-    exit;
-}*/
+    exit;}
+
+require_once('conexion.php');
 
 ?>
 
@@ -20,7 +21,7 @@ if (!isset($_SESSION['loggedin'])) {
     <title>Pawtel</title>
 </head>
     <body>
-        <header>
+    <header>
             <article id="titfo">
                 <section id="titC">
                     <br>
@@ -29,26 +30,34 @@ if (!isset($_SESSION['loggedin'])) {
                 <section id="barNav">
                 <nav class="nave">
                     <ul class="menu">
-                        <li class="men"><a href="inicio.php">Inicio</a></li>
-                        <li class="men"><a href="#">Servicios</a>
+                        <li><a href="inicio.php">Inicio</a></li>
+                        <li><a href="#">Servicios</a>
                             <div class="topM"></div>
                             <ul class="menuv">
                                 <li class="list"><a href="cafeteria.php">Cafeteria</a></li>
                             </ul>
                         </li>
-                        <li class="men"><a href="#">Reservaciones</a>
+                        <li><a href="#">Reservaciones</a>
                             <div class="topM"></div>
                             <ul class="menuv">
-                                <li class="list"><a href="reservas_prueba.php">Reserva Hotel</a></li>
+                                <li class="list"><a href="reservas_prueba2.php">Reserva Hotel</a></li>
                                 <li class="list"><a href="Reserva-resta.php">Reserva Restaurante</a></li>
                             </ul>
                         </li>
                     </ul>
 
                 </nav>
-                </section>
                 <section id="perfil">
-                <div id="pic"><a href="usser_perf.php"><img src="<?php echo'imgs/'.$_SESSION['img']?>" ></a></div>
+                <a href="usser_perf.php"><div id="pic">
+                    <?php
+                        if(isset($_SESSION['loggedin'])){ ?>
+                            <img id="imag" src="<?php echo'imgs/' . $_SESSION['foto']  ?>" >
+                
+                        <?php }
+                    ?>
+                        </div>
+                    </a>
+
                 </section>
             </article>
         </header>
