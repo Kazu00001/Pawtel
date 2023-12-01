@@ -56,21 +56,14 @@
                 <table>
                     <thead>
                     <th>id_reserva</th>
-                    <th>id_habitacion</th>
-                    <th>id_usuario</th>
-                    <th>Inicio de estancia</th>
-                    <th>Fin de estancia</th>
-                    <th>Nombres</th>
-                    <th>Apellidos</th>
-                    <th>Tipo de habitacion</th>
-                    <th>Email</th>
-                    <th>Telfono</th>
-                    <th>Mascota</th>
-                    <th>No. M</th>
-                    <th>Nombre propetario target</th>
-                    <th>Numero de targeta</th>
-                    <th>Fecha vencimiento targeta</th>
-                    <th colspan="2">Otras</th>
+                    <th>Nombre del reservador</th>
+                    <th>Correo</th>
+                    <th>Hora</th>
+                    <th>Fecha</th>
+                    <th>No. Personas</th>
+                    <th>Telefono</th>
+                    <th>Descripcion</th>
+                    <th colspan="1">Otras</th>
                     </thead>
                     <tbody id="content_invent"></tbody>
                 <script>

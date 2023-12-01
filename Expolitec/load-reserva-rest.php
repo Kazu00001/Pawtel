@@ -37,13 +37,11 @@ if ($num_rows > 0) {
         echo '<td>' . $row['nombre'] . '</td>';
         echo '<td>' . $row['Correo'] . '</td>';
         echo '<td>' . $row['horaR'] . '</td>';
-     
         echo '<td>' . $row['fechaR'] . '</td>';
         echo '<td>' . $row['numPersonas'] . '</td>';
-        echo '<td>' . $row['Tipo_de_habitacion'] . '</td>';
         echo '<td>' . $row['Telefono'] . '</td>';
         echo '<td>' . $row['descr'] . '</td>';
-        echo '<td> <form action="eliminar.php" method="post">
+        echo '<td> <form action="eliminar2.php" method="post">
         <input type="hidden" name="eliminar" value="'. $row['id'] . '">
         <button class="Btn" onclick="enviarFormulario3()">
   
@@ -60,21 +58,8 @@ if ($num_rows > 0) {
         </script>
         </button>'
         ;
-        echo '<td> <form id="edit" action="edit-resv.php" method="post"> 
-        <button class="button" >
-            Editar 
-            <input type="hidden" name="update" value="'. $row['id_reserva'] . '">
-            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
-                <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
-            </svg>
-            </button>
-                    </form> </td> <script>
-                    function enviarFormulario3() {
-                        document.getElementById("edit").submit();
-                    }
-                    </script>'
-                    ;
-                    echo '</tr>';
+    
+         echo '</tr>';
     }
 } else {
     echo '<tr>';

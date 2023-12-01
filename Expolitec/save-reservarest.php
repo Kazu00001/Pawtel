@@ -28,7 +28,7 @@ if (mysqli_connect_error()) {
     $celebracion=$_POST['celebracion'];
 
 // hacer la sentencia de envio 
-$sql="INSERT INTO reserva(nombreclient,correo,iniestan,finestan,habitaciones,huspedes,ninos,Nombrpaq) value('$nom','$correo','$icioestan','$finestan','$habitaciones','$huspedes','$ninos','$mascota','$tipohab')";
+$sql="INSERT INTO restar(nombre,Correo,horaR,fechaR,numPersonas,Telefono,descr) value('$nombre','$correo','$hora','$personas','$telefono','$celebracion')";
 //mandar la sentancia de envio
 $envio= mysqli_query($Conexion,$sql);
 // si hay un problema con el envio le damos un mensaje de que no se pudo 
