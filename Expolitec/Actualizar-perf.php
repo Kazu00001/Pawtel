@@ -29,7 +29,7 @@ session_start();
     <main id="main2">
         <aside id="for2">
             <br><br>
-            <form action="actualizacion-datos.php" method="post" class="form">
+            <form action="actu-datos.php" method="post" class="form">
                 <h2 class="title" >Actualizacion de datos</h2>
                     <div class="flex">
                         <input type="hidden" name="ideup"  value="<?php echo $_SESSION['id'] ?>">
