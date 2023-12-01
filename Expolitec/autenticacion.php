@@ -40,7 +40,7 @@ if ($Result = $Conexion->prepare('SELECT id, cotra, correo, nombres, categorio, 
                 if ($categorio == 1) {
                     header('Location: inicio.php');
                 } elseif ($categorio == 2) {
-                    header('Location: inicio-admin.php');
+                    header('Location: empleados.php');
                 }
             } else {
                 echo '<script>alert("Tu contraseña es incorrecta");</script>';

@@ -45,72 +45,77 @@
                 <p class="tit"><b><span class="big">Editar </span></b>Reserva</p>
             </article>
             <article id="add_info">
-                <form action="add_emp.php" method="post" enctype="multipart/form-data">
+                <form action="edit-resv-save.php" method="post" >
                     <br>
+                    <?php 
+                        $posion = $_POST['update'];
+                        echo $posion;
+                    ?>
+                     <input type="hidden" name="update" value="<?php echo $posion; ?>">
                     <div class="inputbox">
-                        <input type="date" name="name" class="inp" placeholder=" " required><br>
+                        <input type="date" name="inicio" class="inp" placeholder=" " required><br>
                         <span class="text_input">Inicio de estancia</span>
                     </div>
                     <div class="inputbox">
-                        <input type="date" name="date" class="inp" placeholder=" " required><br>
+                        <input type="date" name="fin" class="inp" placeholder=" " required><br>
                         <span class="text_input">Fin de estancia</span>
                     </div>
                     <div class="inputbox">
-                        <input type="text" name="phone" class="inp" placeholder=" " required><br>
+                        <input type="text" name="names" class="inp" placeholder=" " required><br>
                         <span class="text_input">Nombres</span>
                     </div>
                     <div class="inputbox">
-                        <input type="text" name="email" class="inp" placeholder=" " required><br>
+                        <input type="text" name="apellidos" class="inp" placeholder=" " required><br>
                         <span class="text_input">Apellidos</span>
                     </div>
                     <div class="inputbox">
-                        <select name="workArea" id="jobArea" class="inp" required>
+                        <select name="Habitacion" id="jobArea" class="inp" required>
                             <option value=""></option>
-                            <option value="Finanzas">Little Dog</option>
-                            <option value="Seguridad">PetHabit</option>
-                            <option value="Cocinero">CatStay</option>
-                            <option value="Recamareras">KingPaw</option>
+                            <option value="Little Dog">Little Dog</option>
+                            <option value="PetHabit">PetHabit</option>
+                            <option value="CatStay">CatStay</option>
+                            <option value="KingPaw">KingPaw</option>
                         </select>
                         <span class="text_input">Tipo de Habitacion</span>
                     </div>
                     <div class="inputbox">
-                        <input type="email" name="job" class="inp" placeholder=" " required><br>
+                        <input type="email" name="email" class="inp" placeholder=" " required><br>
                         <span class="text_input">Email</span>
                     </div>
 
                     <div class="inputbox">
-                        <input type="tel" name="schedule" class="inp" placeholder=" " required><br>
+                        <input type="tel" name="telefono" class="inp" placeholder=" " required><br>
                         <span class="text_input">Telefono</span>
                     </div>
                     <div class="inputbox">
-                        <select name="workArea" id="jobArea" class="inp" required>
+                        <select name="mascota" id="jobArea" class="inp" required>
                             <option value=""></option>
-                            <option value="Finanzas">Gato</option>
-                            <option value="Seguridad">Perro</option>
-                            <option value="Cocinero">Ambos</option>
+                            <option value="Gato">Gato</option>
+                            <option value="Perro">Perro</option>
+                            <option value="Ambos">Ambos</option>
                         </select>
                         <span class="text_input">Mascotas</span>
                     </div>
                     <div class="inputbox">
-                        <select name="workArea" id="jobArea" class="inp" required>
+                        <select name="nomasco" id="nomasco" class="inp" required>
                             <option value=""></option>
-                            <option value="Finanzas">1</option>
-                            <option value="Seguridad">2</option>
-                            <option value="Cocinero">3</option>
-                            <option value="Recamareras">4</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
                         </select>
                         <span class="text_input">N° Mascotas</span>
                     </div>
                     <div class="inputbox">
-                        <input type="text" name="bank" class="inp" placeholder=" " required><br>
+                        <input type="text" name="namepr" class="inp" placeholder=" " required><br>
                         <span class="text_input">titular de la tarjeta</span>
                     </div>
                     <div class="inputbox">
-                        <input type="number" name="salary" class="inp" placeholder=" " required><br>
+                        <input type="number" name="numtarge" class="inp" placeholder=" " required><br>
                         <span class="text_input">Numero de Tarjeta</span>
                     </div>
                     <div class="inputbox">
-                        <input type="text" name="salary" class="inp" placeholder=" " required><br>
+                        <input type="text" name="fechacadu" class="inp" placeholder=" " required><br>
                         <span class="text_input">Fecha de Caducidad de Tarjeta</span>
                     </div><br>
                     <input type="submit" value="Guardar" id="bot">
