@@ -2,10 +2,10 @@
 session_start();
 
 // Database access credentials
-$hostname = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'pawtel';
+$hostname='localhost';
+$username='u918373181_root';
+$password='/HcXL~g1J';
+$database='u918373181_pawtel';
 
 // Database connection
 $conexion = mysqli_connect($hostname, $username, $password, $database);

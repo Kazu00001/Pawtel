@@ -1,9 +1,10 @@
 <?php
 // Credenciales de acceso a la base de datos
-$hostname = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'pawtel';
+$hostname='localhost';
+$username='u918373181_root';
+$password='/HcXL~g1J';
+$database='u918373181_pawtel';
+
 
 // Conexión a la base de datos
 $Conexion = mysqli_connect($hostname, $username, $password, $database);
