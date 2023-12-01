@@ -38,7 +38,7 @@ if ($Result = $Conexion->prepare('SELECT id, cotra, correo, nombres, categorio, 
                 $_SESSION['telefono'] = $tel;
 
                 if ($categorio == 1) {
-                    header('Location: inicio.php');
+                    header('Location: /');
                 } elseif ($categorio == 2) {
                     header('Location: empleados.php');
                 }

@@ -13,12 +13,12 @@
             <article id="titfo">
                 <section id="titC">
                     <br>
-                    <a href="inicio.php"><h1 id="tit">PawTel</h1></a>
+                    <a href="/"><h1 id="tit">PawTel</h1></a>
                 </section>
                 <section id="barNav">
                 <nav class="nave">
                     <ul class="menu">
-                        <li><a href="inicio.php">Inicio</a></li>
+                        <li><a href="/">Inicio</a></li>
                         <li><a href="#">Servicios</a>
                             <div class="topM"></div>
                             <ul class="menuv">
@@ -70,7 +70,7 @@
             <br>
             <section class="container_room">
                 <div class="c_image">
-                    <img src="../Expolitec/rooms/room1.jpg"  class="img">
+                    <img src="./rooms/room1.jpg"  class="img">
                 </div>
                 <div class="info_room">
                     <p class="tit_hb">Nombre de la Habitación</p>
@@ -87,7 +87,7 @@
             </section>
             <section class="container_room">
                 <div class="c_image">
-                    <img src="../Expolitec/rooms/room1.jpg"  class="img">
+                    <img src="./rooms/room1.jpg"  class="img">
                 </div>
                 <div class="info_room">
                     <p class="tit_hb">Nombre de la Habitación</p>
@@ -103,7 +103,7 @@
                 </div>
             </section>            <section class="container_room">
                 <div class="c_image">
-                    <img src="../Expolitec/rooms/room1.jpg"  class="img">
+                    <img src="./rooms/room1.jpg"  class="img">
                 </div>
                 <div class="info_room">
                     <p class="tit_hb">Nombre de la Habitación</p>
