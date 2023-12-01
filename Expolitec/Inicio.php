@@ -41,7 +41,16 @@ require_once('conexion.php');
 
                 </nav>
                 <section id="perfil">
-                <div id="pic"><a href="usser_perf.php"><img src="<?php echo'imgs/' . $_SESSION['foto']  ?>" ></a></div>
+                <a href="usser_perf.php"><div id="pic">
+                    <?php
+                        if(isset($_SESSION['loggedin'])){ ?>
+                            <img id="imag" src="<?php echo'imgs/' . $_SESSION['foto']  ?>" >
+                
+                        <?php }
+                    ?>
+                        </div>
+                    </a>
+
                 </section>
             </article>
         </header>
@@ -255,7 +264,7 @@ require_once('conexion.php');
     </body>
     <script>
         function ress() {
-            location.href ='reservas.php';
+            location.href ='reservas_prueba2.php';
         }
         
     </script>

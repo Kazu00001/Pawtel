@@ -280,3 +280,6 @@ footer{
     position: relative; /* Cambia la posición a relativa */
     margin-top: 20px;
 }
+#imagen-per{
+    max-width: 150%;
+}

@@ -30,7 +30,7 @@ if ($stmt = mysqli_prepare($Conexion, $sql_update)) {
         echo "Consulta SQL: $sql_update";
         exit();
     } else {
-        header('Location: Login.html');
+        header('Location: usser_perf.php');
         exit();
     }
 

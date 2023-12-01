@@ -16,14 +16,14 @@ if (!isset($_POST['correo'], $_POST['password'])) {
     header('Location: Login.html');
 }
 
-if ($Result = $Conexion->prepare('SELECT id, cotra, correo, nombres, categorio, foto FROM usser WHERE correo = ?')) {
+if ($Result = $Conexion->prepare('SELECT id, cotra, correo, nombres, categorio, foto, fech, telefono FROM usser WHERE correo = ?')) {
     $correo = mysqli_real_escape_string($Conexion, $_POST['correo']);
     $Result->bind_param('s', $correo);
     $Result->execute();
     $Result->store_result();
 
     if ($Result->num_rows > 0) {
-        $Result->bind_result($id, $hash_password, $email, $nombres, $categorio, $foto);
+        $Result->bind_result($id, $hash_password, $email, $nombres, $categorio, $foto, $fecha, $tel);
         $Result->fetch();
 
         if ($categorio == 1 || $categorio == 2) {
@@ -34,6 +34,8 @@ if ($Result = $Conexion->prepare('SELECT id, cotra, correo, nombres, categorio, 
                 $_SESSION['id'] = $id;
                 $_SESSION['email'] = $email;
                 $_SESSION['foto'] = $foto;
+                $_SESSION['fech'] = $fecha;
+                $_SESSION['telefono'] = $tel;
 
                 if ($categorio == 1) {
                     header('Location: inicio.php');
