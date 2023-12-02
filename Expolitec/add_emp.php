@@ -14,7 +14,7 @@
     // Verifica si el archivo es una imagen
 if (isset($_FILES["image"])) {
     $image = basename($_FILES["image"]["name"]);
-    $targetDirectory = "C:/wamp64/www/Pawtel/Expolitec/emp/";  // Ajusta la ruta al directorio correcto
+    $targetDirectory = "emp/";  // Ajusta la ruta al directorio correcto
     $targetFile = $targetDirectory . $image;  // Ruta completa del archivo
 
     $esImagen = getimagesize($_FILES["image"]["tmp_name"]);

@@ -1,9 +1,9 @@
 <?php
 // Establish a database connection
 $hostname='localhost';
-$username='root';
-$password='';
-$database='pawtel';
+$username='u918373181_root';
+$password='/HcXL~g1J';
+$database='u918373181_pawtel';
 
 // conexion a la base de datos :hh jjjj
 

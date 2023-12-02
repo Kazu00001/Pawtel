@@ -1,9 +1,10 @@
 <?php
 // Credenciales de acceso a la base de datos
-$hostname = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'pawtel';
+$hostname='localhost';
+$username='u918373181_root';
+$password='/HcXL~g1J';
+$database='u918373181_pawtel';
+
 
 // Conexión a la base de datos
 $Conexion = mysqli_connect($hostname, $username, $password, $database);
@@ -38,7 +39,7 @@ if (!$resultadoComprobacion) {
 
         if (isset($_FILES["image"]) && $_FILES["image"]["error"] == 0) {
             $image = basename($_FILES["image"]["name"]);
-            $targetDirectory = "usser/"; // Ajusta la ruta al directorio correcto (puede ser relativa o absoluta)
+            $targetDirectory = "imgs/"; // Ajusta la ruta al directorio correcto (puede ser relativa o absoluta)
             $targetFile = $targetDirectory . $image; // Ruta completa del archivo
 
             $esImagen = getimagesize($_FILES["image"]["tmp_name"]);

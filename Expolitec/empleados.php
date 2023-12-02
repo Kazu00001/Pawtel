@@ -26,6 +26,8 @@
                         <ul class="menuv">
                             <li class="list"><a href="reservas-most.php">Mostrar Reservaciones</a></li>
                             <li class="list"><a href="Tipodehb.php">Mostrar Habitaciones</a></li>
+                            <li class="list"><a href="most-revers-res.php">Mostrar Reservaciones de Restaurante</a></li>
+
                         </ul>
                     </li>
                     <li><a href="#">Empleados</a>
@@ -35,6 +37,9 @@
                         </ul>
                     </li>
                     <li><a href="inventario-mostr.php">Inventario</a></li>
+                    
+                    <li > <a href="cerrar-sesion.php" style="color:white;" class="aa"><i class="fas fa-sign-out-alt"></i>Cerrar Sesión</a> </li>
+
                 </ul>
 
             </nav>

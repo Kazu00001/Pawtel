@@ -17,12 +17,12 @@ require_once('conexion.php');
             <article id="titfo">
                 <section id="titC">
                     <br>
-                    <a href="inicio.php"><h1 id="tit">PawTel</h1></a>
+                    <a href="index.php"><h1 id="tit">PawTel</h1></a>
                 </section>
                 <section id="barNav">
                 <nav class="nave">
                     <ul class="menu">
-                        <li><a href="inicio.php">Inicio</a></li>
+                        <li><a href="index.php">Inicio</a></li>
                         <li><a href="#">Servicios</a>
                             <div class="topM"></div>
                             <ul class="menuv">
@@ -33,7 +33,7 @@ require_once('conexion.php');
                             <div class="topM"></div>
                             <ul class="menuv">
                                 <li class="list"><a href="reservas_prueba2.php">Reserva Hotel</a></li>
-                                <li class="list"><a href="Reserva-resta.php">Reserva Restaurante</a></li>
+                                <li class="list"><a href="reserva-resta.php">Reserva Restaurante</a></li>
                             </ul>
                         </li>
                     </ul>

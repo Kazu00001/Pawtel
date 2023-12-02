@@ -27,6 +27,8 @@
                         <ul class="menuv">
                             <li class="list"><a href="reservas-most.php">Mostrar Reservaciones</a></li>
                             <li class="list"><a href="Tipodehb.php">Mostrar Habitaciones</a></li>
+                            <li class="list"><a href="most-revers-rest.php">Mostrar Reservaciones de Restaurante</a></li>
+
                         </ul>
                     </li>
                     <li><a href="#">Empleados</a>

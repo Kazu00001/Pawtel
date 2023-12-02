@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-$hostname = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'pawtel';
+$hostname='localhost';
+$username='u918373181_root';
+$password='/HcXL~g1J';
+$database='u918373181_pawtel';
 
 $Conexion = mysqli_connect($hostname, $username, $password, $database);
 
@@ -38,7 +38,7 @@ if ($Result = $Conexion->prepare('SELECT id, cotra, correo, nombres, categorio, 
                 $_SESSION['telefono'] = $tel;
 
                 if ($categorio == 1) {
-                    header('Location: inicio.php');
+                    header('Location: index.php');
                 } elseif ($categorio == 2) {
                     header('Location: empleados.php');
                 }

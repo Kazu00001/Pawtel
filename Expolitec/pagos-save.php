@@ -1,10 +1,11 @@
 <?php
 session_start();
 
-$hostname = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'pawtel';
+$hostname='localhost';
+$username='u918373181_root';
+$password='/HcXL~g1J';
+$database='u918373181_pawtel';
+
 
 $Conexion = mysqli_connect($hostname, $username, $password, $database);
 
